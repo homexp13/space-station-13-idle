@@ -6,7 +6,7 @@
   >
     <div class="d-flex align-items-center">
       <img :src="icon" alt />
-      <span :style="textStyle">{{locked ? "LOCKED" : text}}</span>
+      <span :style="textStyle">{{locked ? $t('action.locked') : text}}</span>
     </div>
     <div>
       <slot v-if="!locked" />
