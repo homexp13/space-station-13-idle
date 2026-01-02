@@ -109,9 +109,30 @@ export default {
     bananium: "Bananium",
     // Botany items
     plantSeed: "Plant Seeds",
+    // Tier 1 plants (3 seeds)
     potato: "Potato",
     tomato: "Tomato",
     banana: "Banana",
+    flowerSun: "Sunflower",
+    mushroom: "Mushroom",
+    pepper: "Pepper",
+    // Tier 2 plants (5 seeds)
+    potatoBattery: "Potato Battery",
+    tomatoBlue: "Blue Tomato",
+    bananaMime: "Mime Banana",
+    flowerMoon: "Moonflower",
+    mushroomRed: "Red Mushroom",
+    peppercold: "Cold Pepper",
+    // Tier 3 plants (7 seeds)
+    orange: "Orange",
+    tomatoBluespace: "Bluespace Tomato",
+    bananaBlue: "Blue Banana",
+    flowerNova: "Nova Flower",
+    mushroomShadow: "Shadow Mushroom",
+    pepperGhost: "Ghost Pepper",
+    // Растения 4-го тира (10 семян)
+    orange3d: "3D Orange",
+    companionKillerTomato: "Killer Tomato Companion",
     // Add more items as needed...
   },
   // Purchases translations

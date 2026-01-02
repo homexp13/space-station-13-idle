@@ -127,18 +127,19 @@ const ACTIONS = {
 const MIN_LEVEL = 1;
 Object.values(ACTIONS).forEach((action, index) => {
 	action.tier = Math.min(Math.floor(action.requiredItems.plantSeed / 2), 4);
-	action.name = ITEMS[action.item].name;
+	//idk but it fix the translation
+	//action.name = ITEMS[action.item].name;
 	action.items = {
-		id: action.item,
-		count: [10, 20]
+	  id: action.item,
+	  count: [10, 20]
 	}
-	delete action.item;
-
+	//delete action.item;
+	
 	let level = Math.round(MIN_LEVEL + index / (Object.values(ACTIONS).length - 1) * (MAX_LEVEL - MIN_LEVEL));
 
 	action.requiredLevel = level;
 	action.xp = Math.max(5, action.time * level / 10);
-});
+  });
 
 export { ACTIONS };
 

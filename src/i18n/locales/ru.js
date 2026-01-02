@@ -109,9 +109,30 @@ export default {
     bananium: "Бананиум",
     // Botany items
     plantSeed: "Семена растений",
+    // Растения 1-го тира (3 семени)
     potato: "Картофель",
     tomato: "Помидор",
     banana: "Банан",
+    flowerSun: "Подсолнух",
+    mushroom: "Гриб",
+    pepper: "Перец",
+    // Растения 2-го тира (5 семян)
+    potatoBattery: "Картофельная батарейка",
+    tomatoBlue: "Синий помидор",
+    bananaMime: "Банановый мим",
+    flowerMoon: "Лунный цветок",
+    mushroomRed: "Красный гриб",
+    peppercold: "Холодный перец",
+    // Растения 3-го тира (7 семян)
+    orange: "Апельсин",
+    tomatoBluespace: "Блюспейс-помидор",
+    bananaBlue: "Синий банан",
+    flowerNova: "Цветок новой",
+    mushroomShadow: "Теневой гриб",
+    pepperGhost: "Призрачный перец",
+    // Tier 4 plants (10 seeds)
+    orange3d: "3D-апельсин",
+    companionKillerTomato: "Убийственный помидор-компаньон",
     // Add more items as needed...
   },
   // Purchases translations
