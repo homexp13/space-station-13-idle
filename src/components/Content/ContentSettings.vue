@@ -1,7 +1,7 @@
 <template>
   <div class="content-settings">
     <content-header
-      text="Settings"
+      :text="$t('common.settings')"
       :icon="require('@/assets/art/sidebar/gear.png')"
       color="rgb(231, 150, 28)"
     />
@@ -9,13 +9,30 @@
       <div class="row">
         <div class="col-12">
           <div class="content-block">
-            <h5>SETTINGS</h5>
+            <h5>{{ $t('settings.title') }}</h5>
             <hr />
+            
+            <div class="d-flex my-1 align-items-center">
+              <img class="mx--2 mr-1" :src="require('@/assets/art/misc/shadowling.png')" />
+              <div class="d-flex flex-column">
+                <label class="mb-1" for="languageSelect">{{ $t('common.language') }}</label>
+                <select
+                  v-model="locale"
+                  class="form-control"
+                  id="languageSelect"
+                  style="max-width: 200px;"
+                >
+                  <option value="en">{{ $t('common.english') }}</option>
+                  <option value="ru">{{ $t('common.russian') }}</option>
+                </select>
+              </div>
+            </div>
+            
             <button
               type="button"
               class="btn btn-primary my-1 d-block"
               @click="resetInfoClicked"
-            >Reset Dismissed Tutorials</button>
+            >{{ $t('settings.resetTutorials') }}</button>
 
             <div class="d-flex my-1">
               <img class="mx--2 mr-1" :src="require('@/assets/art/sidebar/backpack.png')" />
@@ -29,7 +46,7 @@
                 <label
                   class="custom-control-label"
                   for="inventoryFullStop"
-                >Stop Actions when Full Inventory</label>
+                >{{ $t('settings.inventoryFullStop') }}</label>
               </div>
             </div>
 
@@ -45,7 +62,7 @@
                 <label
                   class="custom-control-label"
                   for="pocketsEmptyStop"
-                >Stop Combat when Pockets Empty</label>
+                >{{ $t('settings.pocketsEmptyStop') }}</label>
               </div>
             </div>
 
@@ -58,7 +75,7 @@
                   class="custom-control-input"
                   id="darkMode"
                 />
-                <label class="custom-control-label" for="darkMode">Dark Mode</label>
+                <label class="custom-control-label" for="darkMode">{{ $t('settings.darkMode') }}</label>
               </div>
             </div>
 
@@ -74,7 +91,7 @@
                 <label
                   class="custom-control-label"
                   for="chronoPanelEnabled"
-                >Show Mini Chrono Panel when Time is Banked</label>
+                >{{ $t('settings.chronoPanelEnabled') }}</label>
               </div>
             </div>
 
@@ -90,7 +107,7 @@
                 <label
                   class="custom-control-label"
                   for="showVirtualLevels"
-                >Show Virtual Levels Beyond {{maxLevel}}</label>
+                >{{ $t('settings.showVirtualLevels', { maxLevel }) }}</label>
               </div>
             </div>
 
@@ -106,7 +123,7 @@
                 <label
                   class="custom-control-label"
                   for="showXPNeeded"
-                >Show how much XP is needed to level up in XP bars</label>
+                >{{ $t('settings.showXPNeeded') }}</label>
               </div>
             </div>
 
@@ -122,7 +139,7 @@
                 <label
                   class="custom-control-label"
                   for="showFullValues"
-                >Display Full Item Counts in Jobs (may look ugly with huge numbers)</label>
+                >{{ $t('settings.showFullValues') }}</label>
               </div>
             </div>
 
@@ -138,7 +155,7 @@
                 <label
                   class="custom-control-label"
                   for="showCompletionLines"
-                >Underline actions/fights you haven't fully completed yet (may affect performance)</label>
+                >{{ $t('settings.showCompletionLines') }}</label>
               </div>
             </div>
 
@@ -154,7 +171,7 @@
                 <label
                   class="custom-control-label"
                   for="hideLockedJobs"
-                >Hide locked jobs from the sidebar</label>
+                >{{ $t('settings.hideLockedJobs') }}</label>
               </div>
             </div>
 
@@ -170,7 +187,7 @@
                 <label
                   class="custom-control-label"
                   for="allButOne"
-                >Show an option to sell all but one of an item in your inventory</label>
+                >{{ $t('settings.allButOne') }}</label>
               </div>
             </div>
 
@@ -178,14 +195,14 @@
               type="button"
               class="btn btn-primary my-1 d-block"
               @click="exportDataClicked"
-            >Export Data</button>
+            >{{ $t('settings.exportData') }}</button>
             <div class="d-flex flex-row align-items-center">
               <button
                 type="button"
                 class="btn btn-danger my-1 d-block flex-shrink-0 mr-2"
                 :class="{'cheats-disabled': !fileData}"
                 @click="importDataClicked"
-              >Import Data</button>
+              >{{ $t('settings.importData') }}</button>
               <input
                 type="file"
                 class="form-control-file"
@@ -197,30 +214,30 @@
               type="button"
               class="btn btn-danger my-1 d-block"
               @click="resetDataClicked"
-            >Reset ALL Data</button>
+            >{{ $t('settings.resetData') }}</button>
           </div>
         </div>
         <div class="col-12 mt-3">
           <div class="content-block">
-            <h5>CHEATS</h5>
+            <h5>{{ $t('settings.cheats') }}</h5>
             <hr />
             <button
               v-if="!cheatsEnabled"
               type="button"
               class="btn btn-danger my-1 d-block"
               @click="openEnableCheats"
-            >Enable Cheats</button>
+            >{{ $t('settings.enableCheats') }}</button>
             <div :class="{'cheats-disabled': !cheatsEnabled}">
               <button
                 type="button"
                 class="btn btn-primary my-1 d-block"
                 @click="openItemSpawner"
-              >Open Item Spawner</button>
+              >{{ $t('settings.openItemSpawner') }}</button>
               <button
                 type="button"
                 class="btn btn-primary my-1 d-block"
                 @click="getSomeCash"
-              >Get $1,000,000</button>
+              >{{ $t('settings.getCash') }}</button>
               <div class="custom-control custom-switch">
                 <input
                   v-model="showAllActions"
@@ -228,7 +245,7 @@
                   class="custom-control-input"
                   id="showAllActions"
                 />
-                <label class="custom-control-label" for="showAllActions">Show All Actions</label>
+                <label class="custom-control-label" for="showAllActions">{{ $t('settings.showAllActions') }}</label>
               </div>
               <div class="custom-control custom-switch">
                 <input
@@ -237,7 +254,7 @@
                   class="custom-control-input"
                   id="unlockAllJobs"
                 />
-                <label class="custom-control-label" for="unlockAllJobs">Unlock All Jobs</label>
+                <label class="custom-control-label" for="unlockAllJobs">{{ $t('settings.unlockAllJobs') }}</label>
               </div>
               <div class="custom-control custom-switch">
                 <input
@@ -246,7 +263,7 @@
                   class="custom-control-input"
                   id="infiniteChrono"
                 />
-                <label class="custom-control-label" for="infiniteChrono">Infinite Chronosphere Time</label>
+                <label class="custom-control-label" for="infiniteChrono">{{ $t('settings.infiniteChrono') }}</label>
               </div>
               <div class="custom-control custom-switch">
                 <input
@@ -258,28 +275,28 @@
                 <label
                   class="custom-control-label"
                   for="extraChronoOptions"
-                >Extra Chronosphere Options</label>
+                >{{ $t('settings.extraChronoOptions') }}</label>
               </div>
               <button
                 type="button"
                 class="btn btn-primary my-1 d-block"
                 @click="openSkillLeveler"
-              >Level Individual Jobs</button>
+              >{{ $t('settings.levelIndividualJobs') }}</button>
               <button
                 type="button"
                 class="btn btn-primary my-1 d-block"
                 @click="openLevelAllJobs"
-              >Max All Jobs</button>
+              >{{ $t('settings.maxAllJobs') }}</button>
               <button
                 type="button"
                 class="btn btn-primary my-1 d-block"
                 @click="completeCurrentValidhuntingTask"
-              >Complete Current Validhunting Task</button>
+              >{{ $t('settings.completeValidhuntingTask') }}</button>
               <button
                 type="button"
                 class="btn btn-primary my-1 d-block"
                 @click="giveResearchPoints"
-              >Give 100 Research Bounty Points</button>
+              >{{ $t('settings.giveResearchPoints') }}</button>
             </div>
           </div>
         </div>
@@ -426,6 +443,14 @@ export default {
     },
     maxLevel() {
       return MAX_LEVEL;
+    },
+    locale: {
+      get() {
+        return this.$store.getters["settings/locale"];
+      },
+      set(value) {
+        this.$store.commit("settings/setLocale", value);
+      }
     }
   },
   methods: {
@@ -438,7 +463,7 @@ export default {
     },
     resetInfoClicked() {
       this.$store.commit("info/resetAll");
-      EventBus.$emit("toast", { text: "Tutorials reset!", duration: 3000 });
+      EventBus.$emit("toast", { text: this.$t('messages.tutorialsReset'), duration: 3000 });
     },
     exportDataClicked() {
       let file = new Blob([JSON.stringify(reducer(this.$store.state))], {
@@ -456,10 +481,10 @@ export default {
         window.URL.revokeObjectURL(url);
       }, 0);
 
-      EventBus.$emit("toast", { text: "Data exported!", duration: 3000 });
+      EventBus.$emit("toast", { text: this.$t('messages.dataExported'), duration: 3000 });
       if(this.$store.getters["chrono/oldExport"]){
         this.$store.dispatch("chrono/resetLastExport");
-        EventBus.$emit("toast", { text: "30 minute Export Bonus gained!", duration: 4500 });
+        EventBus.$emit("toast", { text: this.$t('messages.exportBonus'), duration: 4500 });
       }
     },
     importDataChanged(event) {
@@ -478,13 +503,13 @@ export default {
     },
     importDataClicked() {
       if (!this.fileData) {
-        EventBus.$emit("toast", { text: "No file to import!", duration: 3000 });
+        EventBus.$emit("toast", { text: this.$t('messages.noFileToImport'), duration: 3000 });
         return;
       }
 
       this.$store.dispatch("setData", JSON.parse(this.fileData));
       this.$store.dispatch("chrono/updateOfflineTime");
-      EventBus.$emit("toast", { text: "Data imported!", duration: 3000 });
+      EventBus.$emit("toast", { text: this.$t('messages.dataImported'), duration: 3000 });
     },
     resetDataClicked() {
       this.$modal.show(ModalResetData, {}, { height: "auto", width: "320px" });
@@ -514,7 +539,7 @@ export default {
     },
     completeCurrentValidhuntingTask() {
       this.$store.dispatch("validhunting/completeTask", true);
-      EventBus.$emit("toast", { text: "Task Complete!", duration: 3000 });
+      EventBus.$emit("toast", { text: this.$t('messages.taskComplete'), duration: 3000 });
 
       // In case I ever want to simulate this again:
       // let table = [
@@ -545,7 +570,7 @@ export default {
     },
     giveResearchPoints() {
       this.$store.dispatch("research/cheatPoints", { root: true });
-      EventBus.$emit("toast", { text: "Points added!", duration: 3000 });
+      EventBus.$emit("toast", { text: this.$t('messages.pointsAdded'), duration: 3000 });
     }
   }
 };

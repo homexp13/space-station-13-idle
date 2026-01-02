@@ -1,0 +1,57 @@
+export default {
+  common: {
+    settings: "Settings",
+    inventory: "Inventory",
+    cargo: "Cargo",
+    combat: "Combat",
+    jobs: "Jobs",
+    other: "Other",
+    player: "Player",
+    chronosphere: "Chronosphere",
+    completion: "Completion",
+    about: "About",
+    discord: "Discord",
+    language: "Language",
+    english: "English",
+    russian: "Russian"
+  },
+  settings: {
+    title: "SETTINGS",
+    resetTutorials: "Reset Dismissed Tutorials",
+    inventoryFullStop: "Stop Actions when Full Inventory",
+    pocketsEmptyStop: "Stop Combat when Pockets Empty",
+    darkMode: "Dark Mode",
+    chronoPanelEnabled: "Show Mini Chrono Panel when Time is Banked",
+    showVirtualLevels: "Show Virtual Levels Beyond {maxLevel}",
+    showXPNeeded: "Show how much XP is needed to level up in XP bars",
+    showFullValues: "Display Full Item Counts in Jobs (may look ugly with huge numbers)",
+    showCompletionLines: "Underline actions/fights you haven't fully completed yet (may affect performance)",
+    hideLockedJobs: "Hide locked jobs from the sidebar",
+    allButOne: "Show an option to sell all but one of an item in your inventory",
+    exportData: "Export Data",
+    importData: "Import Data",
+    resetData: "Reset ALL Data",
+    cheats: "CHEATS",
+    enableCheats: "Enable Cheats",
+    openItemSpawner: "Open Item Spawner",
+    getCash: "Get $1,000,000",
+    showAllActions: "Show All Actions",
+    unlockAllJobs: "Unlock All Jobs",
+    infiniteChrono: "Infinite Chronosphere Time",
+    extraChronoOptions: "Extra Chronosphere Options",
+    levelIndividualJobs: "Level Individual Jobs",
+    maxAllJobs: "Max All Jobs",
+    completeValidhuntingTask: "Complete Current Validhunting Task",
+    giveResearchPoints: "Give 100 Research Bounty Points"
+  },
+  messages: {
+    tutorialsReset: "Tutorials reset!",
+    dataExported: "Data exported!",
+    dataImported: "Data imported!",
+    noFileToImport: "No file to import!",
+    taskComplete: "Task Complete!",
+    pointsAdded: "Points added!",
+    exportBonus: "30 minute Export Bonus gained!"
+  }
+}
+

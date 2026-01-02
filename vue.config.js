@@ -7,8 +7,7 @@ const version = JSON.parse(packageJson).version || 0
 
 module.exports = {
 
-	publicPath:
-		process.env.FULL_PATH ? "/space-station-13-idle/" : "/",
+	publicPath: './',
 
 	configureWebpack: {
 		plugins: [

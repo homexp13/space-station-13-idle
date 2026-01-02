@@ -14,6 +14,7 @@ const settings = {
 		darkMode: true,
 		hideLockedJobs: false,
 		allButOne: false,
+		locale: null, // null означает автоопределение
 	},
 	getters: {
 		showVirtualLevels(state) {
@@ -52,6 +53,18 @@ const settings = {
 		allButOne(state) {
 			return state.allButOne;
 		},
+		locale(state) {
+			// Если locale не установлен, определяем из localStorage или браузера
+			if (state.locale === null) {
+				const saved = localStorage.getItem('ss13-idle-locale')
+				if (saved && (saved === 'en' || saved === 'ru')) {
+					return saved
+				}
+				const browserLang = navigator.language || navigator.userLanguage
+				return browserLang.startsWith('ru') ? 'ru' : 'en'
+			}
+			return state.locale;
+		},
 	},
 	mutations: {
 		setShowVirtualLevels(state, val) {
@@ -86,6 +99,12 @@ const settings = {
 		},
 		setAllButOne(state, val) {
 			state.allButOne = val;
+		},
+		setLocale(state, val) {
+			if (val && (val === 'en' || val === 'ru')) {
+				state.locale = val;
+				localStorage.setItem('ss13-idle-locale', val);
+			}
 		}
 	}
 }

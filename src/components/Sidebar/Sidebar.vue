@@ -8,14 +8,14 @@
       </div>
       <p class="items-header">{{version}}</p>
 
-      <sidebar-item id="shop" text="Cargo" :icon="require('@/assets/art/sidebar/cargo.png')">
+      <sidebar-item id="shop" :text="$t('common.cargo')" :icon="require('@/assets/art/sidebar/cargo.png')">
         <div>
           <inventory-price-display :price="money" />
         </div>
       </sidebar-item>
       <sidebar-item
         id="inventory"
-        text="Inventory"
+        :text="$t('common.inventory')"
         :icon="require('@/assets/art/sidebar/backpack.png')"
         :textColor="bankItemIds.length == bankSlots ? 'rgb(255, 113, 113)' : ''"
       >
@@ -24,7 +24,7 @@
         >{{bankItemIds.length}}/{{bankSlots}}</span>
       </sidebar-item>
 
-      <p class="items-header">Jobs</p>
+      <p class="items-header">{{ $t('common.jobs') }}</p>
       <sidebar-item
         v-for="job in nonCombatJobs"
         :key="job.id"
@@ -39,7 +39,7 @@
       </sidebar-item>
 
       <div class="items-header flex-row align-items-center justify-content-between">
-        <span>Combat</span>
+        <span>{{ $t('common.combat') }}</span>
         <span :style="healthStyle">({{playerHealth}}/{{playerMaxHealth}})</span>
       </div>
       <sidebar-item
@@ -55,15 +55,15 @@
         <span>{{getLevelText(job)}}</span>
       </sidebar-item>
 
-      <p class="items-header">Other</p>
+      <p class="items-header">{{ $t('common.other') }}</p>
       <sidebar-item
         id="customization"
-        text="Player"
+        :text="$t('common.player')"
         :icon="require('@/assets/art/customization/icon.png')"
       />
       <sidebar-item
         id="chronosphere"
-        text="Chronosphere"
+        :text="$t('common.chronosphere')"
         :icon="require('@/assets/art/chrono/icon.png')"
         :textColor="chronoSpeed != 1 ? '#3ac5ff' : ''"
       >
@@ -71,13 +71,13 @@
       </sidebar-item>
       <sidebar-item
         id="completion"
-        text="Completion"
+        :text="$t('common.completion')"
         :icon="require('@/assets/art/sidebar/trophy.png')"
       />
-      <sidebar-item id="settings" text="Settings" :icon="require('@/assets/art/sidebar/gear.png')" />
-      <sidebar-item id="about" text="About" :icon="require('@/assets/art/misc/logo-square.png')" />
+      <sidebar-item id="settings" :text="$t('common.settings')" :icon="require('@/assets/art/sidebar/gear.png')" />
+      <sidebar-item id="about" :text="$t('common.about')" :icon="require('@/assets/art/misc/logo-square.png')" />
       <a class href="https://discord.com/invite/HwbK9XQ" target="_blank">
-        <sidebar-item text="Discord" :icon="require('@/assets/art/misc/discord.png')" />
+        <sidebar-item :text="$t('common.discord')" :icon="require('@/assets/art/misc/discord.png')" />
       </a>
     </div>
     <img
