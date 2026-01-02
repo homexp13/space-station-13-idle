@@ -95,8 +95,18 @@ export default {
       return null;
     },
     name() {
-      if (this.purchase.name) return this.purchase.name;
-      if (this.item) return this.item.name;
+      if (this.purchase.name) {
+        // Try to translate purchase name
+        const translationKey = `purchases.${this.purchaseId}`;
+        const translated = this.$t(translationKey);
+        if (translated && translated !== translationKey) return translated;
+        return this.purchase.name;
+      }
+      if (this.item) {
+        const translationKey = `items.${this.itemId}`;
+        const translated = this.$t(translationKey);
+        return (translated && translated !== translationKey) ? translated : this.item.name;
+      }
       return "Missing name";
     },
     canPurchase() {

@@ -7,7 +7,7 @@
     :customClass="$store.getters['settings/darkModeClass']"
   >
     <div class="popup d-flex flex-column align-items-center">
-      <h6 class="title">{{item.name}}</h6>
+      <h6 class="title">{{itemName}}</h6>
       <div class="d-flex align-items-center mt-1" v-if="item.equipmentSlot">
         <img class="equippable-icon" :src="require(`@/assets/art/combat/equipment/${item.equipmentSlot}.png`)" alt="" />
         <span class="equippable-name d-md-block text-uppercase ml-1">{{item.equipmentSlot}}</span>
@@ -33,7 +33,7 @@
         :key="'restriction'+index"
         class="warning-bubble mt-1"
       >Restriction: {{restriction.toUpperCase()}}</span>
-      <span class="description mt-1" v-if="item.description">{{item.description}}</span>
+      <span class="description mt-1" v-if="itemDescription">{{itemDescription}}</span>
       <span class="potion-charges mt-1" v-if="item.potionCharges">Charges: {{item.potionCharges}}</span>
       <span
         class="description mt-1"
@@ -66,6 +66,17 @@ export default {
   computed: {
     item() {
       return ITEMS[this.itemId];
+    },
+    itemName() {
+      const translationKey = `items.${this.itemId}`;
+      const translated = this.$t(translationKey);
+      return (translated && translated !== translationKey) ? translated : this.item.name;
+    },
+    itemDescription() {
+      if (!this.item.description) return '';
+      const translationKey = `items.${this.itemId}.description`;
+      const translated = this.$t(translationKey);
+      return (translated && translated !== translationKey) ? translated : this.item.description;
     },
     popoverPlacement() {
       return this.placement ? this.placement : "bottom";

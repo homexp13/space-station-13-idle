@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-column align-items-center m-3 text-center">
-		<h4 class="mb-2">{{item.name}}</h4>
+		<h4 class="mb-2">{{itemName}}</h4>
     <item-chance :data="item" />
   </div>
 </template>
@@ -16,6 +16,11 @@ export default {
 	computed: {
 		item() {
 			return ITEMS[this.itemId];
+		},
+		itemName() {
+			const translationKey = `items.${this.itemId}`;
+			const translated = this.$t(translationKey);
+			return (translated && translated !== translationKey) ? translated : this.item.name;
 		}
 	}
 };

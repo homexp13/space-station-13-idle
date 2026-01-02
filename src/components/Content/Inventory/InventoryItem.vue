@@ -8,7 +8,7 @@
     <item-popover v-if="!popoversDisabled" :target="id" :itemId="itemId" />
     <b-popover v-if="!popoversDisabled" ref="popover" :target="id" triggers="click blur" placement="bottom" delay="30" :customClass="$store.getters['settings/darkModeClass']">
       <div class="popup d-flex flex-column align-items-center">
-        <h6 class="title">{{item.name}}</h6>
+        <h6 class="title">{{itemName}}</h6>
         <button
           v-if="canEquip"
           class="mt-1 btn btn-primary btn-sm"
@@ -73,6 +73,11 @@ export default {
     },
     item() {
       return ITEMS[this.itemId];
+    },
+    itemName() {
+      const translationKey = `items.${this.itemId}`;
+      const translated = this.$t(translationKey);
+      return (translated && translated !== translationKey) ? translated : this.item.name;
     },
     count() {
       return this.bank[this.itemId];

@@ -9,7 +9,7 @@
     <item-popover :itemId="itemId" :target="id" placement="right" />
     <span v-if="simplified">x</span>
     <span>{{countText}}</span>
-    <span v-if="!simplified">&nbsp;{{item.name}}</span>
+    <span v-if="!simplified">&nbsp;{{itemName}}</span>
     <span v-if="simplified" class="ml-1">({{bankCount | aggressive}})</span>
   </div>
 </template>
@@ -37,6 +37,11 @@ export default {
       let item = ITEMS[this.itemId];
       if (!item) console.log("Bad item in table:", this.itemId);
       return item;
+    },
+    itemName() {
+      const translationKey = `items.${this.itemId}`;
+      const translated = this.$t(translationKey);
+      return (translated && translated !== translationKey) ? translated : this.item.name;
     },
     countText() {
       // A

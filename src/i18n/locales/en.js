@@ -90,6 +90,45 @@ export default {
     chanceToFail: "chance to fail and lose",
     health: "health",
     costs: "Costs"
+  },
+  // Items translations - add more as needed
+  // Format: items.{itemId}: "Translated Name"
+  // For descriptions: items.{itemId}.description: "Translated Description"
+  items: {
+    // Mining resources
+    glass: "Glass",
+    iron: "Iron",
+    silver: "Silver",
+    gold: "Gold",
+    titanium: "Titanium",
+    uranium: "Uranium",
+    plasma: "Plasma",
+    diamond: "Diamond",
+    alienalloy: "Alien Alloy",
+    bluespace: "Bluespace Crystal",
+    bananium: "Bananium",
+    // Botany items
+    plantSeed: "Plant Seeds",
+    potato: "Potato",
+    tomato: "Tomato",
+    banana: "Banana",
+    // Add more items as needed...
+  },
+  // Purchases translations
+  purchases: {
+    // Add purchase translations as needed
+    // Format: purchases.{purchaseId}: "Translated Name"
+    // For descriptions: purchases.{purchaseId}.description: "Translated Description"
+  },
+  // Zones translations
+  zones: {
+    // Add zone translations as needed
+    // Format: zones.{zoneId}: "Translated Name"
+  },
+  // Upgrades translations
+  upgrades: {
+    // Add upgrade translations as needed
+    // Format: upgrades.{upgradeId}: "Translated Name"
   }
 }
 

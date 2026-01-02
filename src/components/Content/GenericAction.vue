@@ -171,11 +171,30 @@ export default {
       return this.actionName;
     },
     actionTitle() {
-      if (this.action.name) return this.action.name;
-      if (this.action.item) return this.item.name;
-      if (this.action.items) return ITEMS[this.action.items.id].name;
-      if (this.action.itemTables)
-        return ITEMS[this.action.itemTables[0].item].name;
+      if (this.action.name) {
+        // Try to translate action name if it's an item ID
+        const translationKey = `items.${this.action.name}`;
+        const translated = this.$t(translationKey);
+        if (translated && translated !== translationKey) return translated;
+        return this.action.name;
+      }
+      if (this.action.item) {
+        const translationKey = `items.${this.action.item}`;
+        const translated = this.$t(translationKey);
+        return (translated && translated !== translationKey) ? translated : this.item.name;
+      }
+      if (this.action.items) {
+        const itemId = this.action.items.id;
+        const translationKey = `items.${itemId}`;
+        const translated = this.$t(translationKey);
+        return (translated && translated !== translationKey) ? translated : ITEMS[itemId].name;
+      }
+      if (this.action.itemTables) {
+        const itemId = this.action.itemTables[0].item;
+        const translationKey = `items.${itemId}`;
+        const translated = this.$t(translationKey);
+        return (translated && translated !== translationKey) ? translated : ITEMS[itemId].name;
+      }
       return "BAD NAME";
     },
     icon() {

@@ -90,6 +90,45 @@ export default {
     chanceToFail: "шанс провала и потери",
     health: "здоровья",
     costs: "Стоимость"
+  },
+  // Items translations - add more as needed
+  // Format: items.{itemId}: "Translated Name"
+  // For descriptions: items.{itemId}.description: "Translated Description"
+  items: {
+    // Mining resources
+    glass: "Стекло",
+    iron: "Железо",
+    silver: "Серебро",
+    gold: "Золото",
+    titanium: "Титан",
+    uranium: "Уран",
+    plasma: "Плазма",
+    diamond: "Алмаз",
+    alienalloy: "Инопланетный сплав",
+    bluespace: "Кристалл блюспейса",
+    bananium: "Бананиум",
+    // Botany items
+    plantSeed: "Семена растений",
+    potato: "Картофель",
+    tomato: "Помидор",
+    banana: "Банан",
+    // Add more items as needed...
+  },
+  // Purchases translations
+  purchases: {
+    // Add purchase translations as needed
+    // Format: purchases.{purchaseId}: "Translated Name"
+    // For descriptions: purchases.{purchaseId}.description: "Translated Description"
+  },
+  // Zones translations
+  zones: {
+    // Add zone translations as needed
+    // Format: zones.{zoneId}: "Translated Name"
+  },
+  // Upgrades translations
+  upgrades: {
+    // Add upgrade translations as needed
+    // Format: upgrades.{upgradeId}: "Translated Name"
   }
 }
 
