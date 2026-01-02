@@ -89,7 +89,17 @@ export default {
     seconds: "SECONDS",
     chanceToFail: "chance to fail and lose",
     health: "health",
-    costs: "Costs"
+    costs: "Costs",
+    // Action names (verbs)
+    GENERATE: "GENERATE",
+    "JURY-RIG": "JURY-RIG",
+    FENCE: "FENCE",
+    "PREPARE FOR SALE": "PREPARE FOR SALE",
+    "TRY TO FIX": "TRY TO FIX",
+    "THROW COIN AT": "THROW COIN AT",
+    UNLEASH: "UNLEASH",
+    GROW: "GROW",
+    MINE: "MINE",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -133,7 +143,43 @@ export default {
     // Растения 4-го тира (10 семян)
     orange3d: "3D Orange",
     companionKillerTomato: "Killer Tomato Companion",
-    // Add more items as needed...
+    // Engineering items
+    power: "Power",
+    oil: "Oil",
+    burnJunk: "Burn Junk",
+    wire: "Wire",
+    slimeYellow: "Yellow Slime",
+    companionBee: "Bee Companion",
+    ammoEnergy3: "Energy Ammo Type 3",
+    slimeOil: "Oil Slime",
+    salt: "Salt",
+    drinkSingulo: "Singulo Drink",
+    meleeEngineering: "Engineering Melee Weapon",
+    money: "Money",
+    // Engineering actions (display names)
+    "Stationary Bicycle": "Stationary Bicycle",
+    "Treadmill": "Treadmill",
+    "Portable Generator": "Portable Generator",
+    "Improved Generator": "Improved Generator",
+    "Oil Barrel": "Oil Barrel",
+    "Incinerator": "Incinerator",
+    "Solars": "Solars",
+    "Potato Battery": "Potato Battery",
+    "Charged Slime": "Charged Slime",
+    "Plan Bee": "Plan Bee",
+    "Battery Array": "Battery Array",
+    "American Military Slime": "American Military Slime",
+    "Unholy Matter": "Unholy Matter",
+    "Super Compressed Matter": "Super Compressed Matter",
+    "Advanced Capacitors Plating": "Advanced Capacitors Plating",
+    "Singulo Conductance": "Singulo Conductance",
+    "Improvised Weapon": "Improvised Weapon",
+    "Vital Equipment": "Vital Equipment",
+    "Stored Power": "Stored Power",
+    "Damaged Generator": "Damaged Generator",
+    "Supermatter Crystal": "Supermatter Crystal",
+    "Gravitational Singularity": "Gravitational Singularity",
+    Dusted: "Dusted",
   },
   // Purchases translations
   purchases: {

@@ -89,7 +89,17 @@ export default {
     seconds: "СЕКУНДЫ",
     chanceToFail: "шанс провала и потери",
     health: "здоровья",
-    costs: "Стоимость"
+    costs: "Стоимость",
+    // Названия действий (глаголы)
+    GENERATE: "ГЕНЕРИРОВАТЬ",
+    "JURY-RIG": "ВРЕМЕННЫЙ РЕМОНТ",
+    FENCE: "ПЕРЕПРОДАЖА",
+    "PREPARE FOR SALE": "ПОДГОТОВКА К ПРОДАЖЕ",
+    "TRY TO FIX": "ПОПЫТАТЬСЯ ПОЧИНИТЬ",
+    "THROW COIN AT": "БРОСИТЬ МОНЕТУ В",
+    UNLEASH: "ВЫПУСТИТЬ",
+    GROW: "ВЫРАЩИВАТЬ",
+    MINE: "ДОБЫВАТЬ",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -133,7 +143,43 @@ export default {
     // Tier 4 plants (10 seeds)
     orange3d: "3D-апельсин",
     companionKillerTomato: "Убийственный помидор-компаньон",
-    // Add more items as needed...
+    // Engineering items
+    power: "Энергия",
+    oil: "Масло",
+    burnJunk: "Горючий мусор",
+    wire: "Провод",
+    slimeYellow: "Жёлтый слайм",
+    companionBee: "Пчела-компаньон",
+    ammoEnergy3: "Энергетические боеприпасы 3 типа",
+    slimeOil: "Масляный слайм",
+    salt: "Соль",
+    drinkSingulo: "Напиток Сингуло",
+    meleeEngineering: "Инженерное оружие ближнего боя",
+    money: "Деньги",
+    // Engineering actions (названия для отображения)
+    "Stationary Bicycle": "Стационарный велосипед",
+    "Treadmill": "Беговая дорожка",
+    "Portable Generator": "Портативный генератор",
+    "Improved Generator": "Улучшенный генератор",
+    "Oil Barrel": "Бочка с маслом",
+    "Incinerator": "Мусоросжигатель",
+    "Solars": "Солнечные панели",
+    "Potato Battery": "Картофельная батарея",
+    "Charged Slime": "Заряженный слайм",
+    "Plan Bee": "План Bee",
+    "Battery Array": "Батарейный массив",
+    "American Military Slime": "Американский военный слайм",
+    "Unholy Matter": "Нечестивая материя",
+    "Super Compressed Matter": "Суперсжатая материя",
+    "Advanced Capacitors Plating": "Покрытие из продвинутых конденсаторов",
+    "Singulo Conductance": "Проводимость сингулярности",
+    "Improvised Weapon": "Импровизированное оружие",
+    "Vital Equipment": "Жизненно важное оборудование",
+    "Stored Power": "Накопленная энергия",
+    "Damaged Generator": "Повреждённый генератор",
+    "Supermatter Crystal": "Кристалл сверхматерии",
+    "Gravitational Singularity": "Гравитационная сингулярность",
+    Dusted: "Распылен",
   },
   // Purchases translations
   purchases: {
