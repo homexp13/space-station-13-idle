@@ -52,6 +52,44 @@ export default {
     taskComplete: "Задание завершено!",
     pointsAdded: "Очки добавлены!",
     exportBonus: "Получен бонус за экспорт за 30 минут!"
+  },
+  jobs: {
+    mining: "Добыча",
+    engineering: "Инженерия",
+    fabrication: "Производство",
+    research: "Н&И",
+    graytiding: "Грейтайдинг",
+    tinkering: "Ремонт",
+    botany: "Ботаника",
+    cooking: "Кулинария",
+    bartending: "Барменство",
+    xenobiology: "Ксенобиология",
+    chemistry: "Химия",
+    shitposting: "Шитпостинг",
+    cargonia: "Каргония",
+    traitor: "Предатель",
+    cult: "Культ",
+    ling: "Генокрад",
+    precision: "Точность",
+    meleePower: "Сила ближнего боя",
+    rangedPower: "Сила дальнего боя",
+    evasion: "Уклонение",
+    command: "Командование",
+    validhunting: "Валидхантинг"
+  },
+  action: {
+    locked: "ЗАБЛОКИРОВАНО",
+    level: "УРОВЕНЬ",
+    needsResearch: "ТРЕБУЕТ ИССЛЕДОВАНИЯ",
+    chemReduced: "СНИЖЕНО ХИМИЕЙ",
+    uses: "ИСПОЛЬЗУЕТ",
+    gives: "ДАЁТ",
+    chronoProhibited: "Запрещено хроносферой",
+    xpPerSeconds: "ОПЫТ /",
+    seconds: "СЕКУНДЫ",
+    chanceToFail: "шанс провала и потери",
+    health: "здоровья",
+    costs: "Стоимость"
   }
 }
 

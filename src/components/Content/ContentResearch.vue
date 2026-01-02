@@ -2,7 +2,7 @@
   <div>
 
     <!-- Top bar with job icon/name (values loaded from src/data/research.js) -->
-    <content-header :text="job.name" :icon="job.icon" :color="job.color" />
+    <content-header :text="$t('jobs.' + job.id)" :icon="job.icon" :color="job.color" />
 
 
     <div class="content-container">

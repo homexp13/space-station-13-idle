@@ -7,7 +7,7 @@
       @click="levelJob(job.id)"
     >
       <img :src="job.icon" />
-      <p>{{job.name}}</p>
+      <p>{{ $t('jobs.' + job.id) }}</p>
       <p>{{$store.getters[job.id+'/level']}}/{{maxLevel}}</p>
     </button>
   </div>

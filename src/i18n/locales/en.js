@@ -52,6 +52,44 @@ export default {
     taskComplete: "Task Complete!",
     pointsAdded: "Points added!",
     exportBonus: "30 minute Export Bonus gained!"
+  },
+  jobs: {
+    mining: "Mining",
+    engineering: "Engineering",
+    fabrication: "Fabrication",
+    research: "R&D",
+    graytiding: "Graytiding",
+    tinkering: "Tinkering",
+    botany: "Botany",
+    cooking: "Cooking",
+    bartending: "Bartending",
+    xenobiology: "Xenobiology",
+    chemistry: "Chemistry",
+    shitposting: "Shitposting",
+    cargonia: "Cargonia",
+    traitor: "Traitor",
+    cult: "Cult",
+    ling: "Changeling",
+    precision: "Precision",
+    meleePower: "Melee Power",
+    rangedPower: "Ranged Power",
+    evasion: "Evasion",
+    command: "Command",
+    validhunting: "Validhunting"
+  },
+  action: {
+    locked: "LOCKED",
+    level: "LEVEL",
+    needsResearch: "NEEDS RESEARCH",
+    chemReduced: "CHEM REDUCED",
+    uses: "USES",
+    gives: "GIVES",
+    chronoProhibited: "Chrono Prohibited",
+    xpPerSeconds: "XP /",
+    seconds: "SECONDS",
+    chanceToFail: "chance to fail and lose",
+    health: "health",
+    costs: "Costs"
   }
 }
 
