@@ -167,8 +167,16 @@ export default {
       return this.hasActionRequiredItems(this.actionId);
     },
     _actionName() {
-      if (this.action.actionName) return this.action.actionName;
-      return this.actionName;
+      // Получаем имя действия из action.actionName или пропса actionName
+      const rawActionName = this.action.actionName || this.actionName;
+      if (!rawActionName) return '';
+      // Пробуем перевести через раздел action
+      const translationKey = `action.${rawActionName}`;
+      const translated = this.$t(translationKey);
+      // Если перевод найден и не равен ключу, возвращаем перевод
+      if (translated && translated !== translationKey) return translated;
+      // Возвращаем исходное значение
+      return rawActionName;
     },
     actionTitle() {
       if (this.action.name) {

@@ -91,6 +91,7 @@ export default {
     health: "health",
     costs: "Costs",
     // Action names (verbs)
+    ELECTRIFY: "ELECTRIFY",
     GENERATE: "GENERATE",
     "JURY-RIG": "JURY-RIG",
     FENCE: "FENCE",
