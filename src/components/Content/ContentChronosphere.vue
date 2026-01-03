@@ -1,7 +1,7 @@
 <template>
   <div class="content-settings">
     <content-header
-      text="Chronosphere"
+      :text="$t('common.chronosphere')"
       :icon="require('@/assets/art/chrono/icon.png')"
       color="#3ac5ff"
     />
@@ -9,129 +9,145 @@
       <job-info
         infoId="chronosphere1"
         :icon="require('@/assets/art/jobinfo/chronosphere.png')"
-        title="Kor Phaeron the Chrono Legionnaire says..."
+        :title="$t('chronosphere.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Time Bank?', icon: require('@/assets/art/chrono/timebank.png'), iconClass:'mx--0'},
-					{name: 'Simulation Reset?', icon: require('@/assets/art/chrono/bluetime-empty.png'), iconClass:'mx--1'},
-					{name: 'Chrono Shop?', icon: require('@/assets/art/chrono/bluetime.png'), iconClass:'mx--1'},
+					{key: 'Back', name: $t('chronosphere.back')},
+					{key: 'Time Bank?', name: $t('chronosphere.timeBankQuestion'), icon: require('@/assets/art/chrono/timebank.png'), iconClass:'mx--0'},
+					{key: 'Simulation Reset?', name: $t('chronosphere.simulationResetQuestion'), icon: require('@/assets/art/chrono/bluetime-empty.png'), iconClass:'mx--1'},
+					{key: 'Chrono Shop?', name: $t('chronosphere.chronoShopQuestion'), icon: require('@/assets/art/chrono/bluetime.png'), iconClass:'mx--1'},
 				]"
       >
         <template slot="Back">
           <div v-if="!$store.getters['chrono/previousResetPotential']">
-            <p>Listen, I don't know how to break this to you but...</p>
-            <p>I have reasons to believe we may be trapped inside a simulation.</p>
+            <p>{{ $t('chronosphere.backText1') }}</p>
+            <p>{{ $t('chronosphere.backText2') }}</p>
           </div>
           <div v-else>
-            <p>It's nice to see you again, old friend.</p>
-            <p>I guess that means the reset worked?</p>
+            <p>{{ $t('chronosphere.backText3') }}</p>
+            <p>{{ $t('chronosphere.backText4') }}</p>
           </div>
         </template>
         <template slot="Time Bank?">
-          <span>When the simulation is closed, time will continue outside our reality in the "real world".</span>
+          <span>{{ $t('chronosphere.timeBankText1') }}</span>
           <span>
-            All of the time that passes out there will get stored in this
+            {{ $t('chronosphere.timeBankText2') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/timebank.png')"
             />
-            <b>Time Bank</b>.
+            <b>{{ $t('chronosphere.timeBankText3') }}</b>
+            {{ $t('chronosphere.timeBankText4') }}
           </span>
-          <span>We can tap into this lost time, get back to where we should be.</span>
+          <span>{{ $t('chronosphere.timeBankText5') }}</span>
           <span>
-            While using the time stored in the
+            {{ $t('chronosphere.timeBankText6') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/timebank.png')"
             />
-            <b>Time Bank</b>, everything in our simulation will run at an accelerated rate.
+            <b>{{ $t('chronosphere.timeBankText7') }}</b>
+            {{ $t('chronosphere.timeBankText8') }}
           </span>
           <span>
-            And I mean everything:
+            {{ $t('chronosphere.timeBankText9') }}
             <img class="mx--1" :src="require('@/assets/art/mining/icon.png')" />
-            <b>Job Actions</b> will complete faster, you and your
+            <b>{{ $t('chronosphere.timeBankText10') }}</b>
+            {{ $t('chronosphere.timeBankText11') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/enemies/mouse.png')"
             />
-            <b>Enemies</b> will hit in smaller intervals...
+            <b>{{ $t('chronosphere.timeBankText12') }}</b>
+            {{ $t('chronosphere.timeBankText13') }}
           </span>
           <span>
-            Heck, your
+            {{ $t('chronosphere.timeBankText14') }}
             <img class="mx--0" :src="require('@/assets/art/combat/health.gif')" />
-            <b>Health</b> will even regenerate quicker. I bet you didn't even know
+            <b>{{ $t('chronosphere.timeBankText15') }}</b>
+            {{ $t('chronosphere.timeBankText16') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/health.gif')"
             />
-            <b>Health</b> regen was a mechanic, did you?
+            <b>{{ $t('chronosphere.timeBankText17') }}</b>
+            {{ $t('chronosphere.timeBankText18') }}
           </span>
           <span>
-			Oh, one more thing.  It seems certain exotic forms of matter will interfere with the time acceleration.
+            {{ $t('chronosphere.timeBankText19') }}
           </span>
         </template>
         <template slot="Simulation Reset?">
           <span>
-            With an
+            {{ $t('chronosphere.simulationResetText1') }}
             <img class="mx--0" :src="require('@/assets/art/chrono/bluetime-empty.png')" />
-            <b>Empty Bluespace Time Device</b>, we might just be able to reset this simulation back to where it all started.
+            <b>{{ $t('chronosphere.simulationResetText2') }}</b>
+            {{ $t('chronosphere.simulationResetText3') }}
           </span>
           <span>
-            Unfortunately, my evil
+            {{ $t('chronosphere.simulationResetText4') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/combat/enemies/boss/doppleganger.png')"
             />
-            <b>Doppelgänger</b> from another timeline is the only person I know that has that kind of
+            <b>{{ $t('chronosphere.simulationResetText5') }}</b>
+            {{ $t('chronosphere.simulationResetText6') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/bluetime-empty.png')"
             />
-            <b>Equipment</b>. Any other methods of getting it would be extremely improbable.
+            <b>{{ $t('chronosphere.simulationResetText7') }}</b>
+            {{ $t('chronosphere.simulationResetText8') }}
           </span>
           <span>
-            If you can manage to take him down and bring me the
+            {{ $t('chronosphere.simulationResetText9') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/bluetime-empty.png')"
             />
-            <b>Device</b>... Well, we might be able to get our hands on some
+            <b>{{ $t('chronosphere.simulationResetText10') }}</b>
+            {{ $t('chronosphere.simulationResetText11') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/bluetime.png')"
             />
-            <b>Bluespace Time</b>.
+            <b>{{ $t('chronosphere.simulationResetText12') }}</b>
+            {{ $t('chronosphere.simulationResetText13') }}
           </span>
         </template>
         <template slot="Chrono Shop?">
           <span>
-            If you reset the simulation, you'll find yourself with some
+            {{ $t('chronosphere.chronoShopText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/bluetime.png')"
             />
-            <b>Bluespace Time</b>.
+            <b>{{ $t('chronosphere.chronoShopText2') }}</b>
+            {{ $t('chronosphere.chronoShopText3') }}
           </span>
           <span>
-            You can use this for all sorts of stuff, like upgrading the
+            {{ $t('chronosphere.chronoShopText4') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/chrono/timebank.png')"
             />
-            <b>Time Bank</b> or gaining progress towards certain
+            <b>{{ $t('chronosphere.chronoShopText5') }}</b>
+            {{ $t('chronosphere.chronoShopText6') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/mining/icon.png')"
             />
             <img class="mx--0" :src="require('@/assets/art/engineering/icon.png')" />
             <img class="mx--0" :src="require('@/assets/art/botany/icon.png')" />
-            <b>Jobs</b>.
+            <b>{{ $t('chronosphere.chronoShopText7') }}</b>
+            {{ $t('chronosphere.chronoShopText8') }}
           </span>
           <span>
-            Something tells me the developers of this simulation might even add more options to this shop soon, so you may want to hold off on spending
-            <i>all</i> your
+            {{ $t('chronosphere.chronoShopText9') }}
+            <i>{{ $t('chronosphere.chronoShopText10') }}</i>
+            {{ $t('chronosphere.chronoShopText11') }}
             <img class="mx--0" :src="require('@/assets/art/chrono/bluetime.png')" />
-            <b>Bluespace Time</b> now.
+            <b>{{ $t('chronosphere.chronoShopText12') }}</b>
+            {{ $t('chronosphere.chronoShopText13') }}
           </span>
         </template>
       </job-info>
@@ -144,17 +160,17 @@
                 class="btn btn-lg"
                 @click="tab='bank'"
                 :class="tab=='bank' ? 'btn-primary' : 'btn-outline-primary'"
-              >Time Bank</button>
+              >{{ $t('chronosphere.timeBank') }}</button>
               <button
                 class="btn btn-lg"
                 @click="tab='reset'"
                 :class="tab=='reset' ? 'btn-primary' : 'btn-outline-primary'"
-              >Simulation Reset</button>
+              >{{ $t('chronosphere.simulationReset') }}</button>
               <button
                 class="btn btn-lg"
                 @click="tab='shop'"
                 :class="tab=='shop' ? 'btn-primary' : 'btn-outline-primary'"
-              >Chrono Shop</button>
+              >{{ $t('chronosphere.chronoShop') }}</button>
             </div>
           </div>
         </div>
@@ -163,10 +179,10 @@
       <div v-if="tab=='bank'" class="row time-bank">
         <div class="col-12">
           <div class="content-block">
-            <h5>Time Bank</h5>
+            <h5>{{ $t('chronosphere.timeBank') }}</h5>
             <hr />
             <div class="d-flex flex-column align-items-center">
-              <h6 class="mb-2">Desired Speed:</h6>
+              <h6 class="mb-2">{{ $t('chronosphere.desiredSpeed') }}:</h6>
               <div>
                 <button
                   type="button"
@@ -183,7 +199,7 @@
                 :text="remainingTimeText"
                 :customClass="active ? 'progress-bar-animated' : ''"
               />
-              <span class="mt-1 max">MAX: {{maxHours}} HOURS</span>
+              <span class="mt-1 max">{{ $t('chronosphere.max') }}: {{maxHours}} {{ $t('chronosphere.hours') }}</span>
             </div>
           </div>
         </div>
@@ -192,11 +208,11 @@
       <div v-if="tab=='reset'" class="row">
         <div class="col-12">
           <div class="content-block">
-            <h5>Simulation Reset</h5>
+            <h5>{{ $t('chronosphere.simulationReset') }}</h5>
             <hr />
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
               <div class="audit py-3 px-4 mr-md-5">
-                <h5 class="text-center mb-2">Reset Potential</h5>
+                <h5 class="text-center mb-2">{{ $t('chronosphere.resetPotential') }}</h5>
                 <div v-for="(section, index) in auditSections" :key="index" class="mb-3">
                   <p class="description text-uppercase" v-if="section.name">{{section.name}}</p>
                   <div
@@ -214,7 +230,7 @@
                 </div>
                 <hr />
                 <div class="d-flex flex-row align-items-center justify-content-between">
-                  <span>TOTAL</span>
+                  <span>{{ $t('chronosphere.total') }}</span>
                   <div>
                     <span class="mr-1">+{{$store.getters['chrono/resetPotential']}}</span>
                     <img :src="require('@/assets/art/chrono/bluetime.png')" class="mx--1" />
@@ -222,11 +238,11 @@
                 </div>
               </div>
               <div class="my-2 my-md-0">
-                <p>By resetting the simulation, you'll gain the Bluespace Time listed</p>
+                <p>{{ $t('chronosphere.resetInfo1') }}</p>
                 <p
                   class="my-1"
-                >This Bluespace Time can be used at the Chrono Shop in all future runs</p>
-                <p>Other than this Bluespace Time, your save data will be wiped clean</p>
+                >{{ $t('chronosphere.resetInfo2') }}</p>
+                <p>{{ $t('chronosphere.resetInfo3') }}</p>
                 <div class="reset-container my-2">
                   <shop-purchase purchaseId="resetSimulation" />
                 </div>
@@ -263,9 +279,9 @@ import {
   JOB_INTERVALS
 } from "@/data/chrono";
 
-function createAuditSection(name, percent, intervals) {
+function createAuditSection(name, percent, intervals, t) {
   let section = {
-    name: `${name} Bonuses (${percent}%)`,
+    name: t('chronosphere.bonusesTemplate', { name: name, percent: percent }),
     thresholds: []
   };
   intervals.forEach(interval =>
@@ -297,8 +313,8 @@ export default {
       return this.$store.getters["chrono/desiredSpeed"];
     },
     remainingTimeText() {
-      if (this.infinite) return "INFINTE (cheater)";
-      return this.$store.getters["chrono/remainingTimeText"] + " remaining";
+      if (this.infinite) return this.$t('chronosphere.infiniteTime');
+      return this.$store.getters["chrono/remainingTimeText"] + " " + this.$t('chronosphere.remaining');
     },
     barPercent() {
       if (this.infinite) return 1;
@@ -321,7 +337,11 @@ export default {
       return count ? count : 0;
     },
     sections() {
-      return SECTIONS;
+      // Переводим названия секций
+      return SECTIONS.map(section => ({
+        ...section,
+        name: this.$t(`sections.${section.name}`)
+      }));
     },
     itemPercent() {
       return this.$store.getters["completion/itemPercent"];
@@ -337,11 +357,11 @@ export default {
         {
           thresholds: [
             {
-              name: "Base",
+              name: this.$t('chronosphere.base'),
               count: BASE_BONUS
             },
             {
-              name: "Previous Resets",
+              name: this.$t('chronosphere.previousResets'),
               count: this.$store.getters["chrono/previousResetPotential"]
             }
           ]
@@ -349,12 +369,14 @@ export default {
       ];
 
       sections.push(
-        createAuditSection("Item", this.itemPercent, ITEM_INTERVALS)
+        createAuditSection(this.$t('chronosphere.item'), this.itemPercent, ITEM_INTERVALS, this.$t.bind(this))
       );
       sections.push(
-        createAuditSection("Enemy", this.enemyPercent, ENEMY_INTERVALS)
+        createAuditSection(this.$t('chronosphere.enemy'), this.enemyPercent, ENEMY_INTERVALS, this.$t.bind(this))
       );
-      sections.push(createAuditSection("Job", this.jobPercent, JOB_INTERVALS));
+      sections.push(
+        createAuditSection(this.$t('chronosphere.job'), this.jobPercent, JOB_INTERVALS, this.$t.bind(this))
+      );
 
       return sections;
     }
