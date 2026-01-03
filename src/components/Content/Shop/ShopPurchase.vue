@@ -98,12 +98,14 @@ export default {
     },
     name() {
       if (this.purchase.name) {
-        // Для вложенной структуры: purchases.chronoToCash.name
-        const nameKey = `purchases.${this.purchaseId}.name`;
-        const nameTranslated = this.$t(nameKey);
-        if (nameTranslated && nameTranslated !== nameKey) return nameTranslated;
+        // Сначала пробуем найти прямой перевод для этой конкретной покупки
+        const directNameKey = `purchases.${this.purchaseId}.name`;
+        const directNameTranslated = this.$t(directNameKey);
+        if (directNameTranslated && directNameTranslated !== directNameKey) {
+          return directNameTranslated;
+        }
         
-        // Для Job Blitz покупок
+        // Для покупок Job Blitz (начинающихся с "Level ")
         if (this.purchase.name.startsWith("Level ")) {
           const match = this.purchase.name.match(/Level (.+?) (\d+)-(\d+)/);
           if (match) {
@@ -111,6 +113,7 @@ export default {
             const from = match[2];
             const to = match[3];
             
+            // Ищем работу по английскому названию
             const job = ALL_JOBS.find(j => 
               j.name.toLowerCase() === jobName.toLowerCase() || 
               j.id.toLowerCase() === jobName.toLowerCase().replace(/\s+/g, '')
@@ -127,7 +130,10 @@ export default {
           }
         }
         
-        return this.purchase.name;
+        // Для остальных покупок пробуем найти перевод по ID
+        const translationKey = `purchases.${this.purchaseId}.name`;
+        const translated = this.$t(translationKey);
+        return (translated && translated !== translationKey) ? translated : this.purchase.name;
       }
       if (this.item) {
         const translationKey = `items.${this.itemId}`;
@@ -139,19 +145,25 @@ export default {
     
     description() {
       if (this.purchase.description) {
-        // Для вложенной структуры: purchases.chronoToCash.description
-        const descKey = `purchases.${this.purchaseId}.description`;
-        const descTranslated = this.$t(descKey);
-        if (descTranslated && descTranslated !== descKey) return descTranslated;
+        // Сначала пробуем найти прямой перевод для этой конкретной покупки
+        const directDescKey = `purchases.${this.purchaseId}.description`;
+        const directDescTranslated = this.$t(directDescKey);
+        if (directDescTranslated && directDescTranslated !== directDescKey) {
+          return directDescTranslated;
+        }
         
-        // Для Job Blitz покупок
+        // Для покупок Job Blitz (содержащих "experience, enough to level from")
         if (this.purchase.description.includes("experience, enough to level from")) {
-          const match = this.purchase.description.match(/Gain ([\d,]+) (.+?) experience, enough to level from (\d+) to (\d+)/);
+          // Исправленное регулярное выражение, которое учитывает пробелы в числах
+          const match = this.purchase.description.match(/Gain ([\d\s,]+) (.+?) experience, enough to level from (\d+) to (\d+)/);
           if (match) {
-            const xp = match[1];
+            let xp = match[1];
             const jobName = match[2];
             const from = match[3];
             const to = match[4];
+            
+            // Удаляем пробелы из числа для консистентности
+            xp = xp.replace(/\s+/g, '');
             
             const job = ALL_JOBS.find(j => 
               j.name.toLowerCase() === jobName.toLowerCase() || 
@@ -170,7 +182,10 @@ export default {
           }
         }
         
-        return this.purchase.description;
+        // Для остальных покупок пробуем найти перевод по ID
+        const translationKey = `purchases.${this.purchaseId}.description`;
+        const translated = this.$t(translationKey);
+        return (translated && translated !== translationKey) ? translated : this.purchase.description;
       }
       return '';
     },
