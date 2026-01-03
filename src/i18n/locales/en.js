@@ -515,6 +515,32 @@ export default {
   cooking: {
     fryCookingEnabled: "Fry Cooking Enabled"
   },
+  engineeringTypes: {
+    RENEWABLE: "RENEWABLE",
+    "RESOURCE-CONSUMING": "RESOURCE-CONSUMING",
+    "ILL-ADVISED": "ILL-ADVISED"
+  },
+  engineering: {
+    title: "Kyle Spier-Swenson the Station Engineer says...",
+    back: "Back",
+    generatingPower: "Generating Power?",
+    usesForPower: "Uses For Power?",
+    backText1: "...",
+    backText2: "...",
+    backText3: "Hmm? Oh no I wasn't sleeping, I was just... resting my eyes.",
+    generatingPower1: "You want to know how to make",
+    generatingPower2: "Power?",
+    generatingPower3: "A trained, 130 IQ STEM major engineer like myself can make power from just about anything:",
+    generatingPower4: "Chemicals",
+    generatingPower5: "Junk",
+    generatingPower6: "Plants, you name it.",
+    generatingPower7: "For a smooth-brain like yourself? Maybe the stationary bicycle is more your speed.",
+    usesForPower1: "Are you dense? We're on a space station and you don't even know what",
+    usesForPower2: "Power can do?",
+    usesForPower3: "Outside of keeping all of our vital systems running, I guess the 'scientists' down in",
+    usesForPower4: "Fabrication use it for their toys, and the",
+    usesForPower5: "Chemists use it to synthesize their drugs."
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

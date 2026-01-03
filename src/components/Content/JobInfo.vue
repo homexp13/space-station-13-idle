@@ -19,7 +19,7 @@
               :key="option.name"
               class="btn mt-1 mx-1"
               :class="option.name == current ? 'btn-primary' : 'btn-outline-primary'"
-              @click="current=option.name"
+              @click="current = option.key || option.name"
             >
               <img
                 v-if="option.icon"

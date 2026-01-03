@@ -513,6 +513,32 @@ export default {
   cooking: {
     fryCookingEnabled: "Жарка включена"
   },
+  engineeringTypes: {
+    RENEWABLE: "ВОЗОБНОВЛЯЕМЫЕ",
+    "RESOURCE-CONSUMING": "ПОТРЕБЛЯЮЩИЕ РЕСУРСЫ",
+    "ILL-ADVISED": "НЕРЕКОМЕНДУЕМЫЕ"
+  },
+  engineering: {
+    title: "Кайл Спир-Свенсон, инженер станции, говорит...",
+    back: "Назад",
+    generatingPower: "Генерация энергии?",
+    usesForPower: "Использование энергии?",
+    backText1: "...",
+    backText2: "...",
+    backText3: "Хм? О нет, я не спал, я просто... отдыхал глаза.",
+    generatingPower1: "Вы хотите узнать, как сделать",
+    generatingPower2: "Энергию?",
+    generatingPower3: "Обученный, с IQ 130 инженер STEM, такой как я, может получать энергию практически из чего угодно:",
+    generatingPower4: "Химикаты",
+    generatingPower5: "Мусор",
+    generatingPower6: "Растения, назовите что угодно.",
+    generatingPower7: "Для такого гладкомозглого как вы? Возможно, стационарный велосипед больше подходит для вашей скорости.",
+    usesForPower1: "Ты тупой? Мы на космической станции, а ты даже не знаешь, что может делать",
+    usesForPower2: "Энергия?",
+    usesForPower3: "Помимо поддержания работы всех наших жизненно важных систем, я полагаю, 'учёные' внизу в",
+    usesForPower4: "Производстве используют её для своих игрушек, а",
+    usesForPower5: "Химики используют её для синтеза своих наркотиков."
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

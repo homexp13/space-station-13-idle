@@ -14,62 +14,67 @@
       <job-info
         infoId="engineering"
         :icon="require('@/assets/art/jobinfo/engineering.png')"
-        title="Kyle Spier-Swenson the Station Engineer says..."
+        :title="$t('engineering.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Generating Power?', icon: require('@/assets/art/engineering/power.png'), iconClass:'mx--0'},
-					{name: 'Uses For Power?', icon: require('@/assets/art/engineering/power.png'), iconClass:'mx--0'}
-				]"
+          {key: 'Back', name: $t('engineering.back')},
+          {key: 'Generating Power?', name: $t('engineering.generatingPower'), icon: require('@/assets/art/engineering/power.png'), iconClass:'mx--0'},
+          {key: 'Uses For Power?', name: $t('engineering.usesForPower'), icon: require('@/assets/art/engineering/power.png'), iconClass:'mx--0'}
+        ]"
       >
         <template slot="Back">
-          <span>...</span>
-          <span>...</span>
-          <span>Hmm? Oh no I wasn't sleeping, I was just... resting my eyes.</span>
+          <span>{{ $t('engineering.backText1') }}</span>
+          <span>{{ $t('engineering.backText2') }}</span>
+          <span>{{ $t('engineering.backText3') }}</span>
         </template>
         <template slot="Generating Power?">
           <span>
-            You want to know how to make
+            {{ $t('engineering.generatingPower1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/engineering/power.png')"
             />
-            <b>Power</b>?
+            <b>{{ $t('items.power') }}</b>
+            {{ $t('engineering.generatingPower2') }}
           </span>
           <span>
-            A trained, 130 IQ STEM major engineer like myself can make power from just about anything:
+            {{ $t('engineering.generatingPower3') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/chemistry/chemOil.png')"
             />
-            <b>Chemicals</b>,
+            <b>{{ $t('engineering.generatingPower4') }}</b>,
             <img class="mx--0" :src="require('@/assets/art/tinkering/burnjunk.png')" />
-            <b>Junk</b>,
+            <b>{{ $t('engineering.generatingPower5') }}</b>,
             <img class="mx--2" :src="require('@/assets/art/botany/PlantPotatobattery.png')" />
-            <b>Plants</b>, you name it.
+            <b>{{ $t('items.plantSeed') }}</b>
+            {{ $t('engineering.generatingPower6') }}
           </span>
-          <span>For a smooth-brain like yourself? Maybe the stationary bicycle is more your speed.</span>
+          <span>{{ $t('engineering.generatingPower7') }}</span>
         </template>
         <template slot="Uses For Power?">
           <span>
-            Are you dense? We're on a space station and you don't even know what
+            {{ $t('engineering.usesForPower1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/engineering/power.png')"
             />
-            <b>Power</b> can do?
+            <b>{{ $t('items.power') }}</b>
+            {{ $t('engineering.usesForPower2') }}
           </span>
           <span>
-            Outside of keeping all of our vital systems running, I guess the "scientists" down in
+            {{ $t('engineering.usesForPower3') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/fabrication/icon.png')"
             />
-            <b>Fabrication</b> use it for their toys, and the
+            <b>{{ $t('jobs.fabrication') }}</b>
+            {{ $t('engineering.usesForPower4') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/chemistry/icon.png')"
             />
-            <b>Chemists</b> use it to synthesize their drugs.
+            <b>{{ $t('jobs.chemistry') }}</b>
+            {{ $t('engineering.usesForPower5') }}
           </span>
         </template>
       </job-info>
@@ -80,7 +85,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('engineeringTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"
