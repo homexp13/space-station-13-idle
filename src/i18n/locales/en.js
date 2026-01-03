@@ -126,6 +126,8 @@ export default {
     RAISE: "RAISE",
     PURCHASE: "PURCHASE",
     UPGRADE: "UPGRADE",
+    WORSHIP: "WORSHIP",
+    INVOKE: "INVOKE",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -1195,6 +1197,22 @@ export default {
     "3 TeleCrystals": "3 TELE CRYSTALS",
     "4 TeleCrystals": "4 TELE CRYSTALS",
     "Adaptive Customization": "ADAPTIVE CUSTOMIZATION"
+  },
+
+  cult: {
+    title: "An intrusive thought...",
+    back: "Back",
+    dots: "...",
+    selfCare: "Self Care",
+    somethingNice: "Something Nice",
+    cuddlyPets: "Cuddly Pets",
+  },
+  
+  cultTypes: {
+    "RITUALS": "RITUALS",
+    "MATERIAL RUNES": "MATERIAL RUNES",
+    "BLOOD RUNES": "BLOOD RUNES",
+    "SACRIFICES": "SACRIFICES"
   },
   // Zones translations
   zones: {

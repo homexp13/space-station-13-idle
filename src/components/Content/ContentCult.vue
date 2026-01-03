@@ -13,13 +13,13 @@
       <job-info
         infoId="cult"
         :icon="require('@/assets/art/cult/narsie_anim.gif')"
-        title="An intrusive thought..."
+        :title="$t('cult.title')"
         :options="[
-          {name: 'Back'},
-          {name: '...', icon: require('@/assets/art/combat/items/pill5.png'), iconClass:'mx--0'},
-          {name: 'Self Care', icon: require('@/assets/art/botany/PlantBanana.png'), iconClass:'mx--0'},
-          {name: 'Something Nice', icon: require('@/assets/art/combat/items/cloak/capcloak.png'), iconClass:'mx--0'},
-          {name: 'Cuddly Pets', icon: require('@/assets/art/combat/enemies/runtime.png'), iconClass:'mx--0'},
+          {key: 'Back', name: $t('cult.back')},
+          {key: '...', name: $t('cult.dots'), icon: require('@/assets/art/combat/items/pill5.png'), iconClass:'mx--0'},
+          {key: 'Self Care', name: $t('cult.selfCare'), icon: require('@/assets/art/botany/PlantBanana.png'), iconClass:'mx--0'},
+          {key: 'Something Nice', name: $t('cult.somethingNice'), icon: require('@/assets/art/combat/items/cloak/capcloak.png'), iconClass:'mx--0'},
+          {key: 'Cuddly Pets', name: $t('cult.cuddlyPets'), icon: require('@/assets/art/combat/enemies/runtime.png'), iconClass:'mx--0'},
         ]"
       >
         <template slot="Back">
@@ -95,7 +95,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('cultTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

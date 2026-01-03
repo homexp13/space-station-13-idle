@@ -125,6 +125,8 @@ export default {
     RAISE: "РАСТИТЬ",
     PURCHASE: "ПРИОБРЕСТИ",
     UPGRADE: "УЛУЧШИТЬ",
+    WORSHIP: "ПОКЛОНЯТЬСЯ",
+    INVOKE: "ПРИЗВАТЬ",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -1193,6 +1195,22 @@ export default {
     "3 TeleCrystals": "3 ТЕЛЕ КРИСТАЛЛА",
     "4 TeleCrystals": "4 ТЕЛЕ КРИСТАЛЛА",
     "Adaptive Customization": "АДАПТИВНАЯ НАСТРОЙКА"
+  },
+
+  cult: {
+    title: "Навязчивая мысль...",
+    back: "Назад",
+    dots: "...",
+    selfCare: "Забота о себе",
+    somethingNice: "Что-то хорошее",
+    cuddlyPets: "Милые питомцы",
+  },
+  
+  cultTypes: {
+    "RITUALS": "РИТУАЛЫ",
+    "MATERIAL RUNES": "МАТЕРИАЛЬНЫЕ РУНЫ",
+    "BLOOD RUNES": "КРОВАВЫЕ РУНЫ",
+    "SACRIFICES": "ЖЕРТВОПРИНОШЕНИЯ"
   },
   // Zones translations
   zones: {
