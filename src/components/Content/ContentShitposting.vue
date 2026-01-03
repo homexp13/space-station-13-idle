@@ -14,25 +14,25 @@
       <job-info
         infoId="shitposting"
         :icon="require('@/assets/art/jobinfo/shitposting.png')"
-        title="I A AM EAT GRAPE the Shit Poster says..."
+        :title="$t('shitposting.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Shitposting?', icon: require('@/assets/art/shitposting/icon.png'), iconClass:'mx--1'},
-					{name: 'OK?'},
-					{name: 'I\'m leaving now'},
-				]"
+          {key: 'Back', name: $t('shitposting.back')},
+          {key: 'Shitposting?', name: $t('shitposting.shitpostingQuestion'), icon: require('@/assets/art/shitposting/icon.png'), iconClass:'mx--1'},
+          {key: 'OK?', name: $t('shitposting.okQuestion')},
+          {key: 'I\'m leaving now', name: $t('shitposting.leavingQuestion')},
+        ]"
       >
         <template slot="Back">
-          <span>This kills tactical chairs. Running behind chairs that are pointed up to obscure your character, making it harder to hit. Yes, i am serious.</span>
+          <span>{{ $t('shitposting.backText') }}</span>
         </template>
         <template slot="Shitposting?">
-          <span>This is just like, George Orwell's book, nineteen eighty four.</span>
+          <span>{{ $t('shitposting.shitpostingText') }}</span>
         </template>
         <template slot="OK?">
-          <span>When they say "people are just going to do [x]" they really mean "I am going to do [x] specifically because this change pisses me off as a form of protest"</span>
+          <span>{{ $t('shitposting.okText') }}</span>
         </template>
         <template slot="I'm leaving now">
-          <span>It's not your codebase. It's our codebase. You can imply soft power as much as you want, but you don't have it. Division between the server and project is absolute. I'm not interested in reading dezzmont platitudes for the billionth time and won't be checking back in this thread.</span>
+          <span>{{ $t('shitposting.leavingText') }}</span>
         </template>
       </job-info>
 

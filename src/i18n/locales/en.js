@@ -1112,6 +1112,19 @@ export default {
     chems: "CHEMS",
     pills: "PILLS"
   },
+
+  shitposting: {
+    title: "I A AM EAT GRAPE the Shit Poster says...",
+    back: "Back",
+    shitpostingQuestion: "Shitposting?",
+    okQuestion: "OK?",
+    leavingQuestion: "I'm leaving now",
+  
+    backText: "This kills tactical chairs. Running behind chairs that are pointed up to obscure your character, making it harder to hit. Yes, i am serious.",
+    shitpostingText: "This is just like, George Orwell's book, nineteen eighty four.",
+    okText: "When they say 'people are just going to do [x]' they really mean 'I am going to do [x] specifically because this change pisses me off as a form of protest'",
+    leavingText: "It's not your codebase. It's our codebase. You can imply soft power as much as you want, but you don't have it. Division between the server and project is absolute. I'm not interested in reading dezzmont platitudes for the billionth time and won't be checking back in this thread.",
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
