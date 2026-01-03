@@ -2,7 +2,7 @@
   <div
     class="potion-header content-block d-flex flex-row align-items-center justify-content-center"
   >
-    <span class="chem-title mr-2">BOOST:</span>
+    <span class="chem-title mr-2">{{ $t('potionHeader.boost') }}</span>
     <div class="overlay-div position-relative potion-slot mr-2" :id="target" tabindex="0">
       <img :src="require('@/assets/art/chemistry/potion.png')" />
       <img v-if="currentPotionItem" :src="currentPotionItem.icon" />
@@ -23,12 +23,12 @@
           :key="index"
           :itemId="itemId"
         />
-        <button v-if="currentPotionItemId" class="btn btn-outline-danger" @click="remove">REMOVE</button>
-        <span v-if="!currentPotionItemId && validItems.length == 0">No boosts available for this job.</span>
+        <button v-if="currentPotionItemId" class="btn btn-outline-danger" @click="remove">{{ $t('potionHeader.remove') }}</button>
+        <span v-if="!currentPotionItemId && validItems.length == 0">{{ $t('potionHeader.noBoosts') }}</span>
       </div>
     </b-popover>
     <div v-if="currentPotion" class="d-flex flex-column align-items-center">
-      <p class="charge-title">CHARGES</p>
+      <p class="charge-title">{{ $t('potionHeader.charges') }}</p>
       <p class="charge-number">{{charges}}/{{maxCharges}}</p>
     </div>
   </div>

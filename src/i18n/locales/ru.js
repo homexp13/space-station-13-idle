@@ -1344,6 +1344,13 @@ export default {
     xp: "ОПЫТ",
     toNextLevel: "до следующего уровня"
   },
+
+  potionHeader: {
+    boost: "УСИЛЕНИЕ:",
+    remove: "УБРАТЬ",
+    noBoosts: "Нет доступных усилений для этой работы.",
+    charges: "ЗАРЯДЫ"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

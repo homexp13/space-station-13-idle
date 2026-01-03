@@ -1347,6 +1347,13 @@ export default {
     toNextLevel: "to next level"
   },
 
+  potionHeader: {
+    boost: "BOOST:",
+    remove: "REMOVE",
+    noBoosts: "No boosts available for this job.",
+    charges: "CHARGES"
+  },
+
   // Zones translations
   zones: {
     // Add zone translations as needed
