@@ -13,52 +13,55 @@
       <job-info
         infoId="traitor"
         :icon="require('@/assets/art/jobinfo/traitor.png')"
-        title="Syndicate Ansible crackles..."
+        :title="$t('traitor.title')"
         :options="[
-          {name: 'Back'},
-          {name: 'Telecrystal?', icon: require('@/assets/art/shop/items/telecrystal.png'), iconClass:'mx--0'},
-          {name: 'Extra?', icon: require('@/assets/art/traitor/telecrystal.png'), iconClass:'mx--0'}
+          {key: 'Back', name: $t('traitor.back')},
+          {key: 'Telecrystal?', name: $t('traitor.telecrystalQuestion'), icon: require('@/assets/art/shop/items/telecrystal.png'), iconClass:'mx--0'},
+          {key: 'Extra?', name: $t('traitor.extraQuestion'), icon: require('@/assets/art/traitor/telecrystal.png'), iconClass:'mx--0'}
         ]"
       >
         <template slot="Back">
           <span>
-            Some idiot left their communicator open and now there are
+            {{ $t('traitor.backText1') }}
             <img
               :src="require('@/assets/art/shop/items/telecrystal.png')"
               class="mx--2"
             />
-            <b>Telecrystals</b>
-            all over this station.
+            <b>{{ $t('traitor.backText2') }}</b>
+            {{ $t('traitor.backText3') }}
           </span>
           <span>
-            The syndicate isn't sending you unlimited gear so you get
+            {{ $t('traitor.backText4') }}
             <img
               :src="require('@/assets/art/traitor/telecrystal.png')"
               class="mx--2"
             />
-            <b>These</b> instead.
+            <b>{{ $t('traitor.backText5') }}</b>
+            {{ $t('traitor.backText6') }}
           </span>
         </template>
         <template slot="Telecrystal?">
-          <span>You get twenty of them.</span>
-          <span>Spend them however you want in your uplink below, because you're not getting more.</span>
+          <span>{{ $t('traitor.telecrystalText1') }}</span>
+          <span>{{ $t('traitor.telecrystalText2') }}</span>
           <span>
-            I know they are ugly but you have to use
+            {{ $t('traitor.telecrystalText3') }}
             <img
               :src="require('@/assets/art/traitor/telecrystal.png')"
               class="mx--2"
             />
-            <b>Imprinted Telecrystals</b> rather than the normal red ones.
+            <b>{{ $t('traitor.telecrystalText4') }}</b>
+            {{ $t('traitor.telecrystalText5') }}
           </span>
         </template>
 
         <template slot="Extra?">
           <span>
-            Complete your assigned mission first and we can discuss promotions again later. Maybe you can get in with the
+            {{ $t('traitor.extraText1') }}
             <img
               :src="require('@/assets/art/combat/enemies/boss/OPl6.png')"
             />
-            <b>Big Boys</b>.
+            <b>{{ $t('traitor.extraText2') }}</b>
+            {{ $t('traitor.extraText3') }}
           </span>
         </template>
       </job-info>
@@ -69,7 +72,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('traitorTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

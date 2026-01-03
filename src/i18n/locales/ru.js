@@ -123,6 +123,8 @@ export default {
     CRAFT: "СОЗДАТЬ",
     "RECYCLE INTO": "ПЕРЕРАБОТАТЬ В",
     RAISE: "РАСТИТЬ",
+    PURCHASE: "ПРИОБРЕСТИ",
+    UPGRADE: "УЛУЧШИТЬ",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -1159,6 +1161,38 @@ export default {
     "Find Buyers": "ПОИСК ПОКУПАТЕЛЕЙ",
     "Smuggle Ammo": "КОНТРАБАНДА БОЕПРИПАСОВ",
     "Smuggle Arms": "КОНТРАБАНДА ОРУЖИЯ"
+  },
+
+  traitor: {
+    title: "Ансамбль Синдиката трещит...",
+    back: "Назад",
+    telecrystalQuestion: "Телекристалл?",
+    extraQuestion: "Дополнительно?",
+  
+    backText1: "Какой-то идиот оставил свой коммуникатор открытым, и теперь",
+    backText2: "Телекристаллы",
+    backText3: "разбросаны по всей станции.",
+    backText4: "Синдикат не отправляет вам неограниченное снаряжение, поэтому вы получаете",
+    backText5: "Эти",
+    backText6: "вместо этого.",
+  
+    telecrystalText1: "Вы получаете двадцать из них.",
+    telecrystalText2: "Потратьте их как хотите в вашем аплинке ниже, потому что больше вы не получите.",
+    telecrystalText3: "Я знаю, что они уродливые, но вы должны использовать",
+    telecrystalText4: "Запрограммированные телекристаллы",
+    telecrystalText5: "вместо обычных красных.",
+  
+    extraText1: "Сначала выполните своё задание, и мы можем обсудить повышение позже. Может быть, вы сможете попасть к",
+    extraText2: "Большим Ребятам",
+    extraText3: ".",
+  },
+  
+  traitorTypes: {
+    "1 TeleCrystal": "1 ТЕЛЕ КРИСТАЛЛ",
+    "2 TeleCrystals": "2 ТЕЛЕ КРИСТАЛЛА",
+    "3 TeleCrystals": "3 ТЕЛЕ КРИСТАЛЛА",
+    "4 TeleCrystals": "4 ТЕЛЕ КРИСТАЛЛА",
+    "Adaptive Customization": "АДАПТИВНАЯ НАСТРОЙКА"
   },
   // Zones translations
   zones: {

@@ -124,6 +124,8 @@ export default {
     CRAFT: "CRAFT",
     "RECYCLE INTO": "RECYCLE INTO",
     RAISE: "RAISE",
+    PURCHASE: "PURCHASE",
+    UPGRADE: "UPGRADE",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -1161,6 +1163,38 @@ export default {
     "Find Buyers": "FIND BUYERS",
     "Smuggle Ammo": "SMUGGLE AMMO",
     "Smuggle Arms": "SMUGGLE ARMS"
+  },
+
+  traitor: {
+    title: "Syndicate Ansible crackles...",
+    back: "Back",
+    telecrystalQuestion: "Telecrystal?",
+    extraQuestion: "Extra?",
+  
+    backText1: "Some idiot left their communicator open and now there are",
+    backText2: "Telecrystals",
+    backText3: "all over this station.",
+    backText4: "The syndicate isn't sending you unlimited gear so you get",
+    backText5: "These",
+    backText6: "instead.",
+  
+    telecrystalText1: "You get twenty of them.",
+    telecrystalText2: "Spend them however you want in your uplink below, because you're not getting more.",
+    telecrystalText3: "I know they are ugly but you have to use",
+    telecrystalText4: "Imprinted Telecrystals",
+    telecrystalText5: "rather than the normal red ones.",
+  
+    extraText1: "Complete your assigned mission first and we can discuss promotions again later. Maybe you can get in with the",
+    extraText2: "Big Boys",
+    extraText3: ".",
+  },
+  
+  traitorTypes: {
+    "1 TeleCrystal": "1 TELE CRYSTAL",
+    "2 TeleCrystals": "2 TELE CRYSTALS",
+    "3 TeleCrystals": "3 TELE CRYSTALS",
+    "4 TeleCrystals": "4 TELE CRYSTALS",
+    "Adaptive Customization": "ADAPTIVE CUSTOMIZATION"
   },
   // Zones translations
   zones: {
