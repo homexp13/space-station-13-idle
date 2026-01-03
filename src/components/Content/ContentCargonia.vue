@@ -13,62 +13,69 @@
       <job-info
         infoId="cargonia"
         :icon="require('@/assets/art/jobinfo/shop.png')"
-        title="Brick Carr the Quartermaster says..."
+        :title="$t('cargonia.title')"
         :options="[
-          {name: 'Back'},
-          {name: 'Join', icon: require('@/assets/art/jobinfo/cargonia.png'), iconClass:'mx--0'},
-          {name: 'Money?', icon: require('@/assets/art/misc/coin.png'), iconClass:'mx--0'}
+          {key: 'Back', name: $t('cargonia.back')},
+          {key: 'Join', name: $t('cargonia.join'), icon: require('@/assets/art/jobinfo/cargonia.png'), iconClass:'mx--0'},
+          {key: 'Money?', name: $t('cargonia.moneyQuestion'), icon: require('@/assets/art/misc/coin.png'), iconClass:'mx--0'}
         ]"
       >
         <template slot="Back">
           <span>
-            So you're here to actually join the resistance? Just act like you're doing your duty bringing in
+            {{ $t('cargonia.backText1') }}
             <img
               :src="require('@/assets/art/cargonia/mineral2.png')"
               class="mx--0"
             />
-            <b>Shipments</b>.
+            <b>{{ $t('cargonia.backText2') }}</b>
+            {{ $t('cargonia.backText3') }}
           </span>
           <span>
-            Once we have enough
+            {{ $t('cargonia.backText4') }}
             <img
               :src="require('@/assets/art/combat/items/hand/gunR_naggant.png')"
               class="mx--0"
             />
-            <b>Arms</b> we can declare our independence for good. Keep an eye out for anyone that might support the cause or be willing to contribute
+            <b>{{ $t('cargonia.backText5') }}</b>
+            {{ $t('cargonia.backText6') }}
             <img
               :src="require('@/assets/art/validhunting/guilty.png')"
               class="mx--2"
             />
-            <b>Funds</b>.
+            <b>{{ $t('cargonia.backText7') }}</b>
+            {{ $t('cargonia.backText8') }}
           </span>
         </template>
         <template slot="Join">
           <span>
-            We're having a bit of an employeement dispute with
+            {{ $t('cargonia.joinText1') }}
             <img
               :src="require('@/assets/art/misc/logo-square.png')"
             />
-            <b>Nanotrasen</b> right now. If you want to prove what side you are on you'll need to prove it.
+            <b>{{ $t('cargonia.joinText2') }}</b>
+            {{ $t('cargonia.joinText3') }}
           </span>
           <span>
-            There are some
+            {{ $t('cargonia.joinText4') }}
             <img :src="require('@/assets/art/shop/items/startcargonia.png')" class="mx--0" />
-            <b>Flashes</b> laying around in
+            <b>{{ $t('cargonia.joinText5') }}</b>
+            {{ $t('cargonia.joinText6') }}
             <img :src="require('@/assets/art/shop/items/droppod.png')" class="mx--0"/>
-            <b>Supply Caches</b> across the station. Get me one.
+            <b>{{ $t('cargonia.joinText7') }}</b>
+            {{ $t('cargonia.joinText8') }}
           </span>
         </template>
 
         <template slot="Money?">
-          <span>I'm gonna pop some tags.</span>
-          <span>Only got twenty dollars in my pocket.</span>
+          <span>{{ $t('cargonia.moneyText1') }}</span>
+          <span>{{ $t('cargonia.moneyText2') }}</span>
           <span>
-            Wait you're still here? What are you doing go move
+            {{ $t('cargonia.moneyText3') }}
             <img
               :src="require('@/assets/art/shop/items/hatcrate.png')"
             />
-            <b>Freight!</b>
+            <b>{{ $t('cargonia.moneyText4') }}</b>
+            {{ $t('cargonia.moneyText5') }}
           </span>
         </template>
       </job-info>
@@ -79,7 +86,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('cargoniaTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

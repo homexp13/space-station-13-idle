@@ -1125,6 +1125,43 @@ export default {
     okText: "When they say 'people are just going to do [x]' they really mean 'I am going to do [x] specifically because this change pisses me off as a form of protest'",
     leavingText: "It's not your codebase. It's our codebase. You can imply soft power as much as you want, but you don't have it. Division between the server and project is absolute. I'm not interested in reading dezzmont platitudes for the billionth time and won't be checking back in this thread.",
   },
+  cargonia: {
+    title: "Brick Carr the Quartermaster says...",
+    back: "Back",
+    join: "Join",
+    moneyQuestion: "Money?",
+  
+    backText1: "So you're here to actually join the resistance? Just act like you're doing your duty bringing in",
+    backText2: "Shipments",
+    backText3: ".",
+    backText4: "Once we have enough",
+    backText5: "Arms",
+    backText6: "we can declare our independence for good. Keep an eye out for anyone that might support the cause or be willing to contribute",
+    backText7: "Funds",
+    backText8: ".",
+  
+    joinText1: "We're having a bit of an employeement dispute with",
+    joinText2: "Nanotrasen",
+    joinText3: "right now. If you want to prove what side you are on you'll need to prove it.",
+    joinText4: "There are some",
+    joinText5: "Flashes",
+    joinText6: "laying around in",
+    joinText7: "Supply Caches",
+    joinText8: "across the station. Get me one.",
+  
+    moneyText1: "I'm gonna pop some tags.",
+    moneyText2: "Only got twenty dollars in my pocket.",
+    moneyText3: "Wait you're still here? What are you doing go move",
+    moneyText4: "Freight!",
+    moneyText5: "",
+  },
+  
+  cargoniaTypes: {
+    "Move Freight": "MOVE FREIGHT",
+    "Find Buyers": "FIND BUYERS",
+    "Smuggle Ammo": "SMUGGLE AMMO",
+    "Smuggle Arms": "SMUGGLE ARMS"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
