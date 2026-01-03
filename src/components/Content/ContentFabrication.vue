@@ -14,134 +14,141 @@
       <job-info
         infoId="fabrication"
         :icon="require('@/assets/art/jobinfo/fabrication.png')"
-        title="Flameo Hotman the Roboticist says..."
+        :title="$t('fabrication.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Resources?', icon: require('@/assets/art/engineering/power.png'), iconClass:'mx--0'},
-					{name: 'Guns?', icon: require('@/assets/art/combat/items/gune_energy.png'), iconClass:'mx--0'},
-					{name: 'Ammo?', icon: require('@/assets/art/combat/items/ammo_b1.png'), iconClass:'mx--2'},
-					{name: 'Mechs?', icon: require('@/assets/art/fabrication/mechripley.png'), iconClass:'mx--0'}
-				]"
+          {key: 'Back', name: $t('fabrication.back')},
+          {key: 'Resources?', name: $t('fabrication.resourcesQuestion'), icon: require('@/assets/art/engineering/power.png'), iconClass:'mx--0'},
+          {key: 'Guns?', name: $t('fabrication.gunsQuestion'), icon: require('@/assets/art/combat/items/gune_energy.png'), iconClass:'mx--0'},
+          {key: 'Ammo?', name: $t('fabrication.ammoQuestion'), icon: require('@/assets/art/combat/items/ammo_b1.png'), iconClass:'mx--2'},
+          {key: 'Mechs?', name: $t('fabrication.mechsQuestion'), icon: require('@/assets/art/fabrication/mechripley.png'), iconClass:'mx--0'}
+        ]"
       >
         <template slot="Back">
-          <span>Listen man, I'm going to be upfront with you; I don't actually know how any of this stuff works.</span>
-          <span>I just press some buttons and let the fabricator do its thing.</span>
+          <span>{{ $t('fabrication.backText1') }}</span>
+          <span>{{ $t('fabrication.backText2') }}</span>
         </template>
         <template slot="Resources?">
           <span>
-            You'll need to feed these printers both
+            {{ $t('fabrication.resourcesText1') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/mining/SheetIron.png')"
             />
-            <b>Ore</b> and
+            <b>{{ $t('items.iron') }}</b>
+            {{ $t('fabrication.resourcesText2') }}
             <img class="mx--0" :src="require('@/assets/art/engineering/power.png')" />
-            <b>Power</b> before they'll go brrrrr.
+            <b>{{ $t('items.power') }}</b>
+            {{ $t('fabrication.resourcesText3') }}
           </span>
           <span>
-            Assuming they're still alive, you can probably get the
+            {{ $t('fabrication.resourcesText4') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/mining/SheetIron.png')"
             />
-            <b>Ore</b> from our
+            <b>{{ $t('items.iron') }}</b>
+            {{ $t('fabrication.resourcesText5') }}
             <img class="mx--0" :src="require('@/assets/art/mining/icon.png')" />
-            <b>Miners</b>
+            <b>{{ $t('jobs.mining') }}</b>
           </span>
           <span>
-            As for the
+            {{ $t('fabrication.resourcesText7') }}
             <img class="mx--0" :src="require('@/assets/art/engineering/power.png')" />
-            <b>Power</b>, you'll need to make sure the
+            <b>{{ $t('items.power') }}</b>
+            {{ $t('fabrication.resourcesText8') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/engineering/icon.png')"
             />
-            <b>Engineers</b> are doing their job.
+            <b>{{ $t('jobs.engineering') }}</b>
+            {{ $t('fabrication.resourcesText9') }}
           </span>
         </template>
         <template slot="Guns?">
           <span>
-            Unlike the
+            {{ $t('fabrication.gunsText1') }}
             <img class="mx--2" :src="require('@/assets/art/combat/items/melee_b2.png')" />
-            <b>Primitive Weapons</b> you'll get from
+            <b>{{ $t('fabrication.gunsText2') }}</b>
             <img class="mx--2" :src="require('@/assets/art/tinkering/icon.png')" />
-            <b>Tinkering</b>, the
+            <b>{{ $t('jobs.tinkering') }}</b>
+            {{ $t('fabrication.gunsText3') }}
             <img class="mx--0" :src="require('@/assets/art/combat/items/gune_energy.png')" />
-            <b>Guns</b> you can fabricate here will be far more
+            <b>{{ $t('fabrication.gunsText4') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/precision.png')"
             />
-            <b>Precise</b>, and can dish out both
+            <b>{{ $t('fabrication.gunsText5') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/brute-damage.png')"
             />
-            <b>Brute</b> and
+            <b>{{ $t('fabrication.gunsText6') }}</b>
             <img class="mx--0" :src="require('@/assets/art/combat/burn-damage.png')" />
-            <b>Burn</b> damage.
+            <b>{{ $t('fabrication.gunsText7') }}</b>
           </span>
           <span>
-            The downside is that they take
+            {{ $t('fabrication.gunsText8') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/ammo_b1.png')"
             />
-            <b>Ammo</b> to use. Thankfully you can fabricate more of it here.
+            <b>{{ $t('fabrication.gunsText9') }}</b>
           </span>
         </template>
         <template slot="Ammo?">
           <span>
-            Every shot you take with a
+            {{ $t('fabrication.ammoText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/items/gune_energy.png')"
             />
-            <b>gun</b> will use up some of your
+            <b>{{ $t('fabrication.ammoText2') }}</b>
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/ammo_b1.png')"
             />
-            <b>ammo</b>.
+            <b>{{ $t('fabrication.ammoText3') }}</b>
           </span>
           <span>
-            Make sure you're matching the right type of
+            {{ $t('fabrication.ammoText4') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/ammo_b1.png')"
             />
-            <b>ammo</b> with the type of
+            <b>{{ $t('fabrication.ammoText5') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/items/gune_energy.png')"
             />
-            <b>gun</b>, or your gun won't work.
+            <b>{{ $t('fabrication.ammoText6') }}</b>
           </span>
         </template>
         <template slot="Mechs?">
           <span>
-            Unlike the
+            {{ $t('fabrication.mechsText1') }}
             <img class="mx--2" :src="require('@/assets/art/combat/items/arm_b3.png')" />
-            <b>crude armor</b> you'll get from
+            <b>{{ $t('fabrication.mechsText2') }}</b>
             <img class="mx--2" :src="require('@/assets/art/tinkering/icon.png')" />
-            <b>Tinkering</b>, the
+            <b>{{ $t('jobs.tinkering') }}</b>
+            {{ $t('fabrication.mechsText3') }}
             <img class="mx--0" :src="require('@/assets/art/fabrication/mechripley.png')" />
-            <b>mechs</b> you'll make here will be far more durable and powerful all around.
+            <b>{{ $t('fabrication.mechsText4') }}</b>
           </span>
           <span>
-            That said, you'll find that these
+            {{ $t('fabrication.mechsText5') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/fabrication/mechripley.png')"
             />
-            <b>mechs</b> won't be as quick to manuever, so you'll find yourself
+            <b>{{ $t('fabrication.mechsText6') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/black_shoes.png')"
             />
-            <b>evading</b> and
+            <b>{{ $t('fabrication.mechsText7') }}</b>
             <img class="mx--0" :src="require('@/assets/art/combat/evasion.png')" />
-            <b>moving</b> a lot slower while piloting one.
+            <b>{{ $t('fabrication.mechsText8') }}</b>
           </span>
         </template>
       </job-info>
@@ -152,7 +159,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('fabricationTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

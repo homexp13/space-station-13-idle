@@ -116,6 +116,7 @@ export default {
     BUY: "BUY",
     SYNTHESIZE: "SYNTHESIZE",
     COOK: "COOK",
+    FABRICATE: "FABRICATE"
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -412,6 +413,15 @@ export default {
     "Finger Food": "Finger Food",
     "Fush n Chips": "Fush n Chips",
     "Fried Friend": "Fried Friend",
+
+    "Disabling Cell": "Disabling Cell",
+    "Stunning Cell": "Stunning Cell",
+    "Lethal Cell": "Lethal Cell",
+    "Disintegration Cell": "Disintegration Cell",
+    "Beanbag Shell": "Beanbag Shell",
+    "Birdshot Shell": "Birdshot Shell",
+    "Buckshot Shell": "Buckshot Shell",
+    "Breaching Shell": "Breaching Shell"
   },
   // Purchases translations
   purchases: {
@@ -613,6 +623,62 @@ export default {
     oreText11: "Inventory.",
     oreText12: "Don't really know. And as long as my tools are getting",
     oreText13: "Upgraded, I don't really care."
+  },
+  fabrication: {
+    title: "Flameo Hotman the Roboticist says...",
+    back: "Back",
+    resourcesQuestion: "Resources?",
+    gunsQuestion: "Guns?",
+    ammoQuestion: "Ammo?",
+    mechsQuestion: "Mechs?",
+    
+    backText1: "Listen man, I'm going to be upfront with you; I don't actually know how any of this stuff works.",
+    backText2: "I just press some buttons and let the fabricator do its thing.",
+    
+    resourcesText1: "You'll need to feed these printers both",
+    resourcesText2: "Ore and",
+    resourcesText3: "Power before they'll go brrrrr.",
+    resourcesText4: "Assuming they're still alive, you can probably get the",
+    resourcesText5: "Ore from our",
+    resourcesText6: "Miners",
+    resourcesText7: "As for the",
+    resourcesText8: "Power, you'll need to make sure the",
+    resourcesText9: "Engineers are doing their job.",
+    
+    gunsText1: "Unlike the",
+    gunsText2: "Primitive Weapons you'll get from",
+    gunsText3: "Tinkering, the",
+    gunsText4: "Guns you can fabricate here will be far more",
+    gunsText5: "Precise, and can dish out both",
+    gunsText6: "Brute and",
+    gunsText7: "Burn damage.",
+    gunsText8: "The downside is that they take",
+    gunsText9: "Ammo to use. Thankfully you can fabricate more of it here.",
+    
+    ammoText1: "Every shot you take with a",
+    ammoText2: "gun will use up some of your",
+    ammoText3: "ammo.",
+    ammoText4: "Make sure you're matching the right type of",
+    ammoText5: "ammo with the type of",
+    ammoText6: "gun, or your gun won't work.",
+    
+    mechsText1: "Unlike the",
+    mechsText2: "crude armor you'll get from",
+    mechsText3: "Tinkering, the",
+    mechsText4: "mechs you'll make here will be far more durable and powerful all around.",
+    mechsText5: "That said, you'll find that these",
+    mechsText6: "mechs won't be as quick to manuever, so you'll find yourself",
+    mechsText7: "evading and",
+    mechsText8: "moving a lot slower while piloting one."
+  },
+  
+  fabricationTypes: {
+    "ballistic ammo": "BALLISTIC AMMO",
+    "energy ammo": "ENERGY AMMO",
+    "ballistic guns": "BALLISTIC GUNS",
+    "energy guns": "ENERGY GUNS",
+    "MECHANIZED EXOSUITs": "MECHANIZED EXOSUITS",
+    "ASSAULT MECHANIZED EXOSUITs": "ASSAULT MECHANIZED EXOSUITS"
   },
   // Zones translations
   zones: {

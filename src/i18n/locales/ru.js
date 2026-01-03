@@ -115,6 +115,7 @@ export default {
     BUY: "КУПИТЬ",
     SYNTHESIZE: "СИНТЕЗИРОВАТЬ",
     COOK: "ГОТОВИТЬ",
+    FABRICATE: "ПРОИЗВОДИТЬ"
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -411,6 +412,15 @@ export default {
     "Finger Food": "Еда для пальцев",
     "Fush n Chips": "Фиш энд чипс",
     "Fried Friend": "Жареный друг",
+
+    "Disabling Cell": "Обездвиживающий элемент",
+    "Stunning Cell": "Ошеломляющий элемент",
+    "Lethal Cell": "Смертельный элемент",
+    "Disintegration Cell": "Элемент распада",
+    "Beanbag Shell": "Снаряд с дробью",
+    "Birdshot Shell": "Снаряд с мелкой дробью",
+    "Buckshot Shell": "Снаряд с крупной дробью",
+    "Breaching Shell": "Пробивной снаряд"
   },
   // Purchases translations
   purchases: {
@@ -611,6 +621,62 @@ export default {
     oreText11: "Инвентаря.",
     oreText12: "Я не знаю. И пока мои инструменты",
     oreText13: "Улучшаются, мне всё равно."
+  },
+  fabrication: {
+    title: "Флеймо Хотман, робототехник, говорит...",
+    back: "Назад",
+    resourcesQuestion: "Ресурсы?",
+    gunsQuestion: "Оружие?",
+    ammoQuestion: "Боеприпасы?",
+    mechsQuestion: "Мехи?",
+    
+    backText1: "Слушай, я буду с тобой честен; я на самом деле не знаю, как всё это работает.",
+    backText2: "Я просто нажимаю кнопки и позволяю фабрикатору делать своё дело.",
+    
+    resourcesText1: "Вам нужно загрузить эти принтеры как",
+    resourcesText2: "Рудой, так и",
+    resourcesText3: "Энергией, прежде чем они заработают брррр.",
+    resourcesText4: "Если они ещё живы, вы, вероятно, можете получить",
+    resourcesText5: "Руду от наших",
+    resourcesText6: "Шахтёров",
+    resourcesText7: "Что касается",
+    resourcesText8: "Энергии, вам нужно убедиться, что",
+    resourcesText9: "Инженеры делают свою работу.",
+    
+    gunsText1: "В отличие от",
+    gunsText2: "Примитивного оружия, которое вы получите от",
+    gunsText3: "Ремонта,",
+    gunsText4: "Оружие, которое вы можете изготовить здесь, будет гораздо более",
+    gunsText5: "Точным и может наносить как",
+    gunsText6: "Физический, так и",
+    gunsText7: "Ожоговый урон.",
+    gunsText8: "Недостаток в том, что для их использования нужны",
+    gunsText9: "Боеприпасы. К счастью, вы можете изготовить их здесь же.",
+    
+    ammoText1: "Каждый выстрел из",
+    ammoText2: "оружия будет расходовать часть ваших",
+    ammoText3: "боеприпасов.",
+    ammoText4: "Убедитесь, что вы подбираете правильный тип",
+    ammoText5: "боеприпасов к типу",
+    ammoText6: "оружия, иначе ваше оружие не будет работать.",
+    
+    mechsText1: "В отличие от",
+    mechsText2: "грубой брони, которую вы получите от",
+    mechsText3: "Ремонта,",
+    mechsText4: "мехи, которые вы сделаете здесь, будут гораздо более прочными и мощными во всех отношениях.",
+    mechsText5: "Тем не менее, вы обнаружите, что эти",
+    mechsText6: "мехи не так маневренны, поэтому вы будете",
+    mechsText7: "уклоняться и",
+    mechsText8: "двигаться намного медленнее при пилотировании одного из них."
+  },
+  
+  fabricationTypes: {
+    "ballistic ammo": "БОЕПРИПАСЫ БАЛЛИСТИЧЕСКИЕ",
+    "energy ammo": "БОЕПРИПАСЫ ЭНЕРГЕТИЧЕСКИЕ",
+    "ballistic guns": "ОГНЕСТРЕЛЬНОЕ ОРУЖИЕ",
+    "energy guns": "ЭНЕРГЕТИЧЕСКОЕ ОРУЖИЕ",
+    "MECHANIZED EXOSUITs": "МЕХАНИЗИРОВАННЫЕ ЭКЗОСКЕЛЕТЫ",
+    "ASSAULT MECHANIZED EXOSUITs": "ШТУРМОВЫЕ МЕХАНИЗИРОВАННЫЕ ЭКЗОСКЕЛЕТЫ"
   },
   // Zones translations
   zones: {
