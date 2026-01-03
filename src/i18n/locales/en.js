@@ -1252,6 +1252,29 @@ export default {
     "BONE ARMOR": "BONE ARMOR",
     "DISGUISES": "DISGUISES"
   },
+
+  inventory: {
+    title: "????? the Guy In The Locker Next To Yours says...",
+    back: "Back",
+    inventoryQuestion: "Inventory?",
+    
+    backText1: "I... I can hear you out there. You... you're not a cop, right?",
+    backText2: "That's a relief. Can you do me a favor and uh... don't mention me to anyone else. OK?",
+    
+    inventoryText1: "There's a lot of valuables out on the station.",
+    inventoryText2: "If you don't keep your stuff safe, someone might just snatch it up and hide themselves in a locker before you can track them down.",
+    inventoryText3: "If you want more space, the guys down at",
+    inventoryText4: "Cargo",
+    inventoryText5: "might be able to help you out.",
+    inventoryText6: "Otherwise, you can just",
+    inventoryText7: "Sell",
+    inventoryText8: "off some of the items you no longer care about.",
+    inventoryText9: "(Shift-clicking an item will quickly sell all of it!)",
+    
+    spaceUsed: "Space Used:",
+    bankValue: "Bank Value:",
+    sortBank: "Sort Bank"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
