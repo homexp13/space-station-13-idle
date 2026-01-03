@@ -14,137 +14,154 @@
       <job-info
         infoId="tinkering"
         :icon="require('@/assets/art/jobinfo/tinkering.png')"
-        title="Hits-The-Wizard the Ashwalker hisses..."
+        :title="$t('tinkering.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Junk?', icon: require('@/assets/art/graytiding/junk.png'), iconClass:'mx--0'},
-					{name: 'Recycling?', icon: require('@/assets/art/tinkering/burnjunk.png'), iconClass:'mx--0'},
-					{name: 'Weaponsss?', icon: require('@/assets/art/combat/items/melee_c4.png'), iconClass:'mx--1'},
-					{name: 'Armor?', icon: require('@/assets/art/combat/items/arm_b2.png'), iconClass:'mx--1'}
-				]"
+          {key: 'Back', name: $t('tinkering.back')},
+          {key: 'Junk?', name: $t('tinkering.junkQuestion'), icon: require('@/assets/art/graytiding/junk.png'), iconClass:'mx--0'},
+          {key: 'Recycling?', name: $t('tinkering.recyclingQuestion'), icon: require('@/assets/art/tinkering/burnjunk.png'), iconClass:'mx--0'},
+          {key: 'Weaponsss?', name: $t('tinkering.weaponsQuestion'), icon: require('@/assets/art/combat/items/melee_c4.png'), iconClass:'mx--1'},
+          {key: 'Armor?', name: $t('tinkering.armorQuestion'), icon: require('@/assets/art/combat/items/arm_b2.png'), iconClass:'mx--1'}
+        ]"
       >
         <template slot="Back">
           <span>
-            You nanotrasssen dogsss think you're ssso advanced with all your fancy
+            {{ $t('tinkering.backText1') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/fabrication/icon.png')"
             />
-            <b>ssscience</b>.
+            <b>{{ $t('tinkering.backText2') }}</b>
+            {{ $t('tinkering.backText3') }}
           </span>
           <span>
-            But usss ashwalkersss can craft
+            {{ $t('tinkering.backText4') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/melee_c4.png')"
             />
-            <b>weaponsss</b> and
+            <b>{{ $t('tinkering.backText5') }}</b>
+            {{ $t('tinkering.backText6') }}
             <img class="mx--2" :src="require('@/assets/art/combat/items/arm_b2.png')" />
-            <b>armor</b> jussst asss robussst usssing only the
+            <b>{{ $t('tinkering.backText7') }}</b>
+            {{ $t('tinkering.backText8') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/graytiding/junk.png')"
             />
-            <b>natural resssourcesss</b> of thisss ssstation.
+            <b>{{ $t('tinkering.backText9') }}</b>
+            {{ $t('tinkering.backText10') }}
           </span>
         </template>
         <template slot="Junk?">
           <span>
             <img class="mx--0" :src="require('@/assets/art/graytiding/junk.png')" />
-            <b>"Junk"</b>? Bah, you humansss are all too narrow minded.
+            <b>{{ $t('tinkering.junkText1') }}</b>
           </span>
           <span>
-            In the handsss of a ssskilled craftssslizard like myssself, thisss
+            {{ $t('tinkering.junkText2') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/graytiding/junk.png')"
             />
-            <b>"Junk"</b> can be made into all sssorts of
+            <b>{{ $t('tinkering.junkText3') }}</b>
+            {{ $t('tinkering.junkText4') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/combat/items/melee_c4.png')"
             />
             <img class="mx--2" :src="require('@/assets/art/combat/items/arm_b2.png')" />
-            <b>Ussseful Ssstuff</b>.
+            <b>{{ $t('tinkering.junkText5') }}</b>
+            {{ $t('tinkering.junkText6') }}
           </span>
           <span>
-            The bigger challenge isss getting my handsss on it. For sssomeone like myssself, Nanatrosssan isssn't exactly giving their
+            {{ $t('tinkering.junkText7') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/graytiding/junk.png')"
             />
-            <b>"Junk"</b> away. That'sss where a bit of
+            <b>{{ $t('tinkering.junkText8') }}</b>
+            {{ $t('tinkering.junkText9') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/graytiding/icon.png')"
             />
-            <b>Graytiding</b> can help.
+            <b>{{ $t('tinkering.junkText10') }}</b>
+            {{ $t('tinkering.junkText11') }}
           </span>
         </template>
         <template slot="Recycling?">
           <span>
-            Outssside of crafting, sometimesss I jussst like to ssset this
+            {{ $t('tinkering.recyclingText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/tinkering/burnjunk.png')"
             />
-            <b>Ssstuff</b> ablaze.
+            <b>{{ $t('tinkering.recyclingText2') }}</b>
+            {{ $t('tinkering.recyclingText3') }}
           </span>
           <span>
-            It remindsss me of my homeland, but I guesss the fire could also be usssed to generate
+            {{ $t('tinkering.recyclingText4') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/engineering/power.png')"
             />
-            <b>Power</b> in the handsss of a ssskilled
+            <b>{{ $t('tinkering.recyclingText5') }}</b>
+            {{ $t('tinkering.recyclingText6') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/engineering/icon.png')"
             />
-            <b>Engineer</b>.
+            <b>{{ $t('tinkering.recyclingText7') }}</b>
+            {{ $t('tinkering.recyclingText8') }}
           </span>
         </template>
         <template slot="Weaponsss?">
           <span>
-            The only reliable
+            {{ $t('tinkering.weaponsText1') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/melee_c4.png')"
             />
-            <b>Weapon</b> issss the one you craft yourself.
+            <b>{{ $t('tinkering.weaponsText2') }}</b>
+            {{ $t('tinkering.weaponsText3') }}
           </span>
           <span>
-            Why wassste time making ammo for a
+            {{ $t('tinkering.weaponsText4') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/items/gune_energy.png')"
             />
-            <b>gun</b> when a good ssspear can do the job?
+            <b>{{ $t('tinkering.weaponsText5') }}</b>
+            {{ $t('tinkering.weaponsText6') }}
           </span>
         </template>
         <template slot="Armor?">
           <span>
-            Only cowardsss fight from within a
+            {{ $t('tinkering.armorText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/fabrication/mechripley.png')"
             />
-            <b>Mech</b>.
+            <b>{{ $t('tinkering.armorText2') }}</b>
+            {{ $t('tinkering.armorText3') }}
           </span>
           <span>
-            The
+            {{ $t('tinkering.armorText4') }}
             <img class="mx--2" :src="require('@/assets/art/combat/items/arm_b3.png')" />
-            <b>Armor</b> you make here will let you
+            <b>{{ $t('tinkering.armorText5') }}</b>
+            {{ $t('tinkering.armorText6') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/black_shoes.png')"
             />
-            <b>Evade</b> a lot more effectively. It alssso won't ssslow you down as you
+            <b>{{ $t('tinkering.armorText7') }}</b>
+            {{ $t('tinkering.armorText8') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/evasion.png')"
             />
-            <b>Move</b> from prey to prey.
+            <b>{{ $t('tinkering.armorText9') }}</b>
+            {{ $t('tinkering.armorText10') }}
           </span>
         </template>
       </job-info>
@@ -154,14 +171,14 @@
           <div class="content-block">
             <div class="d-flex flex-row align-items-center">
               <img :src="require('@/assets/art/tinkering/upgrade1.png')" />
-              <h5 class="mb-1">Upgrades</h5>
+              <h5 class="mb-1">{{ $t('common.upgrades') }}</h5>
             </div>
             <p>
-              <b>Streak:</b>
+              <b>{{ $t('tinkering.streak') }}:</b>
               {{$store.getters['tinkering/streak']}}
             </p>
             <p>
-              <b>Bonus:</b>
+              <b>{{ $t('tinkering.bonus') }}:</b>
               {{(100*$store.getters["tinkering/streakBonus"]).toFixed()}}% / {{(100*$store.getters["tinkering/streakCap"]).toFixed()}}%
             </p>
           </div>
@@ -174,7 +191,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('tinkeringTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

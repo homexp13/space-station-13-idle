@@ -15,6 +15,8 @@ export default {
     english: "Английский",
     russian: "Русский",
     upgrades: "Улучшения",
+    streak: "Streak",
+    bonus: "Bonus"
   },
   settings: {
     title: "НАСТРОЙКИ",
@@ -118,6 +120,8 @@ export default {
     FABRICATE: "ПРОИЗВОДИТЬ",
     GRAYTIDE: "ГРЕЙТАЙДИТЬ",
     "CLEAN UP AFTER": "УБИРАТЬ ЗА",
+    CRAFT: "СОЗДАТЬ",
+    "RECYCLE INTO": "ПЕРЕРАБОТАТЬ В"
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -808,6 +812,73 @@ export default {
   graytidingTypes: {
     GRAYTIDING: "ГРЕЙТАЙДИНГ",
     CLEANING: "\"УБОРКА\""
+  },
+
+  tinkering: {
+    title: "Хитс-Зэ-Виззэрд, Эшволкер, шипит...",
+    back: "Назад",
+    junkQuestion: "Мусор?",
+    recyclingQuestion: "Переработка?",
+    weaponsQuestion: "Оружие?",
+    armorQuestion: "Броня?",
+    
+    backText1: "Вы, собаки Нанотрессена, думаете, что вы такие продвинутые со всей вашей модной",
+    backText2: "наукой",
+    backText3: ".",
+    backText4: "Но мы, эшволкеры, можем создавать",
+    backText5: "оружие",
+    backText6: "и",
+    backText7: "броню",
+    backText8: "такие же прочные, используя только",
+    backText9: "природные ресурсы",
+    backText10: "этой станции.",
+    
+    junkText1: "\"Мусор\"? Фу, вы, люди, все слишком ограничены.",
+    junkText2: "В руках умелого ремесленника-ящера, такого как я, этот",
+    junkText3: "\"Мусор\"",
+    junkText4: "может быть превращён во все виды",
+    junkText5: "Полезных Штуковин",
+    junkText6: ".",
+    junkText7: "Большая проблема — получить его. Для кого-то вроде меня, Нанотрессен не раздаёт свой",
+    junkText8: "\"Мусор\"",
+    junkText9: "просто так. Вот где может помочь немного",
+    junkText10: "Грейтайдинга",
+    junkText11: ".",
+    
+    recyclingText1: "Помимо ремесла, иногда я просто люблю поджигать этот",
+    recyclingText2: "Материал",
+    recyclingText3: ".",
+    recyclingText4: "Это напоминает мне о моей родине, но, думаю, огонь также можно использовать для генерации",
+    recyclingText5: "Энергии",
+    recyclingText6: "в руках умелого",
+    recyclingText7: "Инженера",
+    recyclingText8: ".",
+    
+    weaponsText1: "Единственное надёжное",
+    weaponsText2: "Оружие",
+    weaponsText3: "— это то, которое ты создал сам.",
+    weaponsText4: "Зачем тратить время на создание патронов для",
+    weaponsText5: "огнестрельного оружия",
+    weaponsText6: "когда хорошее копьё справится с работой?",
+    
+    armorText1: "Только трусы сражаются внутри",
+    armorText2: "Меха",
+    armorText3: ".",
+    armorText3: " ",
+    armorText5: "Броня",
+    armorText6: "которую ты делаешь здесь, позволит тебе",
+    armorText7: "Уклоняться",
+    armorText8: "гораздо эффективнее. Она также не будет замедлять тебя, когда ты",
+    armorText9: "Перемещаешься",
+    armorText10: "от жертвы к жертве."
+  },
+  
+  tinkeringTypes: {
+    "recycling": "ПЕРЕРАБОТКА",
+    "blunt weapons": "ТУПОЕ ОРУЖИЕ",
+    "sharp weapons": "ОСТРОЕ ОРУЖИЕ",
+    "armor": "БРОНЯ",
+    "space suits": "КОСМИЧЕСКИЕ СКАФАНДРЫ"
   },
   // Zones translations
   zones: {

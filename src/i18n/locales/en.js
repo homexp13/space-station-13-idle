@@ -15,6 +15,8 @@ export default {
     english: "English",
     russian: "Russian",
     upgrades: "Upgrades",
+    streak: "Серия",
+    bonus: "Бонус"
   },
   settings: {
     title: "SETTINGS",
@@ -119,6 +121,8 @@ export default {
     FABRICATE: "FABRICATE",
     GRAYTIDE: "GRAYTIDE",
     "CLEAN UP AFTER": "CLEAN UP AFTER",
+    CRAFT: "CRAFT",
+    "RECYCLE INTO": "RECYCLE INTO"
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -810,6 +814,73 @@ export default {
   graytidingTypes: {
     GRAYTIDING: "GRAYTIDING",
     CLEANING: "\"CLEANING\""
+  },
+
+  tinkering: {
+    title: "Hits-The-Wizard the Ashwalker hisses...",
+    back: "Back",
+    junkQuestion: "Junk?",
+    recyclingQuestion: "Recycling?",
+    weaponsQuestion: "Weaponsss?",
+    armorQuestion: "Armor?",
+    
+    backText1: "You nanotrasssen dogsss think you're ssso advanced with all your fancy",
+    backText2: "ssscience",
+    backText3: ".",
+    backText4: "But usss ashwalkersss can craft",
+    backText5: "weaponsss",
+    backText6: "and",
+    backText7: "armor",
+    backText8: "jussst asss robussst usssing only the",
+    backText9: "natural resssourcesss",
+    backText10: "of thisss ssstation.",
+    
+    junkText1: "\"Junk\"? Bah, you humansss are all too narrow minded.",
+    junkText2: "In the handsss of a ssskilled craftssslizard like myssself, thisss",
+    junkText3: "\"Junk\"",
+    junkText4: "can be made into all sssorts of",
+    junkText5: "Ussseful Ssstuff",
+    junkText6: ".",
+    junkText7: "The bigger challenge isss getting my handsss on it. For sssomeone like myssself, Nanatrosssan isssn't exactly giving their",
+    junkText8: "\"Junk\"",
+    junkText9: "away. That'sss where a bit of",
+    junkText10: "Graytiding",
+    junkText11: "can help.",
+    
+    recyclingText1: "Outssside of crafting, sometimesss I jussst like to ssset this",
+    recyclingText2: "Ssstuff",
+    recyclingText3: "ablaze.",
+    recyclingText4: "It remindsss me of my homeland, but I guesss the fire could also be usssed to generate",
+    recyclingText5: "Power",
+    recyclingText6: "in the handsss of a ssskilled",
+    recyclingText7: "Engineer",
+    recyclingText8: ".",
+    
+    weaponsText1: "The only reliable",
+    weaponsText2: "Weapon",
+    weaponsText3: "issss the one you craft yourself.",
+    weaponsText4: "Why wassste time making ammo for a",
+    weaponsText5: "gun",
+    weaponsText6: "when a good ssspear can do the job?",
+    
+    armorText1: "Only cowardsss fight from within a",
+    armorText2: "Mech",
+    armorText3: ".",
+    armorText4: "The",
+    armorText5: "Armor",
+    armorText6: "you make here will let you",
+    armorText7: "Evade",
+    armorText8: "a lot more effectively. It alssso won't ssslow you down as you",
+    armorText9: "Move",
+    armorText10: "from prey to prey."
+  },
+  
+  tinkeringTypes: {
+    "recycling": "RECYCLING",
+    "blunt weapons": "BLUNT WEAPONS",
+    "sharp weapons": "SHARP WEAPONS",
+    "armor": "ARMOR",
+    "space suits": "SPACE SUITS"
   },
   // Zones translations
   zones: {
