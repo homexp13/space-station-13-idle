@@ -131,6 +131,7 @@ export default {
     INVOKE: "INVOKE",
     INGEST: "INGEST",
     FORM: "FORM",
+    DEVELOP: "DEVELOP",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -435,7 +436,112 @@ export default {
     "Beanbag Shell": "Beanbag Shell",
     "Birdshot Shell": "Birdshot Shell",
     "Buckshot Shell": "Buckshot Shell",
-    "Breaching Shell": "Breaching Shell"
+    "Breaching Shell": "Breaching Shell",
+
+    // MBRUTE - тупое оружие
+    "meleeBlunt1": "Rolling Pin",
+    "meleeBlunt2": "Baseball Bat",
+    "meleeBlunt3": "Null Rod",
+    "meleeBlunt4": "Truncheon",
+    "meleeBlunt5": "Air Tank",
+    "meleeBlunt6": "Fire Extinguisher",
+    "meleeBlunt7": "Jackhammer",
+    "meleeBlunt8": "Chain Of Command",
+    "meleeBlunt9": "Stun Baton",
+
+    // MCUT - острое оружие
+    "meleeSharp1": "Kitchen Fork",
+    "meleeSharp2": "Kitchen Knife",
+    "meleeSharp3": "Butcher Cleaver",
+    "meleeSharp4": "Spear",
+    "meleeSharp5": "Fire Axe",
+    "meleeSharp6": "Chainsaw",
+    "meleeSharp7": "Officer Sabre",
+
+    // MTOOLBOX - инструменты
+    "meleeToolbox1": "Toolbox",
+    "meleeToolbox2": "Toolbox",
+    "meleeToolbox3": "Toolbox",
+    "meleeToolbox4": "Toolbox",
+    "meleeToolbox5": "Toolbox",
+    "meleeToolbox6": "Toolbox",
+
+    // MENERGY - энергетическое оружие
+    "meleeBurn1": "Welding Tool",
+    "meleeBurn2": "Handheld Welder",
+    "meleeBurn3": "Energy Dagger",
+    "meleeBurn4": "Energy Sword",
+    "meleeBurn5": "Dual Energy Sword",
+
+    // MSHIELD - щиты
+    "meleeShield1": "Handcrafted Shield",
+    "meleeShield2": "Telescopic Shield",
+
+    // GENERGY - энергетические пушки
+    "gunEnergy1": "Kinetic Accelerator",
+    "gunEnergy2": "Advanced Kinetic Accelerator",
+    "gunEnergy3": "Plasma Cutter",
+    "gunEnergy4": "Laser Gun",
+    "gunEnergy5": "Tesla Rifle",
+    "gunEnergy6": "Energy Gun",
+    "gunEnergy7": "Wartime Rifle",
+    "gunEnergy8": "Pulse Carbine",
+
+    // GBULLET - огнестрельное оружие
+    "gunBallistic1": "Pipe Shotgun",
+    "gunBallistic2": "Double Barreled Shotgun",
+    "gunBallistic3": "Cycling Shotgun",
+    "gunBallistic4": "Riot Shotgun",
+    "gunBallistic5": "Sawed Off Shotgun",
+    "gunBallistic6": "Compact Shotgun",
+    "gunBallistic7": "Combat Shotgun",
+    "rocketLauncher1": "Rocket Launcher",
+    "gunRifle1": "Mosin-Nagant Rifle",
+    "gunRifle2": "WT-550 Autorifle",
+    "gunRifle3": "NT-ARG 'Boarder' Rifle",
+    "gunRifle4": "C20r Rifle",
+    "gunRifle5": "M-90gl Carbine",
+    "gunRifle6": "Sniper Rifle",
+    "gunRifle7": "Belt Fed L6 Saw",
+
+    // SPECIALBRUTE - специальное оружие
+    "lingBrute1": "Armblade",
+    "mechMining": "Mech Mounted Mining Drill",
+
+    // Описания (если есть)
+    "mechMining.description": "+20% Mining XP",
+
+    // TOOLS - инструменты исследований
+    "toolMining": "Mining Scanner",
+    "toolMining_desc": "All mining tasks give double XP.",
+    "toolEngineering": "Geiger Counter",
+    "toolEngineering_desc": "All engineering tasks are 1.5 seconds faster.",
+    "toolFabrication": "Multitool",
+    "toolFabrication_desc": "Fabrication of ammo is now multiplied by 0x-3x.",
+    "toolGraytiding": "Door Hacking Kit",
+    "toolGraytiding_desc": "Reduces graytiding failure chance by 10%. Being apprehended does not consume a charge and deals 3 less damage.",
+    "toolTinkering": "Wire Ripper",
+    "toolTinkering_desc": "Multiplies tinkering XP by 1.5x and makes tinkering give wire, but doubles junk cost.",
+    "toolBotany": "Botanical Scanner",
+    "toolBotany_desc": "Botany tasks now also grow additional chemicals and meats.",
+    "toolCooking": "Microwave",
+    "toolCooking_desc": "Cooking a dish that you have less than 100 of is 3x faster, or 1.5x faster with less than 250.",
+    "toolBartending": "Ethereal Disco Ball",
+    "toolBartending_desc": "Mixing drinks also yields 2x the sell value of that drink.",
+    "toolXenobiology": "Slime Scanner",
+    "toolXenobiology_desc": "Xenobiology tasks now take several slimes and produce slime cores.",
+    "toolChemistry": "Microdoser",
+    "toolChemistry_desc": "Doubles chemistry pill production.",
+    "toolShitposting": "Tube Plunger",
+    "toolShitposting_desc": "Further increases XP gain from ??? tasks. Strongly inadvised.",
+    "toolCargonia": "Poking Stick",
+    "toolCargonia_desc": "Whenever you get money from Cargonia, you may also get a complimentary crate.",
+    "toolCult": "Rune Assistance Crayons",
+    "toolCult_desc": "Non-blood sacrifice tasks give double Cult XP, but cost health.",
+    "toolLing": "Medical Wrench",
+    "toolLing_desc": "Guarantees Changeling armor of the next tier up.",
+    "toolTraitor": "Uplink Implant",
+    "toolTraitor_desc": "Traitor actions are 10x faster. Careful not to overspend.",
   },
   // Purchases translations
   purchases: {

@@ -68,15 +68,33 @@ export default {
       return ITEMS[this.itemId];
     },
     itemName() {
+      // Пробуем получить перевод названия
       const translationKey = `items.${this.itemId}`;
       const translated = this.$t(translationKey);
-      return (translated && translated !== translationKey) ? translated : this.item.name;
+      
+      // Если перевод найден и не равен ключу, возвращаем перевод
+      if (translated && translated !== translationKey) {
+        return translated;
+      }
+      
+      // Fallback к оригинальному названию
+      return this.item.name;
     },
+    
     itemDescription() {
       if (!this.item.description) return '';
-      const translationKey = `items.${this.itemId}.description`;
+      
+      // Пробуем получить перевод описания с суффиксом _desc
+      const translationKey = `items.${this.itemId}_desc`;
       const translated = this.$t(translationKey);
-      return (translated && translated !== translationKey) ? translated : this.item.description;
+      
+      // Если перевод найден и не равен ключу, возвращаем перевод
+      if (translated && translated !== translationKey) {
+        return translated;
+      }
+      
+      // Fallback к оригинальному описанию
+      return this.item.description;
     },
     popoverPlacement() {
       return this.placement ? this.placement : "bottom";
