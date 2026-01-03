@@ -1043,6 +1043,75 @@ export default {
   
     tier: "TIER"
   },
+
+  chemistry: {
+    title: "Reed Glover the Chemist says...",
+    back: "Back",
+    powerQuestion: "Power?",
+    basesQuestion: "Bases?",
+    chemsQuestion: "CHEMs?",
+    pillsQuestion: "Pills?",
+  
+    backText1: "Fluorine, Uranium, Carbon, Potassium, Arsenic, Sulfur...",
+    backText2: "I'm sorry, did you need something?",
+  
+    powerText1: "These chem dispensers use up a lot of",
+    powerText2: "Power",
+    powerText3: ".",
+    powerText4: "You'll need to",
+    powerText5: "periodically",
+    powerText6: "check up on the",
+    powerText7: "Engineers",
+    powerText8: "to make sure you're stocked up.",
+  
+    basesText1: "Before you can make any",
+    basesText2: "CHEMs",
+    basesText3: ", you'll need to synthesize the individual",
+    basesText4: "Bases",
+    basesText5: "that make it up.",
+    basesText6: "You can speed up this process with",
+    basesText7: "Upgrades",
+    basesText8: "from",
+    basesText9: "Cargo",
+    basesText10: ".",
+  
+    chemsText1: "CHEMs",
+    chemsText2: "provide unique bonuses to individual",
+    chemsText3: "Jobs",
+    chemsText4: ".",
+    chemsText5: "Each",
+    chemsText6: "CHEM",
+    chemsText7: "you make will have a limited number of charges before it depletes.",
+    chemsText8: "You can equip",
+    chemsText9: "CHEMs",
+    chemsText10: "near the top section of each job.",
+  
+    pillsText1: "Keep your voice down.",
+    pillsText2: "With the proper",
+    pillsText3: "Chemistry",
+    pillsText4: "knowledge, I guess",
+    pillsText5: "theoretically",
+    pillsText6: "you could make some",
+    pillsText7: "Pills",
+    pillsText8: "here.",
+    pillsText9: "And,",
+    pillsText10: "hypothetically",
+    pillsText11: ", those",
+    pillsText12: "Pills",
+    pillsText13: "could boost your",
+    pillsText14: "Stats",
+    pillsText15: "while using a",
+    pillsText16: "Melee Weapon",
+    pillsText17: ".",
+    pillsText18: "You didn't hear any of this from me though.",
+    pillsText19: "",
+  },
+  
+  chemistryTypes: {
+    bases: "BASES",
+    chems: "CHEMS",
+    pills: "PILLS"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

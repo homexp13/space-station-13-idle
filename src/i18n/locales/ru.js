@@ -1041,6 +1041,75 @@ export default {
   
     tier: "УРОВЕНЬ"
   },
+
+  chemistry: {
+    title: "Рид Гловер, химик, говорит...",
+    back: "Назад",
+    powerQuestion: "Энергия?",
+    basesQuestion: "Основания?",
+    chemsQuestion: "ХИМИКАТЫ?",
+    pillsQuestion: "Таблетки?",
+  
+    backText1: "Фтор, Уран, Углерод, Калий, Мышьяк, Сера...",
+    backText2: "Простите, вам что-то нужно?",
+  
+    powerText1: "Эти химические диспенсеры потребляют много",
+    powerText2: "Энергии",
+    powerText3: ".",
+    powerText4: "Вам нужно",
+    powerText5: "периодически",
+    powerText6: "проверять",
+    powerText7: "Инженеров",
+    powerText8: ", чтобы убедиться, что у вас достаточный запас.",
+  
+    basesText1: "Прежде чем вы сможете изготовить какие-либо",
+    basesText2: "ХИМИКАТЫ",
+    basesText3: ", вам нужно синтезировать отдельные",
+    basesText4: "Основания",
+    basesText5: ", из которых они состоят.",
+    basesText6: "Вы можете ускорить этот процесс с помощью",
+    basesText7: "Улучшений",
+    basesText8: "из",
+    basesText9: "Карго",
+    basesText10: ".",
+  
+    chemsText1: "ХИМИКАТЫ",
+    chemsText2: "предоставляют уникальные бонусы для отдельных",
+    chemsText3: "Работ",
+    chemsText4: ".",
+    chemsText5: "Каждый",
+    chemsText6: "ХИМИКАТ",
+    chemsText7: ", который вы изготовите, будет иметь ограниченное количество зарядов до истощения.",
+    chemsText8: "Вы можете экипировать",
+    chemsText9: "ХИМИКАТЫ",
+    chemsText10: "в верхней части каждого раздела работы.",
+  
+    pillsText1: "Говорите тише.",
+    pillsText2: "При наличии соответствующих знаний",
+    pillsText3: "Химии",
+    pillsText4: ", полагаю,",
+    pillsText5: "теоретически",
+    pillsText6: "вы могли бы изготовить здесь некоторые",
+    pillsText7: "Таблетки",
+    pillsText8: ".",
+    pillsText9: "И,",
+    pillsText10: "гипотетически",
+    pillsText11: ", эти",
+    pillsText12: "Таблетки",
+    pillsText13: "могли бы усилить ваши",
+    pillsText14: "Характеристики",
+    pillsText15: "при использовании",
+    pillsText16: "Оружия ближнего боя",
+    pillsText17: ".",
+    pillsText18: "Вы не слышали этого от меня.",
+    pillsText19: "",
+  },
+  
+  chemistryTypes: {
+    bases: "ОСНОВАНИЯ",
+    chems: "ХИМИКАТЫ",
+    pills: "ТАБЛЕТКИ"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
