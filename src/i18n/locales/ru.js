@@ -1434,6 +1434,17 @@ export default {
     remaining: "осталось"
   },
 
+  completion: {
+    resetCount: "Сбросов",
+    items: "ПРЕДМЕТЫ",
+    found: "Найдено",
+    enemies: "ВРАГИ",
+    killed: "Убито",
+    jobs: "РАБОТЫ",
+    levels: "Уровни",
+    time: "Время"
+  },
+
   // Zones translations
   zones: {
     // Add zone translations as needed

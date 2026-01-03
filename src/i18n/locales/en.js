@@ -1436,6 +1436,17 @@ export default {
     remaining: "remaining"
   },
 
+  completion: {
+    resetCount: "Reset Count",
+    items: "ITEMS",
+    found: "Found",
+    enemies: "ENEMIES",
+    killed: "Killed",
+    jobs: "JOBS",
+    levels: "Levels",
+    time: "Time"
+  },
+
   // Zones translations
   zones: {
     // Add zone translations as needed

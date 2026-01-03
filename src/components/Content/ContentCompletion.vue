@@ -1,7 +1,7 @@
 <template>
   <div class="content-settings">
     <content-header
-      text="Completion"
+      :text="$t('common.completion')"
       :icon="require('@/assets/art/sidebar/trophy.png')"
       color="rgb(231, 150, 28)"
     />
@@ -10,7 +10,7 @@
         <div class="col-12 mb-3" v-if="resets > 0">
           <div class="content-block content-block-top">
             <img :src="require('@/assets/art/chrono/bluetime.png')" class="mr-2" />
-            <span class="mr-1">Reset Count: {{resets}}</span>
+            <span class="mr-1">{{ $t('completion.resetCount') }}: {{resets}}</span>
           </div>
         </div>
         <div class="col-12">
@@ -20,7 +20,7 @@
             @click="itemsExpanded = !itemsExpanded"
           >
             <img :src="require('@/assets/art/misc/eyes.png')" class="mr-2" />
-            <span class="mr-1">ITEMS</span>
+            <span class="mr-1">{{ $t('completion.items') }}</span>
             <span class="primary-bubble">{{$store.getters['completion/itemPercent']}}%</span>
           </div>
           <div
@@ -43,8 +43,8 @@
                 :customClass="$store.getters['settings/darkModeClass']"
               >
                 <div class="d-flex flex-column align-items-center">
-                  <h6>{{entry[1].name}}</h6>
-                  <span>Found: {{getItem(entry[0])}}</span>
+                  <h6>{{getItemName(entry[0])}}</h6>
+                  <span>{{ $t('completion.found') }}: {{getItem(entry[0])}}</span>
                 </div>
               </b-popover>
             </div>
@@ -57,7 +57,7 @@
             @click="enemiesExpanded = !enemiesExpanded"
           >
             <img :src="require('@/assets/art/misc/eyes.png')" class="mr-2" />
-            <span class="mr-1">ENEMIES</span>
+            <span class="mr-1">{{ $t('completion.enemies') }}</span>
             <span class="primary-bubble">{{$store.getters['completion/enemyPercent']}}%</span>
           </div>
           <div
@@ -80,8 +80,8 @@
                 :customClass="$store.getters['settings/darkModeClass']"
               >
                 <div class="d-flex flex-column align-items-center">
-                  <h6>{{entry[1].name}}</h6>
-                  <span>Killed: {{getEnemy(entry[0])}}</span>
+                  <h6>{{getEnemyName(entry[0])}}</h6>
+                  <span>{{ $t('completion.killed') }}: {{getEnemy(entry[0])}}</span>
                 </div>
               </b-popover>
             </div>
@@ -95,12 +95,12 @@
             @click="jobsExpanded = !jobsExpanded"
           >
             <img :src="require('@/assets/art/misc/eyes.png')" class="mr-2" />
-            <span class="mr-1">JOBS</span>
+            <span class="mr-1">{{ $t('completion.jobs') }}</span>
             <span class="primary-bubble">{{$store.getters['completion/jobPercent']}}%</span>
           </div>
           <div v-if="jobsExpanded" class="content-block content-block-bottom d-flex flex-row">
             <div class="d-flex flex-column align-items-center w-50">
-              <h5 class="pt-2">Levels</h5>
+              <h5 class="pt-2">{{ $t('completion.levels') }}</h5>
               <div class="jobs">
                 <div v-for="(job, index) in jobsLevelSorted" :key="index" class="bar my-1">
                   <div
@@ -118,7 +118,7 @@
               </div>
             </div>
             <div class="d-flex flex-column align-items-center w-50">
-              <h5 class="pt-2">Time</h5>
+              <h5 class="pt-2">{{ $t('completion.time') }}</h5>
               <div class="jobs">
                 <div v-for="(job, index) in jobsTimeSorted" :key="index" class="bar my-1">
                   <div
@@ -130,7 +130,7 @@
                     class="position-relative d-flex flex-row align-items-center justify-content-between w-100"
                   >
                     <img :src="job.icon" alt />
-                    <span>{{job.time | time}}</span>
+                    <span>{{formatTime(job.time)}}</span>
                   </div>
                 </div>
               </div>
@@ -151,6 +151,7 @@ import ITEMS from "@/data/items";
 import ENEMIES from "@/data/enemies";
 import { ALL_JOBS } from "@/data/jobs";
 import { MAX_LEVEL } from "@/data/experience";
+import { getItemName } from "@/utils/i18nUtils";
 
 export default {
   extends: ContentAbstract,
@@ -204,15 +205,73 @@ export default {
       return this.$store.getters["completion/simulationResetCount"];
     }
   },
-  filters: {
-    time(time) {
+  methods: {
+    getItemName(itemId) {
+      return getItemName(itemId, this.$i18n, ITEMS[itemId]);
+    },
+    getEnemyName(enemyId) {
+      const translationKey = `enemies.${enemyId}`;
+      const translated = this.$t(translationKey);
+      return (translated && translated !== translationKey) ? translated : ENEMIES[enemyId].name;
+    },
+    formatTime(time) {
       let minutes = Math.round(time / 60);
       let hours = Math.floor(minutes / 60);
       minutes = minutes % 60;
 
-      var s = `${minutes} mins`;
-      if (hours) s = `${hours} hours ` + s;
-      return s;
+      const locale = this.$i18n.locale || 'en';
+      
+      if (locale === 'ru') {
+        // Русская локализация
+        let hoursText = '';
+        let minutesText = '';
+        
+        if (hours > 0) {
+          // Склонение часов
+          if (hours === 1) {
+            hoursText = 'час';
+          } else if (hours >= 2 && hours <= 4) {
+            hoursText = 'часа';
+          } else {
+            hoursText = 'часов';
+          }
+        }
+        
+        if (minutes > 0) {
+          // Склонение минут
+          if (minutes === 1) {
+            minutesText = 'минута';
+          } else if (minutes >= 2 && minutes <= 4) {
+            minutesText = 'минуты';
+          } else {
+            minutesText = 'минут';
+          }
+        }
+        
+        if (hours > 0 && minutes > 0) {
+          return `${hours} ${hoursText} ${minutes} ${minutesText}`;
+        } else if (hours > 0) {
+          return `${hours} ${hoursText}`;
+        } else if (minutes > 0) {
+          return `${minutes} ${minutesText}`;
+        } else {
+          return '0 минут';
+        }
+      } else {
+        // Английская локализация
+        let result = '';
+        if (hours > 0) {
+          result += `${hours} ${hours === 1 ? 'hour' : 'hours'}`;
+        }
+        if (minutes > 0) {
+          if (result) result += ' ';
+          result += `${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
+        }
+        if (!result) {
+          result = '0 minutes';
+        }
+        return result;
+      }
     }
   }
 };
