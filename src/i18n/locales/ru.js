@@ -1273,6 +1273,19 @@ export default {
     bankValue: "Стоимость банка:",
     sortBank: "Сортировать банк"
   },
+
+  customization: {
+    equipment: "Экипировка",
+    customization: "Настройка",
+    race: "Раса",
+    skinColor: "Цвет кожи",
+    hairStyle: "Прическа",
+    hairColor: "Цвет волос",
+    scaleColor: "Цвет чешуи",
+    horns: "Рога",
+    frills: "Украшения",
+    style: "Стиль"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

@@ -1275,6 +1275,19 @@ export default {
     bankValue: "Bank Value:",
     sortBank: "Sort Bank"
   },
+
+  customization: {
+    equipment: "Equipment",
+    customization: "Customization",
+    race: "Race",
+    skinColor: "Skin Color",
+    hairStyle: "Hair Style",
+    hairColor: "Hair Color",
+    scaleColor: "Scale Color",
+    horns: "Horns",
+    frills: "Frills",
+    style: "Style"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

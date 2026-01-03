@@ -1,7 +1,7 @@
 <template>
   <div>
     <content-header
-      text="Player"
+      :text="$t('common.player')"
       :icon="require('@/assets/art/customization/icon.png')"
       color="rgb(150, 150, 150)"
     />
@@ -18,18 +18,18 @@
                   class="btn"
                   :class="equipment ? 'btn-primary' : 'btn-outline-primary'"
                   @click="equipment=true"
-                >Equipment</div>
+                >{{ $t('customization.equipment') }}</div>
                 <div
                   class="btn"
                   :class="!equipment ? 'btn-primary' : 'btn-outline-primary'"
                   @click="equipment=false"
-                >Customization</div>
+                >{{ $t('customization.customization') }}</div>
               </div>
               <div v-if="equipment">
                 <equipment-panel />
               </div>
               <div v-else>
-                <h6>Race</h6>
+                <h6>{{ $t('customization.race') }}</h6>
                 <button
                   class="btn mr-2"
                   v-for="race in Object.entries(races)"
@@ -41,7 +41,7 @@
                 </button>
 
                 <div v-if="race.skinColor" class="mt-3">
-                  <h6>Skin Color</h6>
+                  <h6>{{ $t('customization.skinColor') }}</h6>
                   <color-setter
                     class="color-setter"
                     propPath="customization/skinColor"
@@ -50,7 +50,7 @@
                 </div>
 
                 <div v-if="race.hair" class="mt-3">
-                  <h6>Hair Style</h6>
+                  <h6>{{ $t('customization.hairStyle') }}</h6>
                   <button
                     class="btn mr-2 mb-2 hair"
                     v-for="hair in Object.entries(hairOptions)"
@@ -63,7 +63,7 @@
                 </div>
 
                 <div v-if="race.skinColor" class="mt-3">
-                  <h6>Hair Color</h6>
+                  <h6>{{ $t('customization.hairColor') }}</h6>
                   <color-setter
                     class="color-setter"
                     propPath="customization/hairColor"
@@ -72,7 +72,7 @@
                 </div>
 
                 <div v-if="race.scaleColor" class="mt-3">
-                  <h6>Scale Color</h6>
+                  <h6>{{ $t('customization.scaleColor') }}</h6>
                   <color-setter
                     class="color-setter"
                     propPath="customization/scaleColor"
@@ -81,7 +81,7 @@
                 </div>
 
                 <div v-if="race.horns" class="mt-3">
-                  <h6>Horns</h6>
+                  <h6>{{ $t('customization.horns') }}</h6>
                   <button
                     class="btn mr-2 mb-2 hair"
                     v-for="horn in Object.entries(hornOptions)"
@@ -94,7 +94,7 @@
                 </div>
 
                 <div v-if="race.frills" class="mt-3">
-                  <h6>Frills</h6>
+                  <h6>{{ $t('customization.frills') }}</h6>
                   <button
                     class="btn mr-2 mb-2 hair"
                     v-for="frill in Object.entries(frillOptions)"
@@ -107,7 +107,7 @@
                 </div>
 
                 <div v-if="race.moth" class="mt-3">
-                  <h6>Style</h6>
+                  <h6>{{ $t('customization.style') }}</h6>
                   <button
                     class="btn mr-2 mb-2"
                     v-for="moth in Object.entries(mothOptions)"
