@@ -880,6 +880,57 @@ export default {
     "armor": "БРОНЯ",
     "space suits": "КОСМИЧЕСКИЕ СКАФАНДРЫ"
   },
+
+  botany: {
+    title: "Дейзи Холмс, ботаник, говорит...",
+    back: "Назад",
+    seedsQuestion: "Семена?",
+    plantsQuestion: "Растения?",
+    statsQuestion: "Статы?",
+  
+    backText1: "Прежде чем я стала",
+    backText2: "Ботаником",
+    backText3: ", у меня была пагубная зависимость от космической травы.",
+    backText4: "Теперь я также могу выращивать крутые",
+    backText5: "Растения",
+    backText6: ".",
+  
+    seedsText1: "Благодаря науке, вы можете вырастить любой тип",
+    seedsText2: "Растения",
+    seedsText3: "из всего одного типа семян.",
+    seedsText4: "Спуститесь в",
+    seedsText5: "Карго",
+    seedsText6: "и вы можете заказать некоторые, если у вас есть",
+    seedsText7: "Деньги",
+    seedsText8: ".",
+  
+    plantsText1: "Большинство",
+    plantsText2: "Растений",
+    plantsText3: "которые вы здесь вырастите, можно съесть, чтобы восстановить своё",
+    plantsText4: "Здоровье",
+    plantsText5: ".",
+    plantsText6: "Хотя я предпочитаю свои продукты",
+    plantsText7: "в натуральном виде",
+    plantsText8: ", вы также можете",
+    plantsText9: "Приготовить",
+    plantsText10: "их, чтобы раскрыть ещё больше вкуса.",
+  
+    statsText1: "Говорят, ты — то, что ты ешь.",
+    statsText2: "В зависимости от",
+    statsText3: "Еды",
+    statsText4: "которую вы используете, вы обнаружите, что некоторые из ваших",
+    statsText5: "Боевых характеристик",
+    statsText6: "будут улучшены или понижены.",
+    statsText7: "Эти",
+    statsText8: "Характеристики",
+    statsText9: "будут изменяться просто от наличия",
+    statsText10: "Еды",
+    statsText11: "в экипировке, даже если вы её не едите. Безумие, да?",
+  
+    upgradeLeftEnabled: "Улучшение включено (левое)",
+    upgradeRightEnabled: "Улучшение включено (правое)",
+    tier: "УРОВЕНЬ"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

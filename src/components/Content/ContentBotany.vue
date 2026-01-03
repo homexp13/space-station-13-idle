@@ -14,95 +14,108 @@
       <job-info
         infoId="botany"
         :icon="require('@/assets/art/jobinfo/botany.png')"
-        title="Daisy Holmes the Botanist says..."
+        :title="$t('botany.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Seeds?', icon: require('@/assets/art/botany/seed.png'), iconClass:'mx--2'},
-					{name: 'Plants?', icon: require('@/assets/art/botany/PlantPepperhot.png'), iconClass:'mx--2'},
-					{name: 'Stats?', icon: require('@/assets/art/combat/precision.png'), iconClass:'mx--0'}
-				]"
+          {key: 'Back', name: $t('botany.back')},
+          {key: 'Seeds?', name: $t('botany.seedsQuestion'), icon: require('@/assets/art/botany/seed.png'), iconClass:'mx--2'},
+          {key: 'Plants?', name: $t('botany.plantsQuestion'), icon: require('@/assets/art/botany/PlantPepperhot.png'), iconClass:'mx--2'},
+          {key: 'Stats?', name: $t('botany.statsQuestion'), icon: require('@/assets/art/combat/precision.png'), iconClass:'mx--0'}
+        ]"
       >
         <template slot="Back">
           <span>
-            Before I became a
+            {{ $t('botany.backText1') }}
             <img class="mx--0" :src="require('@/assets/art/botany/icon.png')" />
-            <b>Botanist</b>, I had a crippling addiction to space weed.
+            <b>{{ $t('botany.backText2') }}</b>
+            {{ $t('botany.backText3') }}
           </span>
           <span>
-            Now, I also get to grow cool
+            {{ $t('botany.backText4') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/botany/PlantPepperhot.png')"
             />
-            <b>Plants</b>.
+            <b>{{ $t('botany.backText5') }}</b>
+            {{ $t('botany.backText6') }}
           </span>
         </template>
         <template slot="Seeds?">
           <span>
-            Thanks to science, you can grow any type of
+            {{ $t('botany.seedsText1') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/botany/PlantPepperhot.png')"
             />
-            <b>Plant</b> from just a single type of Seed.
+            <b>{{ $t('botany.seedsText2') }}</b>
+            {{ $t('botany.seedsText3') }}
           </span>
           <span>
-            Head down to
+            {{ $t('botany.seedsText4') }}
             <img class="mx--0" :src="require('@/assets/art/sidebar/cargo.png')" />
-            <b>Cargo</b> and you can order some, assuming you have the
+            <b>{{ $t('botany.seedsText5') }}</b>
+            {{ $t('botany.seedsText6') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/misc/coin-padded.png')"
             />
-            <b>Cash</b>.
+            <b>{{ $t('botany.seedsText7') }}</b>
+            {{ $t('botany.seedsText8') }}
           </span>
         </template>
         <template slot="Plants?">
           <span>
-            Most of the
+            {{ $t('botany.plantsText1') }}
             <img class="mx--2" :src="require('@/assets/art/botany/PlantPepperhot.png')" />
-            <b>Plants</b> you'll grow here can be eaten to restore your
+            <b>{{ $t('botany.plantsText2') }}</b>
+            {{ $t('botany.plantsText3') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/health.gif')"
             />
-            <b>Health</b>.
+            <b>{{ $t('botany.plantsText4') }}</b>
+            {{ $t('botany.plantsText5') }}
           </span>
           <span>
-            While I prefer my produce
-            <i>au naturel</i>, you can also
+            {{ $t('botany.plantsText6') }}
+            <i>{{ $t('botany.plantsText7') }}</i>
+            {{ $t('botany.plantsText8') }}
             <img class="mx--2" :src="require('@/assets/art/cooking/icon.png')" />
-            <b>Cook</b> it to bring out even more flavor.
+            <b>{{ $t('botany.plantsText9') }}</b>
+            {{ $t('botany.plantsText10') }}
           </span>
         </template>
         <template slot="Stats?">
-          <span>They say you are what you eat.</span>
+          <span>{{ $t('botany.statsText1') }}</span>
           <span>
-            Depending on the
+            {{ $t('botany.statsText2') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/botany/PlantPepperhot.png')"
             />
-            <b>Food</b> you're using, you'll find that some of your
+            <b>{{ $t('botany.statsText3') }}</b>
+            {{ $t('botany.statsText4') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/precision.png')"
             />
             <img class="mx--1" :src="require('@/assets/art/combat/skull.png')" />
             <img class="mx--2" :src="require('@/assets/art/combat/black_shoes.png')" />
-            <b>Combat Stats</b> will be improved or lowered.
+            <b>{{ $t('botany.statsText5') }}</b>
+            {{ $t('botany.statsText6') }}
           </span>
           <span>
-            These
+            {{ $t('botany.statsText7') }}
             <img class="mx--0" :src="require('@/assets/art/combat/precision.png')" />
             <img class="mx--1" :src="require('@/assets/art/combat/skull.png')" />
             <img class="mx--2" :src="require('@/assets/art/combat/black_shoes.png')" />
-            <b>Stat</b> changes will be applied just by having the
+            <b>{{ $t('botany.statsText8') }}</b>
+            {{ $t('botany.statsText9') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/botany/PlantPepperhot.png')"
             />
-            <b>Food</b> equipped, even if you aren't eating it. Crazy, huh?
+            <b>{{ $t('botany.statsText10') }}</b>
+            {{ $t('botany.statsText11') }}
           </span>
         </template>
       </job-info>
@@ -112,7 +125,7 @@
           <div class="content-block">
             <div class="d-flex flex-row align-items-center">
               <img :src="require('@/assets/art/botany/upgrade1.png')" />
-              <h5 class="mb-1">Upgrades</h5>
+              <h5 class="mb-1">{{ $t('common.upgrades') }}</h5>
             </div>
             <div class="custom-control custom-switch mt-1">
               <input
@@ -121,7 +134,7 @@
                 class="custom-control-input"
                 id="upgradeLeftEnabled"
               />
-              <label class="custom-control-label" for="upgradeLeftEnabled">Upgrade Enabled (Left)</label>
+              <label class="custom-control-label" for="upgradeLeftEnabled">{{ $t('botany.upgradeLeftEnabled') }}</label>
             </div>
             <div
               class="custom-control custom-switch mt-1"
@@ -133,7 +146,7 @@
                 class="custom-control-input"
                 id="upgradeRightEnabled"
               />
-              <label class="custom-control-label" for="upgradeRightEnabled">Upgrade Enabled (Right)</label>
+              <label class="custom-control-label" for="upgradeRightEnabled">{{ $t('botany.upgradeRightEnabled') }}</label>
             </div>
           </div>
         </div>
@@ -141,7 +154,7 @@
 
       <div class="tier row" v-for="(tierEntries, tier) in viewableTieredActions" :key="tier">
         <div class="col-12">
-          <span class="tier-text">TIER {{tier+1}}</span>
+          <span class="tier-text">{{ $t('botany.tier') }} {{tier+1}}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"
@@ -214,7 +227,6 @@ export default {
   }
 };
 </script>
-
 
 <style scoped>
 .tier-text {

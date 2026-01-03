@@ -882,6 +882,57 @@ export default {
     "armor": "ARMOR",
     "space suits": "SPACE SUITS"
   },
+
+  botany: {
+    title: "Daisy Holmes the Botanist says...",
+    back: "Back",
+    seedsQuestion: "Seeds?",
+    plantsQuestion: "Plants?",
+    statsQuestion: "Stats?",
+  
+    backText1: "Before I became a",
+    backText2: "Botanist",
+    backText3: ", I had a crippling addiction to space weed.",
+    backText4: "Now, I also get to grow cool",
+    backText5: "Plants",
+    backText6: ".",
+  
+    seedsText1: "Thanks to science, you can grow any type of",
+    seedsText2: "Plant",
+    seedsText3: "from just a single type of Seed.",
+    seedsText4: "Head down to",
+    seedsText5: "Cargo",
+    seedsText6: "and you can order some, assuming you have the",
+    seedsText7: "Cash",
+    seedsText8: ".",
+  
+    plantsText1: "Most of the",
+    plantsText2: "Plants",
+    plantsText3: "you'll grow here can be eaten to restore your",
+    plantsText4: "Health",
+    plantsText5: ".",
+    plantsText6: "While I prefer my produce",
+    plantsText7: "au naturel",
+    plantsText8: ", you can also",
+    plantsText9: "Cook",
+    plantsText10: "it to bring out even more flavor.",
+  
+    statsText1: "They say you are what you eat.",
+    statsText2: "Depending on the",
+    statsText3: "Food",
+    statsText4: "you're using, you'll find that some of your",
+    statsText5: "Combat Stats",
+    statsText6: "will be improved or lowered.",
+    statsText7: "These",
+    statsText8: "Stat",
+    statsText9: "changes will be applied just by having the",
+    statsText10: "Food",
+    statsText11: "equipped, even if you aren't eating it. Crazy, huh?",
+  
+    upgradeLeftEnabled: "Upgrade Enabled (Left)",
+    upgradeRightEnabled: "Upgrade Enabled (Right)",
+    tier: "TIER"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
