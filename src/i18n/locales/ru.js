@@ -1338,6 +1338,12 @@ export default {
     upgrades: "Улучшения",
     jobBlitz: "Блиц-повышение",
   },
+
+  experience: {
+    level: "УРОВЕНЬ",
+    xp: "ОПЫТ",
+    toNextLevel: "до следующего уровня"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

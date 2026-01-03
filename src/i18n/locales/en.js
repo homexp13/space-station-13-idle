@@ -1340,6 +1340,13 @@ export default {
     upgrades: "Upgrades",
     jobBlitz: "Job Blitz",
   },
+
+  experience: {
+    level: "LEVEL",
+    xp: "XP",
+    toNextLevel: "to next level"
+  },
+
   // Zones translations
   zones: {
     // Add zone translations as needed

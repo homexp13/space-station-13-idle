@@ -5,13 +5,17 @@
       :style="{'border-color': color}"
     >
       <div class="d-flex align-items-center">
-        <span class="mr-1">LEVEL</span>
+        <span class="mr-1">{{ $t('experience.level') }}</span>
         <span class="p-1 level rounded">{{level}}/{{maxLevel}}</span>
       </div>
       <div class="d-flex align-items-center">
-        <span class="mr-1">XP</span>
-        <div v-if="ifShowXPNeeded"><span class="p-1 xp rounded">{{nextLevelXP - Math.round(xp) | cleanNum}} to next level</span></div>
-        <div v-else><span class="p-1 xp rounded">{{Math.round(xp) | cleanNum}}/{{nextLevelXP | cleanNum}}</span></div>
+        <span class="mr-1">{{ $t('experience.xp') }}</span>
+        <div v-if="ifShowXPNeeded">
+          <span class="p-1 xp rounded">{{nextLevelXP - Math.round(xp) | cleanNum}} {{ $t('experience.toNextLevel') }}</span>
+        </div>
+        <div v-else>
+          <span class="p-1 xp rounded">{{Math.round(xp) | cleanNum}}/{{nextLevelXP | cleanNum}}</span>
+        </div>
       </div>
     </div>
     <progress-bar style="border-radius: 0 !important" :progress="progress" />
