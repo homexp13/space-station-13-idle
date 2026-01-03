@@ -1,109 +1,116 @@
 <template>
   <div class="content-shop">
-    <content-header text="Cargo" :icon="require('@/assets/art/sidebar/cargo.png')" color="#febb33" />
+    <content-header :text="$t('common.cargo')" :icon="require('@/assets/art/sidebar/cargo.png')" color="#febb33" />
     <div class="content-container">
       <job-info
         infoId="shop"
         :icon="require('@/assets/art/jobinfo/shop.png')"
-        title="Brick Carr the Quartermaster says..."
+        :title="$t('shop.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Inventory?', icon: require('@/assets/art/sidebar/backpack.png'), iconClass:'mx--1'},
-					{name: 'Seeds?', icon: require('@/assets/art/botany/seed.png'), iconClass:'mx--1'},
-					{name: 'New Jobs?', icon: require('@/assets/art/cooking/icon.png'), iconClass:'mx--1'},
-					{name: 'Job Upgrades?', icon: require('@/assets/art/mining/upgrade1.png'), iconClass:'mx--1'},
-					{name: 'Gambling?', icon: require('@/assets/art/shop/items/hatcrate.png'), iconClass:'mx--1'},
-					{name: 'Capes?', icon: require('@/assets/art/combat/items/cloak/capcloak.png'), iconClass:'mx--1'},
-					{name: 'Resistance?', icon: require('@/assets/art/jobinfo/cargo_banner.png'), iconClass:'mx--1'}
-				]"
+          {key: 'Back', name: $t('shop.back')},
+          {key: 'Inventory?', name: $t('shop.inventoryQuestion'), icon: require('@/assets/art/sidebar/backpack.png'), iconClass:'mx--1'},
+          {key: 'Seeds?', name: $t('shop.seedsQuestion'), icon: require('@/assets/art/botany/seed.png'), iconClass:'mx--1'},
+          {key: 'New Jobs?', name: $t('shop.newJobsQuestion'), icon: require('@/assets/art/cooking/icon.png'), iconClass:'mx--1'},
+          {key: 'Job Upgrades?', name: $t('shop.jobUpgradesQuestion'), icon: require('@/assets/art/mining/upgrade1.png'), iconClass:'mx--1'},
+          {key: 'Gambling?', name: $t('shop.gamblingQuestion'), icon: require('@/assets/art/shop/items/hatcrate.png'), iconClass:'mx--1'},
+          {key: 'Capes?', name: $t('shop.capesQuestion'), icon: require('@/assets/art/combat/items/cloak/capcloak.png'), iconClass:'mx--1'},
+          {key: 'Resistance?', name: $t('shop.resistanceQuestion'), icon: require('@/assets/art/jobinfo/cargo_banner.png'), iconClass:'mx--1'}
+        ]"
       >
         <template slot="Back">
-          <span>Welcome to Cargonia!</span>
-          <span>Are you here to order something, or to join the resistance?</span>
+          <span>{{ $t('shop.backText1') }}</span>
+          <span>{{ $t('shop.backText2') }}</span>
         </template>
         <template slot="Inventory?">
           <span>
-            Running low on
+            {{ $t('shop.inventoryText1') }}
             <img class="mx--2" :src="require('@/assets/art/sidebar/backpack.png')" />
-            <b>Inventory Space</b>?
+            <b>{{ $t('shop.inventoryText2') }}</b>
+            {{ $t('shop.inventoryText3') }}
           </span>
-          <span>I can sell you more, but with the storage on this station being so limited I'll have to charge you more for each extra slot.</span>
+          <span>{{ $t('shop.inventoryText4') }}</span>
         </template>
         <template slot="Seeds?">
           <span>
-            You won't make it very far as a
+            {{ $t('shop.seedsText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/botany/icon.png')"
             />
-            <b>Botanist</b> without any seeds.
+            <b>{{ $t('shop.seedsText2') }}</b>
+            {{ $t('shop.seedsText3') }}
           </span>
-          <span>Order them in bulk, and I'll give you a discount.</span>
+          <span>{{ $t('shop.seedsText4') }}</span>
         </template>
         <template slot="New Jobs?">
           <span>
-            Unfortunately, recent budgetary restrictions have left us without the proper equipment to support certain
+            {{ $t('shop.newJobsText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/cooking/icon.png')"
             />
             <img class="mx--0" :src="require('@/assets/art/xenobio/icon.gif')" />
             <img class="mx--0" :src="require('@/assets/art/shitposting/icon.png')" />
-            <b>Jobs</b>.
+            <b>{{ $t('shop.newJobsText2') }}</b>
           </span>
-          <span>With your generous contributions, we could get these departments back up and running at full capacity.</span>
+          <span>{{ $t('shop.newJobsText3') }}</span>
         </template>
         <template slot="Job Upgrades?">
-          <span>For the right price, I might be able to get you equipped to do your job more efficiently</span>
-          <span>I can't just sell this to anyone though. You'll need to demonstrate that you're experienced in that job first.</span>
+          <span>{{ $t('shop.jobUpgradesText1') }}</span>
+          <span>{{ $t('shop.jobUpgradesText2') }}</span>
           <span>
-            In fact, for the fancier equipment I'll also need you to prove your
+            {{ $t('shop.jobUpgradesText3') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/validhunting/icon.png')"
             />
-            <b>Combat Expertise</b>. I can't have these tools falling into the wrong hands.
+            <b>{{ $t('shop.jobUpgradesText4') }}</b>
+            {{ $t('shop.jobUpgradesText5') }}
           </span>
         </template>
 
         <template slot="Capes?">
           <span>
-            Once you've demonstrated your mastery, I'll be able to order you a
+            {{ $t('shop.capesText1') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/cloak/capcloak.png')"
             />
-            <b>Cape</b> for a given job.
+            <b>{{ $t('shop.capesText2') }}</b>
+            {{ $t('shop.capesText3') }}
           </span>
           <span>
-            I've heard rumors that these
+            {{ $t('shop.capesText4') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/combat/items/cloak/capcloak.png')"
             />
-            <b>Capes</b> will work as an extra
+            <b>{{ $t('shop.capesText5') }}</b>
+            {{ $t('shop.capesText6') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/mining/upgrade1.png')"
             />
-            <b>Upgrade</b> for that job, but I don't know if I believe that.
+            <b>{{ $t('shop.capesText7') }}</b>
+            {{ $t('shop.capesText8') }}
           </span>
         </template>
         <template slot="Gambling?">
-          <span>To be honest with you, I don't even know what's in some of these crates.</span>
-          <span>Of course, that won't stop me from selling them to you.</span>
+          <span>{{ $t('shop.gamblingText1') }}</span>
+          <span>{{ $t('shop.gamblingText2') }}</span>
           <span>
-            At the very least, you should pick up a
+            {{ $t('shop.gamblingText3') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/shop/items/hatcrate.png')"
             />
-            <b>Hat Crate</b> at some point; it's the only place you'll find any hats!
+            <b>{{ $t('shop.gamblingText4') }}</b>
+            {{ $t('shop.gamblingText5') }}
           </span>
         </template>
         <template slot="Resistance?">
-          <span>You don't know about the resistance?</span>
-          <span>Nevermind then. Forget you heard anything.</span>
+          <span>{{ $t('shop.resistanceText1') }}</span>
+          <span>{{ $t('shop.resistanceText2') }}</span>
         </template>
       </job-info>
 

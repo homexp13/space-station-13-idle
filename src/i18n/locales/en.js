@@ -516,17 +516,6 @@ export default {
     "Upgrades": "Upgrades",
     "Job Blitz": "Job Blitz",
   },
-  shop: {
-    viewOdds: "View Odds",
-    viewChain: "View Chain",
-    requires: "Requires",
-    level: "lvl",
-    missingName: "Missing name",
-    // For shop sections (if used anywhere)
-    chronoExchange: "Chrono Exchange",
-    upgrades: "Upgrades",
-    jobBlitz: "Job Blitz",
-  },
   cookingTypes: {
     PASTA: "PASTA",
     STEWS: "STEWS",
@@ -1287,6 +1276,69 @@ export default {
     horns: "Horns",
     frills: "Frills",
     style: "Style"
+  },
+
+  shop: {
+    title: "Brick Carr the Quartermaster says...",
+    back: "Back",
+    inventoryQuestion: "Inventory?",
+    seedsQuestion: "Seeds?",
+    newJobsQuestion: "New Jobs?",
+    jobUpgradesQuestion: "Job Upgrades?",
+    gamblingQuestion: "Gambling?",
+    capesQuestion: "Capes?",
+    resistanceQuestion: "Resistance?",
+    
+    backText1: "Welcome to Cargonia!",
+    backText2: "Are you here to order something, or to join the resistance?",
+    
+    inventoryText1: "Running low on",
+    inventoryText2: "Inventory Space",
+    inventoryText3: "?",
+    inventoryText4: "I can sell you more, but with the storage on this station being so limited I'll have to charge you more for each extra slot.",
+    
+    seedsText1: "You won't make it very far as a",
+    seedsText2: "Botanist",
+    seedsText3: "without any seeds.",
+    seedsText4: "Order them in bulk, and I'll give you a discount.",
+    
+    newJobsText1: "Unfortunately, recent budgetary restrictions have left us without the proper equipment to support certain",
+    newJobsText2: "Jobs",
+    newJobsText3: "With your generous contributions, we could get these departments back up and running at full capacity.",
+    
+    jobUpgradesText1: "For the right price, I might be able to get you equipped to do your job more efficiently",
+    jobUpgradesText2: "I can't just sell this to anyone though. You'll need to demonstrate that you're experienced in that job first.",
+    jobUpgradesText3: "In fact, for the fancier equipment I'll also need you to prove your",
+    jobUpgradesText4: "Combat Expertise",
+    jobUpgradesText5: ". I can't have these tools falling into the wrong hands.",
+    
+    capesText1: "Once you've demonstrated your mastery, I'll be able to order you a",
+    capesText2: "Cape",
+    capesText3: "for a given job.",
+    capesText4: "I've heard rumors that these",
+    capesText5: "Capes",
+    capesText6: "will work as an extra",
+    capesText7: "Upgrade",
+    capesText8: "for that job, but I don't know if I believe that.",
+    
+    gamblingText1: "To be honest with you, I don't even know what's in some of these crates.",
+    gamblingText2: "Of course, that won't stop me from selling them to you.",
+    gamblingText3: "At the very least, you should pick up a",
+    gamblingText4: "Hat Crate",
+    gamblingText5: "at some point; it's the only place you'll find any hats!",
+    
+    resistanceText1: "You don't know about the resistance?",
+    resistanceText2: "Nevermind then. Forget you heard anything.",
+    
+    viewOdds: "View Odds",
+    viewChain: "View Chain",
+    requires: "Requires",
+    level: "lvl",
+    missingName: "Missing name",
+    // For shop sections (if used anywhere)
+    chronoExchange: "Chrono Exchange",
+    upgrades: "Upgrades",
+    jobBlitz: "Job Blitz",
   },
   // Zones translations
   zones: {

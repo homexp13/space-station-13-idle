@@ -161,15 +161,15 @@ export default {
             const jobName = match[2];
             const from = match[3];
             const to = match[4];
-            
+
             // Удаляем пробелы из числа для консистентности
             xp = xp.replace(/\s+/g, '');
-            
+
             const job = ALL_JOBS.find(j => 
               j.name.toLowerCase() === jobName.toLowerCase() || 
               j.id.toLowerCase() === jobName.toLowerCase().replace(/\s+/g, '')
             );
-            
+
             if (job) {
               const translatedJobName = this.$t(`jobs.${job.id}`);
               return this.$t('purchases.levelJobTemplate.description', {
