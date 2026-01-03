@@ -931,6 +931,43 @@ export default {
     upgradeRightEnabled: "Улучшение включено (правое)",
     tier: "УРОВЕНЬ"
   },
+
+  bartending: {
+    title: "Наоми Тигарден, бармен, говорит...",
+    back: "Назад",
+    drinksQuestion: "Напитки?",
+    mixingQuestion: "Смешивание?",
+    gettingDrunkQuestion: "Напиться?",
+  
+    backText1: "Новичок, да?",
+    backText2: "Пора приготовить отличный",
+    backText3: "Сингуло",
+    backText4: ".",
+    backText5: "Если вы не боитесь техники, вы готовы.",
+  
+    drinksText1: "Верно, ты можешь смешать себе чертовски крепкие",
+    drinksText2: "напитки",
+    drinksText3: "здесь. Они могут освежить тебя так же, как еда.",
+  
+    mixingText1: "Да. По мере роста навыков ты научишься делать более сложные вещи.",
+    mixingText2: "Я, например, могу приготовить для тебя практически что угодно. Как насчёт",
+    mixingText3: "Глушителя",
+    mixingText4: "для твоего рта?",
+  
+    gettingDrunkText1: "Вот как работает алкоголь.",
+    gettingDrunkText2: "Чем крепче смесь",
+    gettingDrunkText3: "ты сделаешь, тем больше она на тебя подействует.",
+  
+    uniqueDrinks: "Уникальные напитки",
+    bonus: "Бонус"
+  },
+  
+  bartendingTypes: {
+    "Basic Drinks": "ОСНОВНЫЕ НАПИТКИ",
+    "Complex Drinks": "СЛОЖНЫЕ НАПИТКИ",
+    "Super Basic Drinks": "СУПЕР ОСНОВНЫЕ НАПИТКИ",
+    "Super Complex Drinks": "СУПЕР СЛОЖНЫЕ НАПИТКИ"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

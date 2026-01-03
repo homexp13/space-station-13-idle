@@ -933,6 +933,43 @@ export default {
     upgradeRightEnabled: "Upgrade Enabled (Right)",
     tier: "TIER"
   },
+
+  bartending: {
+    title: "Naomi Teagarden the Bartender says...",
+    back: "Back",
+    drinksQuestion: "Drinks?",
+    mixingQuestion: "Mixing?",
+    gettingDrunkQuestion: "Getting Drunk?",
+  
+    backText1: "New here, huh?",
+    backText2: "It's time to mix up a nice",
+    backText3: "Singulo",
+    backText4: ".",
+    backText5: "If you aren't intimidated by the machinery, you're ready.",
+  
+    drinksText1: "That's right, you can mix yourself up some strong-as-hell",
+    drinksText2: "drinks",
+    drinksText3: "here. They can rejuvenate you just like food does.",
+  
+    mixingText1: "Yeah. So as you get more skilled, you'll learn how to make more complicated things.",
+    mixingText2: "I, for one, can make you just about anything. How's about a",
+    mixingText3: "Silencer",
+    mixingText4: "for that mouth of yours?",
+  
+    gettingDrunkText1: "That's how alcohol works. The",
+    gettingDrunkText2: "stronger the mix",
+    gettingDrunkText3: "you make, the more it'll affect you.",
+  
+    uniqueDrinks: "Unique Drinks",
+    bonus: "Bonus"
+  },
+  
+  bartendingTypes: {
+    "Basic Drinks": "BASIC DRINKS",
+    "Complex Drinks": "COMPLEX DRINKS", 
+    "Super Basic Drinks": "SUPER BASIC DRINKS",
+    "Super Complex Drinks": "SUPER COMPLEX DRINKS"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
