@@ -13,56 +13,58 @@
       <job-info
         infoId="ling"
         :icon="require('@/assets/art/jobinfo/ling_anim.gif')"
-        title="MONKEY(413) the totally normal monkey chimpers..."
+        :title="$t('ling.title')"
         :options="[
-          {name: 'Back'},
-          {name: 'Ook?', icon: require('@/assets/art/jobinfo/ling_anim.gif'), iconClass:'mx--0'},
-          {name: 'Cultivate', icon: require('@/assets/art/jobinfo/heart_anim.gif'), iconClass:'mx--0'},
-          {name: 'Parasite', icon: require('@/assets/art/ling/headcrab.png'), iconClass:'mx--0'}
+          {key: 'Back', name: $t('ling.back')},
+          {key: 'Ook?', name: $t('ling.ookQuestion'), icon: require('@/assets/art/jobinfo/ling_anim.gif'), iconClass:'mx--0'},
+          {key: 'Cultivate', name: $t('ling.cultivate'), icon: require('@/assets/art/jobinfo/heart_anim.gif'), iconClass:'mx--0'},
+          {key: 'Parasite', name: $t('ling.parasite'), icon: require('@/assets/art/ling/headcrab.png'), iconClass:'mx--0'}
         ]"
       >
         <template slot="Back">
-          <span>Ook?</span>
+          <span>{{ $t('ling.backText') }}</span>
         </template>
         <template slot="Ook?">
           <span>
-            Not convinced huh? You want ultimate control over your body too? All it takes is some
+            {{ $t('ling.ookText1') }}
             <img
               :src="require('@/assets/art/jobinfo/heart_anim.gif')"
               class="mx--2"
             />
-            <b>Cultivation</b>, and one tiny
+            <b>{{ $t('ling.ookText2') }}</b>
+            {{ $t('ling.ookText3') }}
             <img :src="require('@/assets/art/ling/headcrab.png')" class="mx--1" />
-            <b>Alien Parasite</b>.
+            <b>{{ $t('ling.ookText4') }}</b>
           </span>
-          <span>You can let it in you however you want, but I would advise the mouth or anus. I'd advise you pick one and just go for it. Don't start in one place then give up halfway. You'll regret it.</span>
+          <span>{{ $t('ling.ookText5') }}</span>
         </template>
         <template slot="Cultivate">
-          <span>Find your center and focus inward.</span>
+          <span>{{ $t('ling.cultivateText1') }}</span>
           <span>
-            You can use foreign
+            {{ $t('ling.cultivateText2') }}
             <img
               :src="require('@/assets/art/cooking/meatAnimal.png')"
               class="mx--0"
             />
-            <b>Biomatter</b>
-            to assist you. Focus on the tone of the muscle fiber and the twitch of your nerves.
+            <b>{{ $t('ling.cultivateText3') }}</b>
+            {{ $t('ling.cultivateText4') }}
           </span>
-          <span>It will take a while but you can eventually break through to the next level of physical perfection. Don't be discouraged if you don't get it right away.</span>
+          <span>{{ $t('ling.cultivateText5') }}</span>
         </template>
         <template slot="Parasite">
-          <span>They are a little red slug, about the size of your forearm.</span>
+          <span>{{ $t('ling.parasiteText1') }}</span>
           <span>
-            Security tends to keep a pretty
+            {{ $t('ling.parasiteText2') }}
             <img
               :src="require('@/assets/art/shop/items/seccrate.png')"
               class="mx--0"
             />
-            <b>Tight Lid</b>. They are worth alot of money to the right buyer.
+            <b>{{ $t('ling.parasiteText3') }}</b>
+            {{ $t('ling.parasiteText4') }}
           </span>
           <span>
-            Just keep checking crates until you find one, and remember
-            <B>DON'T EAT IT!</B>
+            {{ $t('ling.parasiteText5') }}
+            <b>{{ $t('ling.parasiteText6') }}</b>
           </span>
         </template>
       </job-info>
@@ -73,7 +75,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('lingTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

@@ -128,6 +128,8 @@ export default {
     UPGRADE: "UPGRADE",
     WORSHIP: "WORSHIP",
     INVOKE: "INVOKE",
+    INGEST: "INGEST",
+    FORM: "FORM",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -1213,6 +1215,42 @@ export default {
     "MATERIAL RUNES": "MATERIAL RUNES",
     "BLOOD RUNES": "BLOOD RUNES",
     "SACRIFICES": "SACRIFICES"
+  },
+
+  ling: {
+    title: "MONKEY(413) the totally normal monkey chimpers...",
+    back: "Back",
+    ookQuestion: "Ook?",
+    cultivate: "Cultivate",
+    parasite: "Parasite",
+    
+    backText: "Ook?",
+    
+    ookText1: "Not convinced huh? You want ultimate control over your body too? All it takes is some",
+    ookText2: "Cultivation",
+    ookText3: "and one tiny",
+    ookText4: "Alien Parasite",
+    ookText5: "You can let it in you however you want, but I would advise the mouth or anus. I'd advise you pick one and just go for it. Don't start in one place then give up halfway. You'll regret it.",
+    
+    cultivateText1: "Find your center and focus inward.",
+    cultivateText2: "You can use foreign",
+    cultivateText3: "Biomatter",
+    cultivateText4: "to assist you. Focus on the tone of the muscle fiber and the twitch of your nerves.",
+    cultivateText5: "It will take a while but you can eventually break through to the next level of physical perfection. Don't be discouraged if you don't get it right away.",
+    
+    parasiteText1: "They are a little red slug, about the size of your forearm.",
+    parasiteText2: "Security tends to keep a pretty",
+    parasiteText3: "Tight Lid",
+    parasiteText4: "They are worth alot of money to the right buyer.",
+    parasiteText5: "Just keep checking crates until you find one, and remember",
+    parasiteText6: "DON'T EAT IT!",
+  },
+  
+  lingTypes: {
+    ACCLIMATION: "ACCLIMATION",
+    "FLESH ARMOR": "FLESH ARMOR",
+    "BONE ARMOR": "BONE ARMOR",
+    "DISGUISES": "DISGUISES"
   },
   // Zones translations
   zones: {
