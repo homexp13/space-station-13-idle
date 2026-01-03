@@ -116,7 +116,9 @@ export default {
     BUY: "BUY",
     SYNTHESIZE: "SYNTHESIZE",
     COOK: "COOK",
-    FABRICATE: "FABRICATE"
+    FABRICATE: "FABRICATE",
+    GRAYTIDE: "GRAYTIDE",
+    "CLEAN UP AFTER": "CLEAN UP AFTER",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -731,6 +733,83 @@ export default {
   researchTypes: {
     tools: "TOOLS",
     facewear: "FACEWEAR"
+  },
+
+  graytiding: {
+    title: "Lexia Black the Assistant says...",
+    back: "Back",
+    graytidingQuestion: "\"Graytiding\"?",
+    lootQuestion: "Loot?",
+    riskQuestion: "Risk?",
+    cleaningQuestion: "\"Cleaning\"?",
+    
+    backText1: "Some may say",
+    backText2: "Graytiding",
+    backText3: "isn't a",
+    backText4: "real",
+    backText5: "job.",
+    backText6: "And you know what? They're right.",
+    backText7: "It's not a job; it's an art.",
+    
+    graytidingText1: "Us assistants, or \"Grayshirts\", don't have the privilege of departmental funding.",
+    graytidingText2: "So how do we close the gap? It's simple; we just take what we need from the other departments for ourselves.",
+    graytidingText3: "Some",
+    graytidingText4: "may call it theft, but others recognize it for the art it is as",
+    graytidingText5: "\"Graytiding\".",
+    
+    lootText1: "When you're under pressure, you'll probably only be able to snag some",
+    lootText2: "Junk",
+    lootText3: "before you'll find",
+    lootText4: "Security",
+    lootText5: "on your tail.",
+    lootText6: "Maybe you can find some use for it with a bit of",
+    lootText7: "Tinkering.",
+    lootText8: "Beyond that, what you'll find will really depend on the",
+    lootText9: "Department",
+    lootText10: "you're raiding.",
+    lootText11: "Oh, and be on the look out for",
+    lootText12: "Gloves",
+    lootText13: "and",
+    lootText14: "Shoes.",
+    lootText15: "They're especially rare.",
+    
+    riskText1: "What we're doing here may not exactly be legal in the eyes of the law.",
+    riskText2: "If you get caught, our friends at",
+    riskText3: "Shitcurity",
+    riskText4: "will be sure to teach you a lesson.",
+    riskText5: "Best to stock up on some",
+    riskText6: "Food",
+    riskText7: "to keep your",
+    riskText8: "Health",
+    riskText9: "up.",
+    riskText10: "Botany",
+    riskText11: "and",
+    riskText12: "Cooking",
+    riskText13: "can help you there.",
+    riskText14: "One more thing, if you don't already have one, you should consider picking up an",
+    riskText15: "Auto-Eat Upgrade",
+    riskText16: "from",
+    riskText17: "Cargo.",
+    
+    cleaningText1: "Some",
+    cleaningText2: "Graytiders",
+    cleaningText3: "have been able to disguise themselves as janitorial staff.",
+    cleaningText4: "While people are very alert to Graytiders, they are completely blind to the humble",
+    cleaningText5: "Janitor.",
+    cleaningText6: "It's such a good disguise that you can",
+    cleaningText7: "Slip",
+    cleaningText8: "into active combat situations while \"cleaning\" and take what you need. This is super dangerous though, so be extra cautious.",
+    cleaningText9: "I could lend you my disguise, but you'll absolutely need some",
+    cleaningText10: "Galoshes",
+    cleaningText11: "if you even want to attempt it.",
+    cleaningText12: "Try asking",
+    cleaningText13: "Research",
+    cleaningText14: "for some."
+  },
+  
+  graytidingTypes: {
+    GRAYTIDING: "GRAYTIDING",
+    CLEANING: "\"CLEANING\""
   },
   // Zones translations
   zones: {

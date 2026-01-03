@@ -14,116 +14,152 @@
       <job-info
         infoId="graytiding"
         :icon="require('@/assets/art/jobinfo/graytiding.png')"
-        title="Lexia Black the Assistant says..."
+        :title="$t('graytiding.title')"
         :options="[
-					{name: 'Back'},
-					{name: '&quot;Graytiding&quot;?', icon: require('@/assets/art/graytiding/icon.png'), iconClass:'mx--0'},
-					{name: 'Loot?', icon: require('@/assets/art/graytiding/junk.png'), iconClass:'mx--0'},
-					{name: 'Risk?', icon: require('@/assets/art/jobinfo/shitcurity.png'), iconClass:'mx--1'},
-          {name: '&quot;Cleaning&quot;?', icon: require('@/assets/art/jobinfo/janitor.png'), iconClass:'mx--1'},
-				]"
+          {key: 'Back', name: $t('graytiding.back')},
+          {key: '&quot;Graytiding&quot;?', name: $t('graytiding.graytidingQuestion'), icon: require('@/assets/art/graytiding/icon.png'), iconClass:'mx--0'},
+          {key: 'Loot?', name: $t('graytiding.lootQuestion'), icon: require('@/assets/art/graytiding/junk.png'), iconClass:'mx--0'},
+          {key: 'Risk?', name: $t('graytiding.riskQuestion'), icon: require('@/assets/art/jobinfo/shitcurity.png'), iconClass:'mx--1'},
+          {key: '&quot;Cleaning&quot;?', name: $t('graytiding.cleaningQuestion'), icon: require('@/assets/art/jobinfo/janitor.png'), iconClass:'mx--1'},
+        ]"
       >
         <template slot="Back">
           <span>
-            Some may say
+            {{ $t('graytiding.backText1') }}
             <img class="mx--0" :src="require('@/assets/art/graytiding/icon.png')" />
-            <b>Graytiding</b>. isn't a
-            <i>real</i> job.
+            <b>{{ $t('graytiding.backText2') }}</b>
+            {{ $t('graytiding.backText3') }}
+            <i>{{ $t('graytiding.backText4') }}</i>
+            {{ $t('graytiding.backText5') }}
           </span>
-          <span>And you know what? They're right.</span>
-          <span>It's not a job; it's an art.</span>
+          <span>{{ $t('graytiding.backText6') }}</span>
+          <span>{{ $t('graytiding.backText7') }}</span>
         </template>
         <template slot="&quot;Graytiding&quot;?">
-          <span>Us assistants, or "Grayshirts", don't have the privilege of departmental funding.</span>
-          <span>So how do we close the gap? It's simple; we just take what we need from the other departments for ourselves.</span>
+          <span>{{ $t('graytiding.graytidingText1') }}</span>
+          <span>{{ $t('graytiding.graytidingText2') }}</span>
           <span>
             <img class="mx--0" :src="require('@/assets/art/jobinfo/shitcurity.png')" />
-            <b>Some</b> may call it theft, but others recognize it for the art it is as
-            <i>"Graytiding"</i>.
+            <b>{{ $t('graytiding.graytidingText3') }}</b>
+            {{ $t('graytiding.graytidingText4') }}
+            <i>{{ $t('graytiding.graytidingText5') }}</i>
           </span>
         </template>
         <template slot="Loot?">
           <span>
-            When you're under pressure, you'll probably only be able to snag some
+            {{ $t('graytiding.lootText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/graytiding/junk.png')"
             />
-            <b>Junk</b> before you'll find
+            <b>{{ $t('graytiding.lootText2') }}</b>
+            {{ $t('graytiding.lootText3') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/jobinfo/shitcurity.png')"
             />
-            <b>Security</b> on your tail.
+            <b>{{ $t('graytiding.lootText4') }}</b>
+            {{ $t('graytiding.lootText5') }}
           </span>
           <span>
-            Maybe you can find some use for it with a bit of
+            {{ $t('graytiding.lootText6') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/tinkering/icon.png')"
             />
-            <b>Tinkering</b>.
+            <b>{{ $t('graytiding.lootText7') }}</b>
           </span>
           <span>
-            Beyond that, what you'll find will really depend on the
+            {{ $t('graytiding.lootText8') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/graytiding/Mining.png')"
             />
-            <b>Department</b> you're raiding.
+            <b>{{ $t('graytiding.lootText9') }}</b>
+            {{ $t('graytiding.lootText10') }}
           </span>
           <span>
-            Oh, and be on the look out for
+            {{ $t('graytiding.lootText11') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/items/limb/glove_yellow.png')"
             />
-            <b>Gloves</b> and
+            <b>{{ $t('graytiding.lootText12') }}</b>
+            {{ $t('graytiding.lootText13') }}
             <img class="mx--2" :src="require('@/assets/art/combat/items/limb/shoe_jackboots.png')" />
-            <b>Shoes</b>. They're especially rare.
+            <b>{{ $t('graytiding.lootText14') }}</b>
+            {{ $t('graytiding.lootText15') }}
           </span>
         </template>
         <template slot="Risk?">
-          <span>What we're doing here may not exactly be legal in the eyes of the law.</span>
+          <span>{{ $t('graytiding.riskText1') }}</span>
           <span>
-            If you get caught, our friends at
+            {{ $t('graytiding.riskText2') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/jobinfo/shitcurity.png')"
             />
-            <b>Shitcurity</b> will be sure to teach you a lesson.
+            <b>{{ $t('graytiding.riskText3') }}</b>
+            {{ $t('graytiding.riskText4') }}
           </span>
           <span>
-            Best to stock up on some
+            {{ $t('graytiding.riskText5') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/cooking/burger1.png')"
             />
-            <b>Food</b> to keep your
+            <b>{{ $t('graytiding.riskText6') }}</b>
+            {{ $t('graytiding.riskText7') }}
             <img class="mx--0" :src="require('@/assets/art/combat/health.gif')" />
-            <b>Health</b> up.
+            <b>{{ $t('graytiding.riskText8') }}</b>
+            {{ $t('graytiding.riskText9') }}
             <img class="mx--0" :src="require('@/assets/art/botany/icon.png')" />
-            <b>Botany</b> and
+            <b>{{ $t('graytiding.riskText10') }}</b>
+            {{ $t('graytiding.riskText11') }}
             <img class="mx--0" :src="require('@/assets/art/cooking/icon.png')" />
-            <b>Cooking</b> can help you there.
+            <b>{{ $t('graytiding.riskText12') }}</b>
+            {{ $t('graytiding.riskText13') }}
           </span>
           <span>
-            One more thing, if you don't already have one, you should consider picking up an
+            {{ $t('graytiding.riskText14') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/upgrades/autoeat.png')"
             />
-            <b>Auto-Eat Upgrade</b> from
+            <b>{{ $t('graytiding.riskText15') }}</b>
+            {{ $t('graytiding.riskText16') }}
             <img class="mx--0" :src="require('@/assets/art/sidebar/cargo.png')" />
-            <b>Cargo</b>.
+            <b>{{ $t('graytiding.riskText17') }}</b>
           </span>
         </template>
         <template slot="&quot;Cleaning&quot;?">
-          <span>Some <img class="mx--0" :src="require('@/assets/art/graytiding/icon.png')" /> <b>Graytiders</b> have been able to disguise themselves as janitorial staff.</span>
-          <span>While people are very alert to Graytiders, they are completely blind to the humble <img class="mx--0" :src="require('@/assets/art/jobinfo/janitor.png')" /> <b>Janitor</b>.</span>
-          <span>It's such a good disguise that you can <img class="mx--0" :src="require('@/assets/art/chemistry/lube.png')" /><b>Slip</b> into active combat situations while "cleaning" and take what you need. This is super dangerous though, so be extra cautious.</span>
-          <span>I could lend you my disguise, but you'll absolutely need some <img class="mx--0" :src="require('@/assets/art/research/galoshes.png')" /><b>Galoshes</b> if you even want to attempt it.
-             Try asking <img class="mx--0" :src="require('@/assets/art/research/researchJobIcon.png')" /><b>Research</b> for some.</span>
+          <span>
+            {{ $t('graytiding.cleaningText1') }}
+            <img class="mx--0" :src="require('@/assets/art/graytiding/icon.png')" />
+            <b>{{ $t('graytiding.cleaningText2') }}</b>
+            {{ $t('graytiding.cleaningText3') }}
+          </span>
+          <span>
+            {{ $t('graytiding.cleaningText4') }}
+            <img class="mx--0" :src="require('@/assets/art/jobinfo/janitor.png')" />
+            <b>{{ $t('graytiding.cleaningText5') }}</b>
+          </span>
+          <span>
+            {{ $t('graytiding.cleaningText6') }}
+            <img class="mx--0" :src="require('@/assets/art/chemistry/lube.png')" />
+            <b>{{ $t('graytiding.cleaningText7') }}</b>
+            {{ $t('graytiding.cleaningText8') }}
+          </span>
+          <span>
+            {{ $t('graytiding.cleaningText9') }}
+            <img class="mx--0" :src="require('@/assets/art/research/galoshes.png')" />
+            <b>{{ $t('graytiding.cleaningText10') }}</b>
+            {{ $t('graytiding.cleaningText11') }}
+            {{ $t('graytiding.cleaningText12') }}
+            <img class="mx--0" :src="require('@/assets/art/research/researchJobIcon.png')" />
+            <b>{{ $t('graytiding.cleaningText13') }}</b>
+            {{ $t('graytiding.cleaningText14') }}
+          </span>
         </template>
       </job-info>
 
@@ -150,7 +186,7 @@
         :key="tier"
       >
         <div class="col-12">
-          <span class="type-text text-uppercase">{{typedEntry[0]}}</span>
+          <span class="type-text text-uppercase">{{ $t('graytidingTypes.' + typedEntry[0]) }}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

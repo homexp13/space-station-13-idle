@@ -1002,7 +1002,7 @@ Object.values(CLEANING).forEach((action, index) => {
 });
 
 Object.values(TIDING).forEach(action => { action.type = "GRAYTIDING" });
-Object.values(CLEANING).forEach(action => { action.type = "\"CLEANING\"" });
+Object.values(CLEANING).forEach(action => { action.type = "CLEANING" });
 
 export const ACTIONS = {
 	...TIDING,
