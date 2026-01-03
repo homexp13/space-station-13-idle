@@ -13,110 +13,121 @@
       <job-info
         infoId="mining"
         :icon="require('@/assets/art/jobinfo/mining.png')"
-        title="Lathius Talram the Shaft Miner says..."
+        :title="$t('mining.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Mining?', icon: require('@/assets/art/mining/icon.png'), iconClass:'mx--0'},
-					{name: 'Ore?', icon: require('@/assets/art/mining/SheetIron.png'), iconClass:'mx--2'}
-				]"
+          {key: 'Back', name: $t('mining.back')},
+          {key: 'Mining?', name: $t('mining.miningQuestion'), icon: require('@/assets/art/mining/icon.png'), iconClass:'mx--0'},
+          {key: 'Ore?', name: $t('mining.oreQuestion'), icon: require('@/assets/art/mining/SheetIron.png'), iconClass:'mx--2'}
+        ]"
       >
         <template slot="Back">
           <span>
-            No time to chat. Have to get down there and
+            {{ $t('mining.backText1') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/mining/icon.png')"
             />
-            <b>Mine</b> some
+            <b>{{ $t('action.MINE') }}</b>
+            {{ $t('mining.backText2') }}
             <img class="mx--2" :src="require('@/assets/art/mining/SheetIron.png')" />
-            <b>Ore</b>.
+            <b>{{ $t('items.iron') }}</b>
+            {{ $t('mining.backText3') }}
           </span>
         </template>
         <template slot="Mining?">
-          <span>What, you're still here?</span>
+          <span>{{ $t('mining.miningText1') }}</span>
           <span>
             <img class="mx--0" :src="require('@/assets/art/mining/icon.png')" />
-            <b>Mining</b>'s real easy, kid. Just go down there and click on whatever
+            <b>{{ $t('jobs.mining') }}</b>
+            {{ $t('mining.miningText2') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/mining/OreIron.png')"
             />
-            <b>Vein</b> it is that you want to mine.
+            <b>{{ $t('mining.miningText3') }}</b>
           </span>
           <span>
-            After a few seconds, you should have have yourself some fully processed
+            {{ $t('mining.miningText4') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/mining/SheetIron.png')"
             />
-            <b>Ore</b>.
+            <b>{{ $t('items.iron') }}</b>
+            {{ $t('mining.miningText5') }}
           </span>
           <span>
-            Beginners should get started by pounding some
+            {{ $t('mining.miningText6') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/mining/OreGlass.png')"
             />
-            <b>Sand</b> to make
+            <b>{{ $t('items.glass') }}</b>
+            {{ $t('mining.miningText7') }}
             <img class="mx--2" :src="require('@/assets/art/mining/SheetGlass.png')" />
-            <b>Glass</b>.
+            <b>{{ $t('items.glass') }}</b>
+            {{ $t('mining.miningText8') }}
           </span>
           <span>
-            Of course, you're probably going to need to build some experience up before you go after some of the
+            {{ $t('mining.miningText9') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/mining/SheetGold.png')"
             />
             <img class="mx--1" :src="require('@/assets/art/mining/SheetUranium.png')" />
             <img class="mx--1" :src="require('@/assets/art/mining/SheetDiamond.png')" />
-            <b>fancier stuff</b>
+            <b>{{ $t('mining.miningText10') }}</b>
           </span>
           <span></span>
         </template>
         <template slot="Ore?">
           <span>
-            Yeah,
+            {{ $t('mining.oreText1') }}
             <img class="mx--2" :src="require('@/assets/art/mining/SheetIron.png')" />
-            <b>Ore</b>. Not much else to mine.
+            <b>{{ $t('items.iron') }}</b>
+            {{ $t('mining.oreText2') }}
           </span>
-          <span>What's it used for? You sure do ask a lot of questions.</span>
+          <span>{{ $t('mining.oreText3') }}</span>
           <span>
-            I think those purple-shirts down at
+            {{ $t('mining.oreText4') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/fabrication/icon.png')"
             />
-            <b>Fabrication</b> might turn it into
+            <b>{{ $t('jobs.fabrication') }}</b>
+            {{ $t('mining.oreText5') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/items/gune_energy.png')"
             />
-            <b>Weapons</b> or something. I think they're shut down right now until someone orders supplies for it from
+            <b>{{ $t('mining.oreText6') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/sidebar/cargo.png')"
             />
-            <b>Cargo</b>
+            <b>{{ $t('common.cargo') }}</b>
           </span>
           <span>
-            Alternatively,
+            {{ $t('mining.oreText8') }}
             <img class="mx--2" :src="require('@/assets/art/mining/SheetIron.png')" />
-            <b>Ore</b> can be sold straight for
+            <b>{{ $t('items.iron') }}</b>
+            {{ $t('mining.oreText9') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/misc/coin-padded.png')"
             />
-            <b>Money</b> from your
+            <b>{{ $t('items.money') }}</b>
+            {{ $t('mining.oreText10') }}
             <img class="mx--2" :src="require('@/assets/art/sidebar/backpack.png')" />
-            <b>Inventory</b>.
+            <b>{{ $t('common.inventory') }}</b>
+            {{ $t('mining.oreText11') }}
           </span>
           <span>
-            Don't really know. And as long as my tools are getting
+            {{ $t('mining.oreText12') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/mining/upgrade1.png')"
             />
-            <b>Upgraded</b>, I don't really care.
+            <b>{{ $t('mining.oreText13') }}</b>
           </span>
         </template>
       </job-info>

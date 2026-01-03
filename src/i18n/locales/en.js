@@ -541,6 +541,41 @@ export default {
     usesForPower4: "Fabrication use it for their toys, and the",
     usesForPower5: "Chemists use it to synthesize their drugs."
   },
+  mining: {
+    title: "Lathius Talram the Shaft Miner says...",
+    back: "Back",
+    miningQuestion: "Mining?",
+    oreQuestion: "Ore?",
+    
+    backText1: "No time to chat. Have to get down there and",
+    backText2: "Mine some",
+    backText3: "Ore.",
+    
+    miningText1: "What, you're still here?",
+    miningText2: "Mining's real easy, kid. Just go down there and click on whatever",
+    miningText3: "Vein it is that you want to mine.",
+    miningText4: "After a few seconds, you should have have yourself some fully processed",
+    miningText5: "Ore.",
+    miningText6: "Beginners should get started by pounding some",
+    miningText7: "Sand to make",
+    miningText8: "Glass.",
+    miningText9: "Of course, you're probably going to need to build some experience up before you go after some of the",
+    miningText10: "fancier stuff",
+    
+    oreText1: "Yeah,",
+    oreText2: "Ore. Not much else to mine.",
+    oreText3: "What's it used for? You sure do ask a lot of questions.",
+    oreText4: "I think those purple-shirts down at",
+    oreText5: "Fabrication might turn it into",
+    oreText6: "Weapons or something. I think they're shut down right now until someone orders supplies for it from",
+    oreText7: "Cargo",
+    oreText8: "Alternatively,",
+    oreText9: "Ore can be sold straight for",
+    oreText10: "Money from your",
+    oreText11: "Inventory.",
+    oreText12: "Don't really know. And as long as my tools are getting",
+    oreText13: "Upgraded, I don't really care."
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
