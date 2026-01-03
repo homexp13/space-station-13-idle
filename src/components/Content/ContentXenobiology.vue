@@ -14,41 +14,44 @@
       <job-info
         infoId="xenobiology"
         :icon="require('@/assets/art/jobinfo/xenobiology.png')"
-        title="Nar Nar the Scientist flutters..."
+        :title="$t('xenobiology.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Slimes?', icon: require('@/assets/art/xenobio/SlimeGrey.gif'), iconClass:'mx--1'},
-					{name: 'Slow?', icon: require('@/assets/art/xenobio/upgrade1.png'), iconClass:'mx--1'},
-					{name: 'Benefits?', icon: require('@/assets/art/combat/health.gif'), iconClass:'mx--0'},
-					{name: 'Command?', icon: require('@/assets/art/combat/command.png'), iconClass:'mx--1'},
-					{name: 'Z?', icon: require('@/assets/art/jobinfo/xenobiology.png'), iconClass:'mx--0'}
-				]"
+          {key: 'Back', name: $t('xenobiology.back')},
+          {key: 'Slimes?', name: $t('xenobiology.slimesQuestion'), icon: require('@/assets/art/xenobio/SlimeGrey.gif'), iconClass:'mx--1'},
+          {key: 'Slow?', name: $t('xenobiology.slowQuestion'), icon: require('@/assets/art/xenobio/upgrade1.png'), iconClass:'mx--1'},
+          {key: 'Benefits?', name: $t('xenobiology.benefitsQuestion'), icon: require('@/assets/art/combat/health.gif'), iconClass:'mx--0'},
+          {key: 'Command?', name: $t('xenobiology.commandQuestion'), icon: require('@/assets/art/combat/command.png'), iconClass:'mx--1'},
+          {key: 'Z?', name: $t('xenobiology.zQuestion'), icon: require('@/assets/art/jobinfo/xenobiology.png'), iconClass:'mx--0'}
+        ]"
       >
         <template slot="Back">
-          <span>You look a bit puzzzled, chimpanzzzee-descendent citizzzen.</span>
+          <span>{{ $t('xenobiology.backText1') }}</span>
           <span>
             <img class="mx--1" :src="require('@/assets/art/xenobio/icon.gif')" />
-            <b>Xenobiology</b> is a hazzzardous place, it's a crazzzy idea to come in here without specializzzed knowledge of this zzzone.
+            <b>{{ $t('xenobiology.backText2') }}</b>
+            {{ $t('xenobiology.backText3') }}
           </span>
-          <span>Don't worry, I sympathizzze with your situation, and would be abuzzz to help organizzze some instructions for you.</span>
-          <span>You'll be amazzzed to see how much of a breezzze this is to pick up.</span>
+          <span>{{ $t('xenobiology.backText4') }}</span>
+          <span>{{ $t('xenobiology.backText5') }}</span>
         </template>
         <template slot="Slimes?">
           <span>
-            Raising these
+            {{ $t('xenobiology.slimesText1') }}
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeGrey.gif')" />
-            <b>Oozzzes</b> is a doozzzy.
+            <b>{{ $t('xenobiology.slimesText2') }}</b>
+            {{ $t('xenobiology.slimesText3') }}
           </span>
           <span>
-            First, you'll want to get a couple dozzzen Gray
+            {{ $t('xenobiology.slimesText4') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/SlimeGrey.gif')"
             />
-            <b>Oozzzes</b>.
+            <b>{{ $t('xenobiology.slimesText5') }}</b>
+            {{ $t('xenobiology.slimesText6') }}
           </span>
           <span>
-            Then, you can customizzze them into a completely different
+            {{ $t('xenobiology.slimesText7') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/SlimeOrange.gif')"
@@ -56,10 +59,11 @@
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimePurple.gif')" />
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeBlue.gif')" />
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeMetal.gif')" />
-            <b>Color</b>.
+            <b>{{ $t('xenobiology.slimesText8') }}</b>
+            {{ $t('xenobiology.slimesText9') }}
           </span>
           <span>
-            After you develop proper color analyzzzing ability, you'll be able to create even more personalizzzed
+            {{ $t('xenobiology.slimesText10') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/SlimeBluespace.gif')"
@@ -67,103 +71,118 @@
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeSepia.gif')" />
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeCerulean.gif')" />
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimePyrite.gif')" />
-            <b>Oozzzes</b>.
+            <b>{{ $t('xenobiology.slimesText11') }}</b>
+            {{ $t('xenobiology.slimesText12') }}
           </span>
         </template>
 
         <template slot="Slow?">
           <span>
-            If you want to minimizzze your time spent, you'll want to order some of the
+            {{ $t('xenobiology.slowText1') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/upgrade1.png')"
             />
-            <b>Optimizzzation Gizzzmos</b> from our local
+            <b>{{ $t('xenobiology.slowText2') }}</b>
+            {{ $t('xenobiology.slowText3') }}
             <img class="mx--0" :src="require('@/assets/art/sidebar/cargo.png')" />
-            <b>"Amazzzon"</b>.
+            <b>{{ $t('xenobiology.slowText4') }}</b>
+            {{ $t('xenobiology.slowText5') }}
           </span>
           <span>
-            You can utilizzze them to grow a larger sizzze of certain
+            {{ $t('xenobiology.slowText6') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/SlimeGrey.gif')"
             />
-            <b>Oozzzes</b> all at once.
+            <b>{{ $t('xenobiology.slowText7') }}</b>
+            {{ $t('xenobiology.slowText8') }}
           </span>
         </template>
         <template slot="Benefits?">
           <span>
-            You can weaponizzze your
+            {{ $t('xenobiology.benefitsText1') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/SlimeGrey.gif')"
             />
-            <b>Oozzze</b> companion to emphasizzze your combat abilities.
+            <b>{{ $t('xenobiology.benefitsText2') }}</b>
+            {{ $t('xenobiology.benefitsText3') }}
           </span>
           <span>
-            These
+            {{ $t('xenobiology.benefitsText4') }}
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeGrey.gif')" />
-            <b>Oozzzes</b> can energizzze your attacks with more
+            <b>{{ $t('xenobiology.benefitsText5') }}</b>
+            {{ $t('xenobiology.benefitsText6') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/combat/skull.png')"
             />
-            <b>Zzzeal</b>, light your strikes
+            <b>{{ $t('xenobiology.benefitsText7') }}</b>
+            {{ $t('xenobiology.benefitsText8') }}
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/burn-damage.png')"
             />
-            <b>Ablazzze</b>, or even let you
+            <b>{{ $t('xenobiology.benefitsText9') }}</b>
+            {{ $t('xenobiology.benefitsText10') }}
             <img class="mx--1" :src="require('@/assets/art/combat/evasion.png')" />
-            <b>Mobilizzze</b> faster from enemy-to-enemy.
+            <b>{{ $t('xenobiology.benefitsText11') }}</b>
+            {{ $t('xenobiology.benefitsText12') }}
           </span>
           <span>
-            Make sure you prioritizzze the
+            {{ $t('xenobiology.benefitsText13') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/combat/command.png')"
             />
-            <b>Command</b> combat style though, or you'll never gain experience and realizzze your
+            <b>{{ $t('xenobiology.benefitsText14') }}</b>
+            {{ $t('xenobiology.benefitsText15') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/combat/command.png')"
             />
-            <b>Command</b> potential.
+            <b>{{ $t('xenobiology.benefitsText16') }}</b>
+            {{ $t('xenobiology.benefitsText17') }}
           </span>
         </template>
         <template slot="Command?">
           <span>
-            Some of these
+            {{ $t('xenobiology.commandText1') }}
             <img class="mx--1" :src="require('@/assets/art/xenobio/SlimeGrey.gif')" />
-            <b>Oozzzes</b> can be quite lazzzy, demoralizzzed, or quick to freezzze up in a fight.
+            <b>{{ $t('xenobiology.commandText2') }}</b>
+            {{ $t('xenobiology.commandText3') }}
           </span>
           <span>
-            You'll need to raise your
+            {{ $t('xenobiology.commandText4') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/combat/command.png')"
             />
-            <b>Command</b> level before they'll recognizzze your authority. Otherwise they'll be more likely to waltzzz away mid-fight if you are hurt.
+            <b>{{ $t('xenobiology.commandText5') }}</b>
+            {{ $t('xenobiology.commandText6') }}
           </span>
           <span>
-            With enough
+            {{ $t('xenobiology.commandText7') }}
             <img class="mx--1" :src="require('@/assets/art/combat/command.png')" />
-            <b>Command</b>, you can even reach a flee chance of zzzero on some
+            <b>{{ $t('xenobiology.commandText8') }}</b>
+            {{ $t('xenobiology.commandText9') }}
             <img
               class="mx--1"
               :src="require('@/assets/art/xenobio/SlimeGrey.gif')"
             />
-            <b>Oozzzes</b>.
+            <b>{{ $t('xenobiology.commandText10') }}</b>
+            {{ $t('xenobiology.commandText11') }}
           </span>
         </template>
         <template slot="Z?">
-          <span>Don't be a buzzzkill; it's not very jazzzed of you to agonizzze my bizzzare speech pattern.</span>
+          <span>{{ $t('xenobiology.zText') }}</span>
         </template>
       </job-info>
 
       <div class="tier row" v-for="(tierEntries, tier) in viewableTieredActions" :key="tier">
         <div class="col-12">
-          <span class="tier-text">TIER {{tier+1}}</span>
+          <span class="tier-text">{{ $t('xenobiology.tier') }} {{tier+1}}</span>
         </div>
         <div
           class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2"

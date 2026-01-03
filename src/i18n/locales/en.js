@@ -122,7 +122,8 @@ export default {
     GRAYTIDE: "GRAYTIDE",
     "CLEAN UP AFTER": "CLEAN UP AFTER",
     CRAFT: "CRAFT",
-    "RECYCLE INTO": "RECYCLE INTO"
+    "RECYCLE INTO": "RECYCLE INTO",
+    RAISE: "RAISE",
   },
   // Items translations - add more as needed
   // Format: items.{itemId}: "Translated Name"
@@ -969,6 +970,78 @@ export default {
     "Complex Drinks": "COMPLEX DRINKS", 
     "Super Basic Drinks": "SUPER BASIC DRINKS",
     "Super Complex Drinks": "SUPER COMPLEX DRINKS"
+  },
+
+  xenobiology: {
+    title: "Nar Nar the Scientist flutters...",
+    back: "Back",
+    slimesQuestion: "Slimes?",
+    slowQuestion: "Slow?",
+    benefitsQuestion: "Benefits?",
+    commandQuestion: "Command?",
+    zQuestion: "Z?",
+  
+    backText1: "You look a bit puzzzled, chimpanzzzee-descendent citizzzen.",
+    backText2: "Xenobiology",
+    backText3: "is a hazzzardous place, it's a crazzzy idea to come in here without specializzzed knowledge of this zzzone.",
+    backText4: "Don't worry, I sympathizzze with your situation, and would be abuzzz to help organizzze some instructions for you.",
+    backText5: "You'll be amazzzed to see how much of a breezzze this is to pick up.",
+  
+    slimesText1: "Raising these",
+    slimesText2: "Oozzzes",
+    slimesText3: "is a doozzzy.",
+    slimesText4: "First, you'll want to get a couple dozzzen Gray",
+    slimesText5: "Oozzzes",
+    slimesText6: ".",
+    slimesText7: "Then, you can customizzze them into a completely different",
+    slimesText8: "Color",
+    slimesText9: ".",
+    slimesText10: "After you develop proper color analyzzzing ability, you'll be able to create even more personalizzzed",
+    slimesText11: "Oozzzes",
+    slimesText12: ".",
+  
+    slowText1: "If you want to minimizzze your time spent, you'll want to order some of the",
+    slowText2: "Optimizzzation Gizzzmos",
+    slowText3: "from our local",
+    slowText4: "\"Amazzzon\"",
+    slowText5: ".",
+    slowText6: "You can utilizzze them to grow a larger sizzze of certain",
+    slowText7: "Oozzzes",
+    slowText8: "all at once.",
+  
+    benefitsText1: "You can weaponizzze your",
+    benefitsText2: "Oozzze",
+    benefitsText3: "companion to emphasizzze your combat abilities.",
+    benefitsText4: "These",
+    benefitsText5: "Oozzzes",
+    benefitsText6: "can energizzze your attacks with more",
+    benefitsText7: "Zzzeal",
+    benefitsText8: ", light your strikes",
+    benefitsText9: "Ablazzze",
+    benefitsText10: ", or even let you",
+    benefitsText11: "Mobilizzze",
+    benefitsText12: "faster from enemy-to-enemy.",
+    benefitsText13: "Make sure you prioritizzze the",
+    benefitsText14: "Command",
+    benefitsText15: "combat style though, or you'll never gain experience and realizzze your",
+    benefitsText16: "Command",
+    benefitsText17: "potential.",
+  
+    commandText1: "Some of these",
+    commandText2: "Oozzzes",
+    commandText3: "can be quite lazzzy, demoralizzzed, or quick to freezzze up in a fight.",
+    commandText4: "You'll need to raise your",
+    commandText5: "Command",
+    commandText6: "level before they'll recognizzze your authority. Otherwise they'll be more likely to waltzzz away mid-fight if you are hurt.",
+    commandText7: "With enough",
+    commandText8: "Command",
+    commandText9: ", you can even reach a flee chance of zzzero on some",
+    commandText10: "Oozzzes",
+    commandText11: ".",
+  
+    zText: "Don't be a buzzzkill; it's not very jazzzed of you to agonizzze my bizzzare speech pattern.",
+  
+    tier: "TIER"
   },
   // Zones translations
   zones: {
