@@ -51,7 +51,11 @@ export default {
     noFileToImport: "Нет файла для импорта!",
     taskComplete: "Задание завершено!",
     pointsAdded: "Очки добавлены!",
-    exportBonus: "Получен бонус за экспорт за 30 минут!"
+    exportBonus: "Получен бонус за экспорт за 30 минут!",
+    "Time gained!": "Время получено!",
+    "Not enough time...": "Недостаточно времени...",
+    "Time sold!": "Время продано!",
+    "XP Gained!": "Опыт получен!",
   },
   jobs: {
     mining: "Добыча",
@@ -334,12 +338,101 @@ export default {
     pillSpacelube: "Космическая смазка",
     pillRegen: "Таблетка регенерации",
     pillPrecision: "Таблетка точности",
+    // Chronosphere items
+    "bluetimeEmpty": "Пустое время блюспейса",
+    "bluetime": "Время блюспейса",
+    "antag": "Антагонист",
+    "money": "Деньги",
   },
   // Purchases translations
   purchases: {
-    // Add purchase translations as needed
-    // Format: purchases.{purchaseId}: "Translated Name"
-    // For descriptions: purchases.{purchaseId}.description: "Translated Description"
+    // Chronosphere purchases
+    resetSimulation: {
+      name: "_simulation.Reset()",
+      description: "Сбросьте игру, получив указанное время блюспейса в начале всех будущих прохождений"
+    },
+    chronoToCash: {
+      name: "ХроноДеньги",
+      description: "Получите $100,000"
+    },
+    chronoToTime: {
+      name: "Купить время",
+      description: "Добавьте 2 часа в банк времени"
+    },
+    timeToCash1: {
+      name: "Разблокировать продажу времени",
+      description: "Разблокируйте возможность продажи накопленного времени (1 час за $25,000)"
+    },
+    timeToCash2: {
+      name: "Продать время",
+      description: "Потеряйте 1 час накопленного времени хроносферы. Получите $25,000",
+      otherText: "Час x1"
+    },
+    antagRoll1: {
+      name: "Антаг-ролл",
+      description: "Получите помощь от зловещей фракции"
+    },
+    antagRoll2: {
+      name: "Антаг-ролл",
+      description: "Получите помощь от зловещей фракции"
+    },
+    antagRoll3: {
+      name: "Антаг-ролл",
+      description: "Получите помощь от зловещей фракции"
+    },
+    antagRoll4: {
+      name: "Антаг-ролл",
+      description: "Получите помощь от зловещей фракции"
+    },
+    timeBankSize1: {
+      name: "Увеличить банк времени I",
+      description: "Увеличивает максимальную ёмкость банка времени с 12 часов до 24 часов"
+    },
+    timeBankSize2: {
+      name: "Увеличить банк времени II",
+      description: "Увеличивает максимальную ёмкость банка времени с 24 часов до 48 часов"
+    },
+    timeBankOptions1: {
+      name: "Опции банка времени I",
+      description: "Позволяет использовать банк времени на скорости x7.5"
+    },
+    timeBankOptions2: {
+      name: "Опции банка времени II",
+      description: "Позволяет использовать банк времени на скорости x10"
+    },
+    timeBankAutoPause: {
+      name: "Авто-пауза хроноускорения",
+      description: "Время больше не тратится, когда вы не выполняете работу или не в бою"
+    },
+    chronoCombatRoll: {
+      name: "+1 реролл валидхантинга",
+      description: "Позволяет рероллить награду за валидхантинг +1 раз за успешное задание"
+    },
+    chronoScrying: {
+      name: "Предвидение",
+      description: "Позволяет видеть все действия до их разблокировки. Полезно для планирования"
+    },
+    // Шаблон для покупок уровней (Job Blitz)
+    levelJobTemplate: {
+      name: "Уровень {job} {from}-{to}",
+      description: "Получите {xp} опыта {job}, достаточно для повышения с уровня {from} до {to}"
+    },
+  },
+  sections: {
+    "Chrono Exchange": "Обмен хроносферы",
+    "Upgrades": "Улучшения",
+    "Job Blitz": "Блиц-повышение",
+  },
+  shop: {
+    viewOdds: "Посмотреть шансы",
+    viewChain: "Посмотреть цепочку",
+    requires: "Требуется",
+    level: "ур.",
+    missingName: "Отсутствует название", 
+    // Для секций магазина (если где-то используются)
+    chronoExchange: "Обмен хроносферы",
+    upgrades: "Улучшения",
+    jobBlitz: "Блиц-повышение",
   },
   // Zones translations
   zones: {

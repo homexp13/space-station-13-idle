@@ -42,7 +42,12 @@ export default {
     levelIndividualJobs: "Level Individual Jobs",
     maxAllJobs: "Max All Jobs",
     completeValidhuntingTask: "Complete Current Validhunting Task",
-    giveResearchPoints: "Give 100 Research Bounty Points"
+    giveResearchPoints: "Give 100 Research Bounty Points",
+    // Chronosphere messages
+    "Time gained!": "Time gained!",
+    "Not enough time...": "Not enough time...",
+    "Time sold!": "Time sold!",
+    "XP Gained!": "XP Gained!",
   },
   messages: {
     tutorialsReset: "Tutorials reset!",
@@ -334,12 +339,102 @@ export default {
     pillSpacelube: "Space Lube",
     pillRegen: "Regeneration Pill",
     pillPrecision: "Precision Pill",
+    // Chronosphere items
+    "bluetimeEmpty": "Bluespace Time Empty",
+    "bluetime": "Bluespace Time",
+    "antag": "Antagonist",
+    "money": "Money",
   },
   // Purchases translations
   purchases: {
-    // Add purchase translations as needed
-    // Format: purchases.{purchaseId}: "Translated Name"
-    // For descriptions: purchases.{purchaseId}.description: "Translated Description"
+    // Chronosphere purchases
+    resetSimulation: {
+      name: "_simulation.Reset()",
+      description: "Reset your game, gaining the Bluespace Time listed at the start of all future playthroughs"
+    },
+    chronoToCash: {
+      name: "Chrono-To-Cash",
+      description: "Gain $100,000"
+    },
+    chronoToTime: {
+      name: "Buy Time",
+      description: "Add 2 hours to the time bank"
+    },
+    timeToCash1: {
+      name: "Unlock Time Selling",
+      description: "Unlock the ability to sell banked time (1 hour for $25,000)"
+    },
+    timeToCash2: {
+      name: "Sell Time",
+      description: "Lose 1 hour of banked Chrono time. Gain $25,000",
+      otherText: "Hour x1"
+    },
+    antagRoll1: {
+      name: "Antag Roll",
+      description: "Acquire aid from a nefarious faction."
+    },
+    antagRoll2: {
+      name: "Antag Roll",
+      description: "Acquire aid from a nefarious faction."
+    },
+    antagRoll3: {
+      name: "Antag Roll",
+      description: "Acquire aid from a nefarious faction."
+    },
+    antagRoll4: {
+      name: "Antag Roll",
+      description: "Acquire aid from a nefarious faction."
+    },
+    timeBankSize1: {
+      name: "Expand Time Bank I",
+      description: "Increases the maximum capacity of the time bank from 12 hours, to 24 hours"
+    },
+    timeBankSize2: {
+      name: "Expand Time Bank II",
+      description: "Increases the maximum capacity of the time bank from 24 hours, to 48 hours"
+    },
+    timeBankOptions1: {
+      name: "Time Bank Options I",
+      description: "Allows you to use the time bank at x7.5 speed"
+    },
+    timeBankOptions2: {
+      name: "Time Bank Options II",
+      description: "Allows you to use the time bank at x10 speed"
+    },
+    timeBankAutoPause: {
+      name: "Auto-Pause Chrono Acceleration",
+      description: "Time is no longer drained when you aren't doing a job or in combat"
+    },
+    chronoCombatRoll: {
+      name: "+1 Validhunting Reroll",
+      description: "Allows you to reroll your validhunting bounty +1 time per successful bounty"
+    },
+    chronoScrying: {
+      name: "Scrying",
+      description: "Allows you to see all actions before you unlock them. Good for planning ahead"
+    },
+    
+    // Template for level purchases (Job Blitz)
+    levelJobTemplate: {
+      name: "Level {job} {from}-{to}",
+      description: "Gain {xp} {job} experience, enough to level from {from} to {to}"
+    },
+  },
+  sections: {
+    "Chrono Exchange": "Chrono Exchange",
+    "Upgrades": "Upgrades",
+    "Job Blitz": "Job Blitz",
+  },
+  shop: {
+    viewOdds: "View Odds",
+    viewChain: "View Chain",
+    requires: "Requires",
+    level: "lvl",
+    missingName: "Missing name",
+    // For shop sections (if used anywhere)
+    chronoExchange: "Chrono Exchange",
+    upgrades: "Upgrades",
+    jobBlitz: "Job Blitz",
   },
   // Zones translations
   zones: {
