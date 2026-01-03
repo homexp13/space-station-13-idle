@@ -501,6 +501,18 @@ export default {
     upgrades: "Улучшения",
     jobBlitz: "Блиц-повышение",
   },
+  cookingTypes: {
+    PASTA: "ПАСТА",
+    STEWS: "РАГУ",
+    POCKETS: "ПОКЕТЫ",
+    PIES: "ПИРОГИ",
+    BURGERS: "БУРГЕРЫ",
+    PIZZA: "ПИЦЦА",
+    EXOTIC: "ЭКЗОТИКА"
+  },
+  cooking: {
+    fryCookingEnabled: "Жарка включена"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed

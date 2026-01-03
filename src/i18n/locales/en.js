@@ -503,6 +503,18 @@ export default {
     upgrades: "Upgrades",
     jobBlitz: "Job Blitz",
   },
+  cookingTypes: {
+    PASTA: "PASTA",
+    STEWS: "STEWS",
+    POCKETS: "POCKETS",
+    PIES: "PIES",
+    BURGERS: "BURGERS",
+    PIZZA: "PIZZA",
+    EXOTIC: "EXOTIC"
+  },
+  cooking: {
+    fryCookingEnabled: "Fry Cooking Enabled"
+  },
   // Zones translations
   zones: {
     // Add zone translations as needed
