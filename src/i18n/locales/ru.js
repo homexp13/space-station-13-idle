@@ -16,7 +16,8 @@ export default {
     russian: "Русский",
     upgrades: "Улучшения",
     streak: "Streak",
-    bonus: "Bonus"
+    bonus: "Bonus",
+    ok: "OK",
   },
   settings: {
     title: "НАСТРОЙКИ",
@@ -1443,6 +1444,15 @@ export default {
     jobs: "РАБОТЫ",
     levels: "Уровни",
     time: "Время"
+  },
+
+  chronoModal: {
+    welcomeBack: "С возвращением!",
+    offlineTimeConverted: "Ваше время в оффлайне было конвертировано для использования в",
+    offlineTimeConverted2: ".",
+    totalTimeAvailable: "ВСЕГО ДОСТУПНО ВРЕМЕНИ:",
+    exportBonus: "Вы получили бонус за экспорт!",
+    exportBonusDescription: "Экспортируйте своё сохранение, чтобы сохранить данные и получить дополнительные 30 минут в вашем Банке Времени."
   },
 
   // Zones translations

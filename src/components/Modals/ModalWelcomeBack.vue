@@ -1,19 +1,20 @@
 <template>
   <div class="d-flex flex-column align-items-center m-3 text-center">
-    <h3 class="text-center mb-3">Welcome Back!</h3>
+    <h3 class="text-center mb-3">{{ $t('chronoModal.welcomeBack') }}</h3>
     <span>
-      Your time offline has been converted for use at the
+      {{ $t('chronoModal.offlineTimeConverted') }}
       <img
         :src="require('@/assets/art/chrono/icon.png')"
         class="mx--1"
       />
-      <b>Chronosphere</b>.
+      <b>{{ $t('common.chronosphere') }}</b>
+      {{ $t('chronoModal.offlineTimeConverted2') }}
     </span>
-    <span class="mt-2 description">TOTAL TIME AVAILABLE:</span>
+    <span class="mt-2 description">{{ $t('chronoModal.totalTimeAvailable') }}</span>
     <span>{{remainingTimeText}}</span>
-    <span v-if="oldExport"><br><b class="chrono">You've earned an Export Bonus!</b><br>
-       Export your save to keep your data backed up and earn 30 extra minutes in your Time Bank.</span>
-    <button class="btn btn-primary mt-3" @click="confirmationClicked">OK</button>
+    <span v-if="oldExport"><br><b class="chrono">{{ $t('chronoModal.exportBonus') }}</b><br>
+       {{ $t('chronoModal.exportBonusDescription') }}</span>
+    <button class="btn btn-primary mt-3" @click="confirmationClicked">{{ $t('common.ok') }}</button>
   </div>
 </template>
 
