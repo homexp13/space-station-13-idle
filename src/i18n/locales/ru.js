@@ -13,7 +13,8 @@ export default {
     discord: "Discord",
     language: "Язык",
     english: "Английский",
-    russian: "Русский"
+    russian: "Русский",
+    upgrades: "Улучшения",
   },
   settings: {
     title: "НАСТРОЙКИ",
@@ -511,6 +512,43 @@ export default {
     EXOTIC: "ЭКЗОТИКА"
   },
   cooking: {
+    title: "Король Конец, повар, говорит...",
+    back: "Назад",
+    produceQuestion: "Продукты?",
+    meatQuestion: "Мясо?",
+    qualityQuestion: "Качество?",
+    cannibalismQuestion: "Каннибализм?",
+    
+    backText1: "Мама миа, пришло время приготовить очень острое",
+    backText2: "Спагетти",
+    backText3: ".",
+    
+    produceText1: "Свинороги внизу в",
+    produceText2: "Ботанике могут вырастить для тебя немного",
+    produceText3: "Продуктов, если они не",
+    produceText4: "под кайфом.",
+    
+    meatText1: "Нельзя сделать омлет, не разбив несколько яиц.",
+    meatText2: "Если хочешь самое свежее",
+    meatText3: "Мясо, нет лучшего способа получить его, чем прямо из",
+    meatText4: "Источника.",
+    meatText5: "Какая бойня!",
+    
+    qualityText1: "С правильным",
+    qualityText2: "Оборудованием ты сможешь приготовить блюдо",
+    qualityText3: "лучшего качества.",
+    qualityText4: "Эти блюда будут",
+    qualityText5: "Продаваться дороже,",
+    qualityText6: "Лечить больше и даже давать тебе больше",
+    qualityText7: "Статов.",
+    qualityText8: "Какая удача!",
+    
+    cannibalismText1: "Спокойно, синьор. Если ты пойдешь рассказывать",
+    cannibalismText2: "Полиции",
+    cannibalismText3: "просто помни: месть — блюдо, которое подают холодным.",
+    cannibalismText4: "Ты же не хочешь оказаться чьим-то",
+    cannibalismText5: "обедом, не так ли?",
+    
     fryCookingEnabled: "Жарка включена"
   },
   engineeringTypes: {

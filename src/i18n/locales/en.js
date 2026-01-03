@@ -13,7 +13,8 @@ export default {
     discord: "Discord",
     language: "Language",
     english: "English",
-    russian: "Russian"
+    russian: "Russian",
+    upgrades: "Upgrades",
   },
   settings: {
     title: "SETTINGS",
@@ -513,6 +514,43 @@ export default {
     EXOTIC: "EXOTIC"
   },
   cooking: {
+    title: "Korol Konets the Cook says...",
+    back: "Back",
+    produceQuestion: "Produce?",
+    meatQuestion: "Meat?",
+    qualityQuestion: "Quality?",
+    cannibalismQuestion: "Cannibalism?",
+    
+    backText1: "Mamma mia, it's-a time to cook-a a very-a spicy",
+    backText2: "Spaghett",
+    backText3: ".",
+    
+    produceText1: "The pigornes down in",
+    produceText2: "Botany might grow-a you some",
+    produceText3: "Produrre, unless they're",
+    produceText4: "alto di droghe.",
+    
+    meatText1: "You can't-a make an omelette without breaking a few eggs.",
+    meatText2: "If you want the freshest-a",
+    meatText3: "Meat, there's no better way to get it than straight from the",
+    meatText4: "Source.",
+    meatText5: "Che macello!",
+    
+    qualityText1: "With the proper",
+    qualityText2: "Equipment you may just be able to prepare a dish",
+    qualityText3: "di qualità migliore.",
+    qualityText4: "These meals will",
+    qualityText5: "Sell for more,",
+    qualityText6: "Heal for more, and even provide-a you with more",
+    qualityText7: "Stats.",
+    qualityText8: "Che fortuna!",
+    
+    cannibalismText1: "Tranquillo signore. If you go telling-a the",
+    cannibalismText2: "Polizia",
+    cannibalismText3: "just remember: revenge is a dish best served cold.",
+    cannibalismText4: "You don't want to end up as someone's",
+    cannibalismText5: "pranzo, do you?",
+    
     fryCookingEnabled: "Fry Cooking Enabled"
   },
   engineeringTypes: {

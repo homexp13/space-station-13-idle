@@ -14,98 +14,101 @@
       <job-info
         infoId="cooking"
         :icon="require('@/assets/art/jobinfo/cooking.png')"
-        title="Korol Konets the Cook says..."
+        :title="$t('cooking.title')"
         :options="[
-					{name: 'Back'},
-					{name: 'Produce?', icon: require('@/assets/art/botany/PlantPepperhot.png'), iconClass:'mx--2'},
-					{name: 'Meat?', icon: require('@/assets/art/cooking/meatAnimal.png'), iconClass:'mx--1'},
-					{name: 'Quality?', icon: require('@/assets/art/cooking/upgrade1.png'), iconClass:'mx--0'},
-					{name: 'Cannibalism?', icon: require('@/assets/art/cooking/meatFoot.png'), iconClass:'mx--2'}
-				]"
+          {key: 'Back', name: $t('cooking.back')},
+          {key: 'Produce?', name: $t('cooking.produceQuestion'), icon: require('@/assets/art/botany/PlantPepperhot.png'), iconClass:'mx--2'},
+          {key: 'Meat?', name: $t('cooking.meatQuestion'), icon: require('@/assets/art/cooking/meatAnimal.png'), iconClass:'mx--1'},
+          {key: 'Quality?', name: $t('cooking.qualityQuestion'), icon: require('@/assets/art/cooking/upgrade1.png'), iconClass:'mx--0'},
+          {key: 'Cannibalism?', name: $t('cooking.cannibalismQuestion'), icon: require('@/assets/art/cooking/meatFoot.png'), iconClass:'mx--2'}
+        ]"
       >
         <template slot="Back">
           <span>
-            <i>Mamma mia</i>, it's-a time to cook-a a very-a spicy
+            <i>{{ $t('cooking.backText1') }}</i>
             <img
               class="mx--2"
               :src="require('@/assets/art/cooking/pasta1.png')"
             />
             <b>
-              <i>Spaghett</i>
-            </b>.
+              <i>{{ $t('cooking.backText2') }}</i>
+            </b>
+            {{ $t('cooking.backText3') }}
           </span>
         </template>
         <template slot="Produce?">
           <span>
-            The pigornes down in
+            {{ $t('cooking.produceText1') }}
             <img class="mx--0" :src="require('@/assets/art/botany/icon.png')" />
-            <b>Botany</b> might grow-a you some
+            <b>{{ $t('jobs.botany') }}</b>
+            {{ $t('cooking.produceText2') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/botany/PlantPepperhot.png')"
             />
-            <b>Produrre</b>, unless they're
-            <i>alto di droghe.</i>
+            <b>{{ $t('cooking.produceText3') }}</b>
+            <i>{{ $t('cooking.produceText4') }}</i>
           </span>
         </template>
         <template slot="Meat?">
-          <span>You can't-a make an omelette without breaking a few eggs.</span>
+          <span>{{ $t('cooking.meatText1') }}</span>
           <span>
-            If you want the freshest-a
+            {{ $t('cooking.meatText2') }}
             <img
               class="mx--2"
               :src="require('@/assets/art/cooking/meatAnimal.png')"
             />
-            <b>Meat</b>, there's no better way to get it than straight from the
+            <b>{{ $t('cooking.meatText3') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/enemies/pete.png')"
             />
-            <b>Source</b>.
+            <b>{{ $t('cooking.meatText4') }}</b>
           </span>
           <span>
-            <i>Che macello!</i>
+            <i>{{ $t('cooking.meatText5') }}</i>
           </span>
         </template>
         <template slot="Quality?">
           <span>
-            With the proper
+            {{ $t('cooking.qualityText1') }}
             <img class="mx--2" :src="require('@/assets/art/cooking/upgrade1.png')" />
-            <b>Equipment</b> you may just be able to prepare a dish
-            <i>di qualità migliore</i>.
+            <b>{{ $t('cooking.qualityText2') }}</b>
+            <i>{{ $t('cooking.qualityText3') }}</i>
           </span>
           <span>
-            These meals will
+            {{ $t('cooking.qualityText4') }}
             <img class="mx--2" :src="require('@/assets/art/misc/coin-padded.png')" />
-            <b>Sell</b> for more,
+            <b>{{ $t('cooking.qualityText5') }}</b>
             <img class="mx--0" :src="require('@/assets/art/combat/health.gif')" />
-            <b>Heal</b> for more, and even provide-a you with more
+            <b>{{ $t('cooking.qualityText6') }}</b>
             <img
               class="mx--0"
               :src="require('@/assets/art/combat/precision.png')"
             />
             <img class="mx--1" :src="require('@/assets/art/combat/skull.png')" />
             <img class="mx--2" :src="require('@/assets/art/combat/black_shoes.png')" />
-            <b>Stats</b>.
+            <b>{{ $t('cooking.qualityText7') }}</b>
           </span>
           <span>
-            <i>Che fortuna!</i>
+            <i>{{ $t('cooking.qualityText8') }}</i>
           </span>
         </template>
         <template slot="Cannibalism?">
           <span>
-            <i>Tranquillo signore.</i> If you go telling-a the
+            <i>{{ $t('cooking.cannibalismText1') }}</i>
             <img
               class="mx--0"
               :src="require('@/assets/art/jobinfo/shitcurity.png')"
             />
             <b>
-              <i>Polizia</i>
-            </b> just remember: revenge is a dish best served cold.
+              <i>{{ $t('cooking.cannibalismText2') }}</i>
+            </b>
+            {{ $t('cooking.cannibalismText3') }}
           </span>
           <span>
-            You don't want to end up as someone's
-            <i>pranzo</i>, do you?
+            {{ $t('cooking.cannibalismText4') }}
+            <i>{{ $t('cooking.cannibalismText5') }}</i>
           </span>
         </template>
       </job-info>
@@ -115,7 +118,7 @@
           <div class="content-block">
             <div class="d-flex flex-row align-items-center">
               <img :src="require('@/assets/art/cooking/upgrade1.png')" />
-              <h5 class="mb-1">Upgrades</h5>
+              <h5 class="mb-1">{{ $t('common.upgrades') }}</h5>
             </div>
             <div class="custom-control custom-switch mt-1">
               <input
